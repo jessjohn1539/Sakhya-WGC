@@ -1,25 +1,20 @@
 ---
+// Layout
+import PageLayout from "../layouts/PageLayout.astro";
+// Components
+import Hero from "../components/Hero.astro";
+// Assets
 import HeroImage from "../assets/home.png";
-
-import PageLayout from "../components/layouts/PageLayout.astro";
-
 const HeroBg = `url(${HeroImage.src})`;
 ---
 
 <PageLayout>
-  <!-- #DFFFE7 -->
-  <div class="hero">
-    <div class="content z-10">
-      <!-- h1 text-5xl h2 3xl -->
-      <h1 class="text-col-4 text-center text-5xl uppercase font-bold mb-2">
-        Sakhya - Women's Guidance Cell
-      </h1>
-      <h2 class="text-txt text-center text-3xl">
-        Women empowerment for nation building
-      </h2>
-    </div>
-    <div class="overlay"></div>
-  </div>
+  <Hero
+    bgImg={HeroBg}
+    title="Sakhya - Women's Guidance Cell"
+    subText="Women empowerment for nation building"
+  />
+
   <div class="h-[300px] bg-col-4"></div>
   <div class="h-[500px] w-full"></div>
 
@@ -28,25 +23,3 @@ const HeroBg = `url(${HeroImage.src})`;
     src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
   ></script>
 </PageLayout>
-
-<style define:vars={{ bgImg: HeroBg }}>
-  .hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: var(--bgImg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .hero .overlay {
-    background-color: #dfffe7;
-    position: absolute;
-    opacity: 0.7;
-    height: inherit;
-    width: 100%;
-    z-index: 0;
-  }
-</style>
