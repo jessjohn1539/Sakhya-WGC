@@ -3,6 +3,7 @@
 import PageLayout from "../layouts/PageLayout.astro";
 // Components
 import Hero from "../components/Hero.astro";
+import Partners from "../components/Partners.astro";
 // Assets
 import HeroImage from "../assets/home.png";
 const HeroBg = `url(${HeroImage.src})`;
@@ -16,7 +17,8 @@ const HeroBg = `url(${HeroImage.src})`;
     overlay={true}
   />
 
-  <div class="h-[300px] bg-col-4"></div>
+  <Partners/>
+  
   <div class="h-[500px] w-full"></div>
 
   <script
