@@ -1,0 +1,64 @@
+---
+interface subsection {
+	name: string;
+	link: string;
+}
+interface section {
+	name: string;
+	subsections: subsection[];
+}
+interface Props {
+	links: Array<section>;
+	popupState: boolean;
+}
+const { links, popupState } = Astro.props as Props;
+---
+
+<nav
+	class={"fixed top-0 z-20 bg-txt text-slate-200 min-h-screen py-5 px-6 w-full flex md:hidden transition-left duration-200 " +
+		(popupState ? "left-0" : "-left-[100%]")}
+>
+	<ul
+		class="grow flex flex-col gap-4 items-start pt-16"
+	>
+		{
+			links.map((link) => (
+				<li class="w-full">
+					<details class="group [&_summary::-webkit-details-marker]:hidden">
+						<summary class="flex cursor-pointer focus:border-none items-center py-1 px-2 hover:text-col-3">
+							<span class="font-medium">
+								{link.name}
+							</span>
+							<span class="shrink-0 transition duration-300 group-open:-rotate-180">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="h-5 w-5"
+									viewBox="0 0 20 20"
+									fill="currentColor"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+										clip-rule="evenodd"
+									/>
+								</svg>
+							</span>
+						</summary>
+						<ul class="mt-2 grid grid-cols-2 justify-between">
+							{
+								link.subsections.map( subsection => (
+								<li>
+									<a
+									href={subsection.link}
+									class="block rounded-md text-sm px-2 py-2 font-medium hover:text-col-3"
+									>{subsection.name}</a>
+								</li>
+								))
+							}
+						</ul>
+					</details>
+				</li>
+			))
+		}
+	</ul>
+</nav>
