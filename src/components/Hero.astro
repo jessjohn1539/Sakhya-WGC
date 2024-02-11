@@ -1,11 +1,14 @@
 ---
+import type { boolean } from "astro/zod";
+
 interface Props {
     bgImg: string;
     title?: string;
     subText?: string;
+    overlay: boolean;
 }
 
-const { bgImg, title, subText } = Astro.props as Props;
+const { bgImg, title, subText, overlay } = Astro.props as Props;
 ---
 
 <div class="hero">
@@ -19,7 +22,7 @@ const { bgImg, title, subText } = Astro.props as Props;
         }
         {subText && <p class="text-txt text-center text-3xl">{subText}</p>}
     </div>
-    <div class="overlay"></div>
+    {overlay && <div class="overlay" />}
 </div>
 
 <style define:vars={{ bgImg }}>
