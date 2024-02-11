@@ -5,9 +5,11 @@ export default {
 		extend: {
 			colors: {
 				'col-1': '#81EE9A', // light green
+				'col-1-light': '#DFFFE7', // lighter light green idk
 				'col-2': '#56CD9A', // emerald green
 				'col-3': "#35A4A7", // turquoise blue
 				'col-4': "#1C567B", // blue
+				'txt': '#354647', // blue
 			},
 		},
 	},

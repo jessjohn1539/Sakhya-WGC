@@ -1,0 +1,45 @@
+---
+interface Props {
+    bgImg: string;
+    title?: string;
+    subText?: string;
+}
+
+const { bgImg, title, subText } = Astro.props as Props;
+---
+
+<div class="hero">
+    <div class="content z-10">
+        {
+            title && (
+                <h1 class="text-col-4 text-center text-5xl uppercase font-bold mb-2">
+                    {title}
+                </h1>
+            )
+        }
+        {subText && <p class="text-txt text-center text-3xl">{subText}</p>}
+    </div>
+    <div class="overlay"></div>
+</div>
+
+<style define:vars={{ bgImg }}>
+    .hero {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: var(--bgImg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .hero .overlay {
+        position: absolute;
+        opacity: 0.7;
+        height: inherit;
+        width: 100%;
+        z-index: 0;
+        @apply bg-col-1-light;
+    }
+</style>
