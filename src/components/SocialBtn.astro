@@ -1,0 +1,71 @@
+---
+// FB: https://www.facebook.com/sacredheartschoolkalyan
+// Insta : https://www.instagram.com/sacredheartkalyan
+// LinkedIn: https://www.linkedin.com/school/sacred-heart-school-kalyan/
+// Twitter: https://www.twitter.com/SHSKalyan
+// YT: https://www.youtube.com/@SacredHeartSchoolKalyan
+
+import { Insta, FB, LinkedIn, Twitter, YT } from "../assets/icons";
+interface Props {
+    type: string;
+    class?: string;
+    height: number;
+    width: number;
+}
+const props = Astro.props as Props;
+let href = "";
+
+switch (props.type) {
+    case "instagram":
+        href = "";
+        break;
+    case "facebook":
+        href = "";
+        break;
+    case "linkedin":
+        href = "";
+        break;
+    case "twitter":
+        href = "";
+        break;
+    case "youtube":
+        href = "";
+        break;
+    default:
+        break;
+}
+---
+
+<a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    class={"btn btn-circle btn-outline text-white hover:text-col-3" +
+        (props.class ? " " + props.class : "")}
+>
+    {
+        props.type == "instagram" && (
+            <Insta height={props.height} width={props.width} />
+        )
+    }
+    {
+        props.type == "facebook" && (
+            <FB height={props.height} width={props.width} />
+        )
+    }
+    {
+        props.type == "linkedin" && (
+            <LinkedIn height={props.height} width={props.width} />
+        )
+    }
+    {
+        props.type == "twitter" && (
+            <Twitter height={props.height} width={props.width} />
+        )
+    }
+    {
+        props.type == "youtube" && (
+            <YT height={props.height} width={props.width} />
+        )
+    }
+</a>
