@@ -4,9 +4,10 @@ interface Props {
     title?: string;
     subText?: string;
     overlay: boolean;
+    overlayOpacity?: number;
 }
 
-const { bgImg, title, subText, overlay } = Astro.props as Props;
+const { bgImg, title, subText, overlay, overlayOpacity } = Astro.props as Props;
 ---
 
 <div class="hero">
@@ -23,7 +24,7 @@ const { bgImg, title, subText, overlay } = Astro.props as Props;
     {overlay && <div class="overlay" />}
 </div>
 
-<style define:vars={{ bgImg }}>
+<style define:vars={{ bgImg, overlayOpacity }}>
     .hero {
         height: 100vh;
         display: flex;
@@ -37,7 +38,7 @@ const { bgImg, title, subText, overlay } = Astro.props as Props;
     }
     .hero .overlay {
         position: absolute;
-        opacity: 0.7;
+        opacity: var(--overlayOpacity);
         height: inherit;
         width: 100%;
         z-index: 0;
