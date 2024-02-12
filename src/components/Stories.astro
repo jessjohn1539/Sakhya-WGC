@@ -2,25 +2,35 @@
 import Img1 from "../assets/home.png";
 ---
 
-<div class="h-[1250px] bg-col-1-light flex flex-col items-center">
+<div class="h-[2200px] xl:h-[1250px] bg-col-1-light flex flex-col items-center">
   <!-- Reusable Heading Component -->
   <div class="flex items-center justify-center pt-7 text-3xl font-bold">
     <span class="text-txt"
       >Stories of <span class="text-col-3">Change</span></span
     >
   </div>
-  <!-- Reusable Story Board -->
+  <!-- Reusable Story Board-->
   <div
-    class="flex flex-row h-[300px] w-[1200px] bg-col-3 rounded-tr-[62px] rounded-tl-[31px] rounded-bl-[31px] mt-[60px]"
+    class="flex flex-col lg:flex-row rounded-[31px] h-[600px] w-[400px] bg-col-3 mt-[60px] md:w-[700px] md:h-[550px] lg:w-[900px] lg:h-[300px] xl:h-[300px] xl:w-[1200px] lg:rounded-tr-[62px] lg:rounded-tl-[31px] lg:rounded-bl-[31px] lg:rounded-none"
   >
-    <img src={Img1.src} class="w-[280px] h-[300px] rounded-[31px]" alt="" />
-    <div class="flex flex-col items-start justify-start p-10 gap-3">
+    <div class="flex justify-center pt-3 lg:pt-0 lg:justify-start">
+      <img
+        src={Img1.src}
+        class="w-[370px] h-[250px] rounded-[31px] lg:w-[250px] lg:h-[300px] xl:w-[280px] xl:h-[300px]"
+        alt=""
+      />
+    </div>
+    <div
+      class="flex flex-col items-start justify-start md:items-center lg:items-start lg:pl-10 lg:pt-8 pl-10 md:pl-[0px] pt-5 gap-3"
+    >
       <span class="font-bold uppercase text-xl text-txt"
         >Shyama, <span class="uppercase font-normal text-xl text-txt"
           >Haryana</span
         >
       </span>
-      <p class="w-[700px] text-txt font-normal text-lg">
+      <p
+        class="w-[300px] md:w-[500px] xl:w-[700px] md:text-justify text-txt font-normal text-lg"
+      >
         Covid brought many problems with it, both outside and within our home.
         My husband who used to work at a tailoring shop lost his job. It became
         very hard to make ends meet...
@@ -34,43 +44,63 @@ import Img1 from "../assets/home.png";
       </div>
     </div>
   </div>
+
   <div
-    class="flex flex-row-reverse h-[300px] w-[1200px] bg-col-3 rounded-tr-[31px] rounded-br-[31px] rounded-tl-[62px] mt-[60px]"
+    class="flex flex-col lg:flex-row-reverse rounded-[31px] h-[600px] w-[400px] bg-col-3 mt-[60px] md:w-[700px] md:h-[550px] lg:w-[900px] lg:h-[300px] xl:h-[300px] xl:w-[1200px] lg:rounded-tr-[31px] lg:rounded-br-[31px] lg:rounded-tl-[62px] lg:rounded-none"
   >
-    <div class="flex flex-row items-start justify-end">
-      <div class="flex flex-col items-end justify-end p-10 gap-3">
-        <span class="font-bold uppercase text-xl text-txt"
-          >Yashoda, <span class="uppercase font-normal text-xl text-txt"
-            >Karnataka</span
-          >
-        </span>
-        <p class="w-[700px] text-txt font-normal text-lg text-right">
-          Before the pandemic, Yashoda was a young mother to a one-year old,
-          living with her cab driver husband in Bengaluru. However, her husband
-          lost his job in the lockdown...
-        </p>
-        <div class="pt-5">
-          <button
-            type="button"
-            class="text-txt bg-col-2 hover:bg-col-1 focus:ring-4 focus:outline-none focus:ring-col-3 font-normal rounded-lg text-md px-11 py-2 text-center"
-            >Read More</button
-          >
-        </div>
+    <div class="flex justify-center pt-3 lg:pt-0 lg:justify-end">
+      <img
+        src={Img1.src}
+        class="w-[370px] h-[250px] rounded-[31px] lg:w-[250px] lg:h-[300px] xl:w-[280px] xl:h-[300px]"
+        alt=""
+      />
+    </div>
+    <div
+      class="flex flex-col items-start justify-start md:items-center lg:pt-8 lg:pr-10 pl-10 md:pl-[0px] pt-5 gap-3 lg:items-end lg:justify-start"
+    >
+      <span class="font-bold uppercase text-xl text-txt"
+        >Yashoda, <span class="uppercase font-normal text-xl text-txt"
+          >Karnataka</span
+        >
+      </span>
+      <p
+        class="w-[300px] md:w-[500px] xl:w-[700px] md:text-justify lg:text-right text-txt font-normal text-lg"
+      >
+        Before the pandemic, Yashoda was a young mother to a one-year old,
+        living with her cab driver husband in Bengaluru. However, her husband
+        lost his job in the lockdown...
+      </p>
+      <div class="pt-5">
+        <button
+          type="button"
+          class="text-txt bg-col-2 hover:bg-col-1 focus:ring-4 focus:outline-none focus:ring-col-3 font-normal rounded-lg text-md px-11 py-2 text-center"
+          >Read More</button
+        >
       </div>
-      <img src={Img1.src} class="w-[280px] h-[300px] rounded-[31px]" alt="" />
     </div>
   </div>
+
   <div
-    class="flex flex-row h-[300px] w-[1200px] bg-col-3 rounded-tr-[62px] rounded-tl-[31px] rounded-bl-[31px] mt-[60px]"
+    class="flex flex-col lg:flex-row rounded-[31px] h-[625px] w-[400px] bg-col-3 mt-[60px] md:w-[700px] md:h-[550px] lg:w-[900px] lg:h-[300px] xl:h-[300px] xl:w-[1200px] lg:rounded-tr-[62px] lg:rounded-tl-[31px] lg:rounded-bl-[31px] lg:rounded-none"
   >
-    <img src={Img1.src} class="w-[280px] h-[300px] rounded-[31px]" alt="" />
-    <div class="flex flex-col items-start justify-start p-10 gap-3">
+    <div class="flex justify-center pt-3 lg:pt-0 lg:justify-start">
+      <img
+        src={Img1.src}
+        class="w-[370px] h-[250px] rounded-[31px] lg:w-[250px] lg:h-[300px] xl:w-[280px] xl:h-[300px]"
+        alt=""
+      />
+    </div>
+    <div
+      class="flex flex-col items-start justify-start md:items-center lg:items-start lg:pl-10 lg:pt-8 pl-10 md:pl-[0px] pt-5 gap-3"
+    >
       <span class="font-bold uppercase text-xl text-txt"
         >Ishwati, <span class="uppercase font-normal text-xl text-txt"
           >Maharashtra</span
         >
       </span>
-      <p class="w-[700px] text-txt font-normal text-lg">
+      <p
+        class="w-[300px] md:w-[500px] xl:w-[700px] md:text-justify text-txt font-normal text-lg"
+      >
         Ishwati was a daily wage labourer living with her family of six in
         Maharashtra. After a day's work her family was barely able to make ends
         meet. When Smile Foundation began its Swabhiman...
