@@ -13,42 +13,40 @@ import PlaceholderImg from "../assets/Placeholder.jpg";
 const HeroBg = `url(${HeroImage.src})`;
 ---
 
-<PageLayout 
-title="Home"
->
-	<Hero
-	bgImg={HeroBg}
-	title="Sakhya - Women's Guidance Cell"
-	subText="Women empowerment for nation building"
-	overlay={true}
-	/>
+<PageLayout title="Home">
+  <Hero
+    bgImg={HeroBg}
+    title="Sakhya - Women's Guidance Cell"
+    subText="Women empowerment for nation building"
+    overlay={true}
+    overlayOpacity={0.7}
+  />
 
-  <Partners/>
-  <Stories/>
+  <Partners />
+  <Stories />
   <div class="h-[500px] w-full"></div>
 
-	<Section class="grid grid-cols-1 md:grid-cols-2">
-		<Card
-		class_={"bg-col-2 max-w-80"}
-		img={PlaceholderImg}
-		title={"Ms. Philomena Sequira"}
-		subtitle={"President"}
-		txt={"Premankur, St. Pius College Campus, Aarey Road, Goregaon East, Mumbai 400020"}
-		/>
-		<Card
-		class_={"bg-col-3 max-w-80"}
-		img={PlaceholderImg}
-		title={"Counselling & Legal Asst"}
-		subtitle={""}
-		txt={"The main focus of work with individuals is to help women to help themselves. In that it seeks to forge a relationship with the women."}
-		/>
-	</Section>
+  <Section class="grid grid-cols-1 md:grid-cols-2">
+    <Card
+      class_={"bg-col-2 max-w-80"}
+      img={PlaceholderImg}
+      title={"Ms. Philomena Sequira"}
+      subtitle={"President"}
+      txt={"Premankur, St. Pius College Campus, Aarey Road, Goregaon East, Mumbai 400020"}
+    />
+    <Card
+      class_={"bg-col-3 max-w-80"}
+      img={PlaceholderImg}
+      title={"Counselling & Legal Asst"}
+      subtitle={""}
+      txt={"The main focus of work with individuals is to help women to help themselves. In that it seeks to forge a relationship with the women."}
+    />
+  </Section>
 
-	<div class="h-[500px] w-full"></div>
+  <div class="h-[500px] w-full"></div>
 
-	<script
-	is:inline
-	src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
-	></script>
+  <script
+    is:inline
+    src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
+  ></script>
 </PageLayout>
-

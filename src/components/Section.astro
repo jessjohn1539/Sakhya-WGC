@@ -1,6 +1,4 @@
 ---
-import SectionTitle from "./section-title.astro";
-
 interface Props {
     class?: string;
     theme?: string; // dark | light default: 'light' - determines the color of the text
@@ -15,7 +13,6 @@ if (!props.theme) props.theme = "light";
     class={"w-full px-4 md:px-12 xl:px-32 py-8 " +
         (props.class ? props.class + " " : "") +
         (props.theme === "dark" ? "dark" : "light")}
-
 >
     <slot />
 </section>
