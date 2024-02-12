@@ -9,26 +9,45 @@ interface section {
 }
 interface Props {
 	links: Array<section>;
-	popupState: boolean;
 }
-const { links, popupState } = Astro.props as Props;
+const { links } = Astro.props as Props;
 ---
 
-<nav
-	class={"fixed top-0 z-20 bg-txt text-slate-200 min-h-screen py-5 px-6 w-full flex md:hidden transition-left duration-200 " +
-		(popupState ? "left-0" : "-left-[100%]")}
+<style>
+	:not(#menu-toggle:checked) + #menu {
+		@apply left-full;
+	}
+</style>
+<label
+	for="menu-toggle"
+	class="rounded p-2 text-gray-600 transition hover:text-gray-600/75 cursor-pointer lg:hidden block"
 >
-	<ul
-		class="grow flex flex-col gap-4 items-start pt-16"
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		class="h-5 w-5"
+		fill="none"
+		viewBox="0 0 24 24"
+		stroke="currentColor"
+		stroke-width="2"
 	>
+		<path
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			d="M4 6h16M4 12h16M4 18h16"></path>
+	</svg>
+</label>
+<input class="hidden" type="checkbox" id="menu-toggle" />
+<nav
+	id="menu"
+	class="fixed left-0 top-20 z-20 bg-txt text-slate-200 h-screen py-5 px-6 w-full flex md:hidden transition-left duration-200"
+>
+	<ul class="grow flex flex-col gap-4 items-start pt-8">
 		{
 			links.map((link) => (
 				<li class="w-full">
 					<details class="group [&_summary::-webkit-details-marker]:hidden">
 						<summary class="flex cursor-pointer focus:border-none items-center py-1 px-2 hover:text-col-3">
-							<span class="font-medium">
-								{link.name}
-							</span>
+							<span class="font-medium">{link.name}</span>
 							<span class="shrink-0 transition duration-300 group-open:-rotate-180">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -45,16 +64,16 @@ const { links, popupState } = Astro.props as Props;
 							</span>
 						</summary>
 						<ul class="mt-2 grid grid-cols-2 justify-between">
-							{
-								link.subsections.map( subsection => (
+							{link.subsections.map((subsection) => (
 								<li>
 									<a
-									href={subsection.link}
-									class="block rounded-md text-sm px-2 py-2 font-medium hover:text-col-3"
-									>{subsection.name}</a>
+										href={subsection.link}
+										class="block rounded-md text-sm px-2 py-2 font-medium hover:text-col-3"
+									>
+										{subsection.name}
+									</a>
 								</li>
-								))
-							}
+							))}
 						</ul>
 					</details>
 				</li>
