@@ -7,6 +7,7 @@ import Partners from "../components/Partners.astro";
 import Section from "../components/Section.astro";
 import Card from "../components/Card.astro";
 import Stories from "../components/Stories.astro";
+import CTA from "../components/cta.astro";
 // Assets
 import HeroImage from "../assets/home.png";
 import PlaceholderImg from "../assets/Placeholder.jpg";
@@ -24,6 +25,7 @@ const HeroBg = `url(${HeroImage.src})`;
 
   <Partners />
   <Stories />
+  
   <div class="h-[500px] w-full"></div>
 
   <Section class="grid grid-cols-1 md:grid-cols-2">
@@ -42,6 +44,7 @@ const HeroBg = `url(${HeroImage.src})`;
       txt={"The main focus of work with individuals is to help women to help themselves. In that it seeks to forge a relationship with the women."}
     />
   </Section>
+  <CTA/>
 
   <div class="h-[500px] w-full"></div>
 
