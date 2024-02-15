@@ -25,6 +25,27 @@ const links = [
     ],
   },
   {
+    name: "Strategies",
+    subsections: [
+      {
+        name: "Counselling & Legal Asst",
+        link: "",
+      },
+      {
+        name: "Groups & Communities",
+        link: "",
+      },
+      {
+        name: "Awareness Campaigns",
+        link: "",
+      },
+      {
+        name: "Networking & Advocacy",
+        link: "",
+      },
+    ],
+  },
+  {
     name: "Resources",
     subsections: [
       {
@@ -49,27 +70,6 @@ const links = [
       },
       {
         name: "Media coverage",
-        link: "",
-      },
-    ],
-  },
-  {
-    name: "Our Work",
-    subsections: [
-      {
-        name: "Sakhya History",
-        link: "",
-      },
-      {
-        name: "Our Team",
-        link: "",
-      },
-      {
-        name: "Trustees",
-        link: "",
-      },
-      {
-        name: "Partners",
         link: "",
       },
     ],
@@ -106,10 +106,9 @@ const links = [
   },
 ];
 ---
+
 <div class="relative">
-  <header
-    class="bg-col-1-light fixed top-0 left-0 right-0 z-50"
-  >
+  <header class="bg-col-1-light fixed top-0 left-0 right-0 z-50">
     <nav class="flex items-center justify-between max-w-screen-xl p-4 mx-auto">
       <a class="block" href="/">
         <span class="sr-only">Home</span>
@@ -172,7 +171,7 @@ const links = [
         </div>
       </div>
     </nav>
-      <!-- <ul class='md:hidden flex items-center'>
+    <!-- <ul class='md:hidden flex items-center'>
         <li>
           <button type='button' class='flex items-center justify-center transition-all duration-200 active:scale-90 cursor-pointer relative pr-4 interactable' onClick={onTriggerPopup}  datatype={`${popupState ? 'open' : 'close'}`}>
             <GiHamburgerMenu class={`absolute transition-all text-2xl text-slate-50 duration-100 ${popupState ? 'opacity-0 rotate-45': 'opacity-100 rotate-0'}`}/>
