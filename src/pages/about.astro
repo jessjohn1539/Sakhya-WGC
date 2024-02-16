@@ -1,0 +1,103 @@
+---
+// Layout
+import PageLayout from "../layouts/PageLayout.astro";
+// Components
+
+// Assets
+import HeroImage from "../assets/About.jpg";
+---
+
+<PageLayout title="About">
+  <div class="h-full w-full bg-col-1-light">
+    <img
+      src={HeroImage.src}
+      alt=""
+      class="w-full h-[400px] md:h-[500px] xl:h-[700px] pt-[110px] opacity-[0.95]"
+    />
+
+    <div class="w-full h-max bg-col-1-light">
+      <div class="flex items-center justify-center pt-10 text-3xl font-bold">
+        <span class="text-txt">Who <span class="text-col-3">We Are</span></span>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-center justify-center xl:pb-20">
+      <div class="flex flex-col">
+        <div
+          class="flex items-center justify-start pt-24 text-2xl font-bold pb-1"
+        >
+          <span class="text-txt"
+            >In Retrospect - <span class="text-col-3">Then</span></span
+          >
+        </div>
+        <div class="w-[200px] h-[4px] bg-col-4"></div>
+        <p class="w-[300px] md:w-[350px] xl:w-[450px] text-justify pt-6">
+          In 1987, SAKHYA, Anti-dowry and Women's Guidance Cell was started by
+          the College of Social Work, Nirmala Niketan, Mumbai, at the request of
+          and in collaboration with the District Vigilance Commission,
+          Government of Maharashtra. From 1985 to 2003 it continued to be run as
+          a field action project of Nirmala Niketan run by the Religious
+          Congregation of the Daughters of the Heart of Mary. From 2004 it
+          became an independent entity under the aegis of Nirmala Institute.
+          From 1987 the focus of Sakhya was addressing dowry related harassment
+          and working on the issue of domestic violence. Besides this, Sakhya
+          has been offering services in the form of counseling, legal aid,
+          providing shelter to women in distress, conducting awareness programs
+          on gender issues, educational programs to youth on family life,
+          HIV/AIDS, value education, gender sensitization in schools, colleges,
+          institutions and low-income group communities.
+        </p>
+      </div>
+      <div
+        class="flex flex-row items-center justify-center p-16 xl:p-20 shrink-0"
+      >
+        <img
+          src={HeroImage.src}
+          alt=""
+          class="w-[400px] h-[250px] xl:h-[300px] shrink-0"
+        />
+      </div>
+
+      <!-- <div class="w-[400px] h-[300px] bg-col-4 z-0"></div> -->
+    </div>
+    <div
+      class="flex flex-col md:flex-row items-center justify-center pb-20 xl:mt-[-100px]"
+    >
+      <div class="flex flex-col">
+        <div class="flex items-center justify-start text-2xl font-bold pb-1">
+          <span class="text-txt"
+            >In Present - <span class="text-col-3">Now</span></span
+          >
+        </div>
+        <div class="w-[200px] h-[4px] bg-col-4"></div>
+        <img
+          src={HeroImage.src}
+          alt=""
+          class="w-[300px] md:w-[400px] h-[250px] md:h-[300px] shrink-0 pt-9"
+        />
+      </div>
+      <div class="flex flex-row items-center justify-center p-16 md:p-20">
+        <p
+          class="w-[300px] md:w-[350px] xl:w-[450px] text-justify xl:mt-[60px]"
+        >
+          The major focus of Sakhya Women's Guidance Cell is to promote gender
+          equality and gender justice through the process of concretization
+          called women's empowerment. Sakhya believes that an integrated
+          approach of women's empowerment is vital to sustainable development
+          and the realization of human rights for all. Sakhya makes efforts to
+          identifying and redressing power imbalances and giving women more
+          autonomy to manage their own lives. Promoting gender equality through
+          the process of awareness and sensitization and giving women more
+          autonomy to manage their own lives.
+        </p>
+      </div>
+
+      <!-- <div class="w-[400px] h-[300px] bg-col-4 z-0"></div> -->
+    </div>
+  </div>
+
+  <script
+    is:inline
+    src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
+  ></script>
+</PageLayout>
