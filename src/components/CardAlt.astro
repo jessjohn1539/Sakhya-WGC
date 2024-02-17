@@ -1,0 +1,90 @@
+---
+import type { ImageMetadata } from 'astro';
+interface Props {
+	img: ImageMetadata;
+	title: string;
+	subtitle: string;
+	txtShort: string;
+	txtLong: string;
+	rtl: boolean;
+}
+
+const { img, title, subtitle, txtShort, txtLong, rtl } = Astro.props as Props;
+---
+
+<div 
+	class={"w-3/4 sm:w-auto max-w-4xl mt-12 mx-4 md:mx-8 flex flex-col bg-col-3 rounded-md md:rounded-3xl shadow-xl " 
+	+ (rtl ? "sm:flex-row sm:rounded-br-none" : "sm:flex-row-reverse sm:rounded-bl-none")}>
+	<div class="sm:basis-56">
+		<img
+			alt={title + " " + subtitle}
+			src={img.src}
+			class="sm:aspect-square w-full object-cover rounded-lg shadow-md sm:shadow-none"
+		/>
+	</div>
+	<div class="flex flex-1 flex-col">
+		<div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6 text-xl text-gray-800">
+			<span class="font-bold uppercase">
+				{title} 
+				<span class="font-normal">
+					{subtitle}
+				</span>
+			</span>
+			<p class="mt-2 line-clamp-3 text-sm/relaxed text-justify">
+				{txtShort}
+			</p>
+		</div>
+		<div class={"sm:flex sm:items-end pl-4 pb-4 sm:px-6" + (rtl ? "" : " sm:justify-end")}>
+			<button 
+				data-open-modal
+				class="block bg-col-1 px-5 py-3 text-center text-xs font-bold transition hover:bg-col-2 rounded-md"
+			>
+				Read More
+			</button>
+		</div>
+	</div>
+</div>
+
+<dialog data-modal class="backdrop:bg-black/80 px-6 py-3 rounded-md max-w-4xl min-h-screen md:min-h-0">
+	<button 
+		data-close-modal
+		class="block bg-col-1 px-5 py-3 ml-auto mb-2 text-center text-xs font-bold transition hover:bg-col-2 rounded-b-sm sm:rounded-md w-full sm:w-auto"
+	>
+		X
+	</button>
+	<div class="flex items-start gap-4 flex-col md:flex-row">
+		<img
+			alt={title + " " + subtitle}
+			src={img.src}
+			class="md:aspect-square md:max-w-60 m-3 object-cover rounded-lg mx-auto shadow-md md:shadow-none"
+		/>
+
+		<div class="md:px-6 text-gray-800">
+			<span class="font-medium uppercase text-xl md:text-lg">
+				{title} {subtitle}
+			</span>
+			<p class="mt-5 text-xs font-light text-justify">
+				{txtLong}
+			</p>
+		</div>
+	</div>
+</dialog>
+
+<script>
+	const openModalBtns = document.querySelectorAll('[data-open-modal]');
+	const closeModalBtns = document.querySelectorAll('[data-close-modal]');
+	const modals = document.querySelectorAll('[data-modal]');
+
+	openModalBtns.forEach( (modalBtn, id) => {
+		modalBtn.addEventListener("click", () => {
+			modals[id].showModal();
+		})
+	})
+
+	closeModalBtns.forEach( (modalBtn, id) => {
+		modalBtn.addEventListener("click", () => {
+			modals[id].close()
+		})
+	})
+</script>
+

@@ -1,117 +1,36 @@
 ---
 import Img1 from "../assets/home.png";
+import CardAlt from "../components/CardAlt.astro";
 ---
 
-<div class="h-[2150px] md:h-[2000px] lg:h-[1250px] xl:h-[1250px] bg-col-1-light flex flex-col items-center">
-  <!-- Reusable Heading Component -->
+<div class="py-12 bg-col-1-light flex flex-col items-center">
   <div class="flex items-center justify-center pt-7 text-3xl font-bold">
     <span class="text-txt"
       >Stories of <span class="text-col-3">Change</span></span
     >
   </div>
-  <!-- Reusable Story Board-->
-  <div
-    class="flex flex-col lg:flex-row rounded-[31px] h-[600px] w-[400px] bg-col-3 mt-[60px] md:w-[700px] md:h-[550px] lg:w-[900px] lg:h-[300px] xl:h-[300px] xl:w-[1200px] lg:rounded-tr-[62px] lg:rounded-tl-[31px] lg:rounded-bl-[31px] lg:rounded-none"
-  >
-    <div class="flex justify-center pt-3 lg:pt-0 lg:justify-start">
-      <img
-        src={Img1.src}
-        class="w-[370px] h-[250px] rounded-[31px] lg:w-[250px] lg:h-[300px] xl:w-[280px] xl:h-[300px]"
-        alt=""
-      />
-    </div>
-    <div
-      class="flex flex-col items-start justify-start md:items-center lg:items-start lg:pl-10 lg:pt-8 pl-10 md:pl-[0px] pt-5 gap-3"
-    >
-      <span class="font-bold uppercase text-xl text-txt"
-        >Shyama, <span class="uppercase font-normal text-xl text-txt"
-          >Haryana</span
-        >
-      </span>
-      <p
-        class="w-[300px] md:w-[500px] xl:w-[700px] md:text-justify text-txt font-normal text-lg"
-      >
-        Covid brought many problems with it, both outside and within our home.
-        My husband who used to work at a tailoring shop lost his job. It became
-        very hard to make ends meet...
-      </p>
-      <div class="pt-5">
-        <button
-          type="button"
-          class="text-txt bg-col-2 hover:bg-col-1 focus:ring-4 focus:outline-none focus:ring-col-3 font-normal rounded-lg text-md px-11 py-2 text-center"
-          >Read More</button
-        >
-      </div>
-    </div>
-  </div>
-
-  <div
-    class="flex flex-col lg:flex-row-reverse rounded-[31px] h-[600px] w-[400px] bg-col-3 mt-[60px] md:w-[700px] md:h-[550px] lg:w-[900px] lg:h-[300px] xl:h-[300px] xl:w-[1200px] lg:rounded-tr-[31px] lg:rounded-br-[31px] lg:rounded-tl-[62px] lg:rounded-none"
-  >
-    <div class="flex justify-center pt-3 lg:pt-0 lg:justify-end">
-      <img
-        src={Img1.src}
-        class="w-[370px] h-[250px] rounded-[31px] lg:w-[250px] lg:h-[300px] xl:w-[280px] xl:h-[300px]"
-        alt=""
-      />
-    </div>
-    <div
-      class="flex flex-col items-start justify-start md:items-center lg:pt-8 lg:pr-10 pl-10 md:pl-[0px] pt-5 gap-3 lg:items-end lg:justify-start"
-    >
-      <span class="font-bold uppercase text-xl text-txt"
-        >Yashoda, <span class="uppercase font-normal text-xl text-txt"
-          >Karnataka</span
-        >
-      </span>
-      <p
-        class="w-[300px] md:w-[500px] xl:w-[700px] md:text-justify lg:text-right text-txt font-normal text-lg"
-      >
-        Before the pandemic, Yashoda was a young mother to a one-year old,
-        living with her cab driver husband in Bengaluru. However, her husband
-        lost his job in the lockdown...
-      </p>
-      <div class="pt-5">
-        <button
-          type="button"
-          class="text-txt bg-col-2 hover:bg-col-1 focus:ring-4 focus:outline-none focus:ring-col-3 font-normal rounded-lg text-md px-11 py-2 text-center"
-          >Read More</button
-        >
-      </div>
-    </div>
-  </div>
-
-  <div
-    class="flex flex-col lg:flex-row rounded-[31px] h-[625px] w-[400px] bg-col-3 mt-[60px] md:w-[700px] md:h-[550px] lg:w-[900px] lg:h-[300px] xl:h-[300px] xl:w-[1200px] lg:rounded-tr-[62px] lg:rounded-tl-[31px] lg:rounded-bl-[31px] lg:rounded-none"
-  >
-    <div class="flex justify-center pt-3 lg:pt-0 lg:justify-start">
-      <img
-        src={Img1.src}
-        class="w-[370px] h-[250px] rounded-[31px] lg:w-[250px] lg:h-[300px] xl:w-[280px] xl:h-[300px]"
-        alt=""
-      />
-    </div>
-    <div
-      class="flex flex-col items-start justify-start md:items-center lg:items-start lg:pl-10 lg:pt-8 pl-10 md:pl-[0px] pt-5 gap-3"
-    >
-      <span class="font-bold uppercase text-xl text-txt"
-        >Ishwati, <span class="uppercase font-normal text-xl text-txt"
-          >Maharashtra</span
-        >
-      </span>
-      <p
-        class="w-[300px] md:w-[500px] xl:w-[700px] md:text-justify text-txt font-normal text-lg"
-      >
-        Ishwati was a daily wage labourer living with her family of six in
-        Maharashtra. After a day's work her family was barely able to make ends
-        meet. When Smile Foundation began its Swabhiman...
-      </p>
-      <div class="pt-5">
-        <button
-          type="button"
-          class="text-txt bg-col-2 hover:bg-col-1 focus:ring-4 focus:outline-none focus:ring-col-3 font-normal rounded-lg text-md px-11 py-2 text-center"
-          >Read More</button
-        >
-      </div>
-    </div>
-  </div>
+	<CardAlt 
+		img={Img1}
+		title={"Shyama,"}
+		subtitle={"Haryana"}
+		txtShort={"Covid brought many problems with it, both outside and within our home. My husband who used to work at a tailoring shop lost his job. It became very hard to make ends meet..."}
+		txtLong={"Covid brought many problems with it– both outside and within our home. My husband who used to work at a tailoring shop lost his job. It became very hard to make ends meet. We could not even pay the school fees of our daughter. This led to many fights at home and I could see my family falling apart. At that time, the Swabhiman community mobilizer started visiting me, asking about my health and well being. I started attending the meetings where we were taught about healthcare, financial literacy, and becoming self dependent. I gradually became more confident and encouraged my husband to start working from our home. I too learned sewing and got much-needed support to get a tailoring machine. After that, we started receiving orders and getting back on our feet. During Covid, I also taught how to make masks to other women in my slum who needed some extra income. Now, thankfully, things are much better."}
+		rtl={true}
+	/>
+	<CardAlt 
+		img={Img1}
+		title={"Yashoda,"}
+		subtitle={"Karnataka"}
+		txtShort={"Before the pandemic, Yashoda was a young mother to a one-year old, living with her cab driver husband in Bengaluru. However, her husband lost his job in the lockdown..."}
+		txtLong={"Before the pandemic, Yashoda was a young mother to a one-year old, living with her cab driver husband in Bengaluru. However, her husband lost his job in the lockdown and things turned bitter due to the resultant financial constraints. Yashoda, however, fought back. She joined the ‘Entrepreneur Development Training Programme’ of Smile Foundation which enables women to start their own ventures. Yashoda not only completed the training herself, but also gathered women in her community who were suffering like her. Soon she emerged as a leader of her peer group and set up a business of handmade organic cosmetics with them. Since then the group has started making lip balm, kajal, bathing salt, bathing powder and tooth powder. The enterprise has now been registered as “Kadamba Naturals”. Yashoda wants to expand her business and support other women too in becoming self-reliant."}
+		rtl={false}
+	/>
+	<CardAlt 
+		img={Img1}
+		title={"ISHWATI,"}
+		subtitle={"MAHARASHTRA"}
+		txtShort={"Ishwati was a daily wage labourer living with her family of six in Maharashtra. After a day’s work her family was barely able to make ends meet. When Smile Foundation began its Swabhiman..."}
+		txtLong={"Ishwati was a daily wage labourer living with her family of six in Maharashtra. After a day’s work her family was barely able to make ends meet. When Smile Foundation began its Swabhiman programme, she was one of the first to come on board and helped mobilize other women from her community. Initially, Ishwati took up vegetable cultivation in her backyard. The two-pronged benefit being that not only does she run her own business, but also uses nutritious vegetables to feed her family. Slowly Ishwati mobilized other women of her community and formed a Self Help Group which now runs the vegetable cultivation business. During the Covid-19 lockdown, it was this essential business which helped their families survive. Ishwati is a true change-maker, who has led women from her community towards financial independence and confidence."}
+		rtl={true}
+	/>
 </div>
