@@ -24,7 +24,7 @@ const { img, title, subtitle, txtShort, txtLong, rtl } = Astro.props as Props;
 		/>
 	</div>
 	<div class="flex flex-1 flex-col">
-		<div class={"border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6 text-xl text-gray-800" + (rtl ? "" : " flex flex-col place-items-end")}>
+		<div class={"border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6 text-xl text-gray-800" + (rtl ? "" : " flex flex-col sm:place-items-end")}>
 			<span class="font-bold uppercase">
 				{title} 
 				<span class="font-normal">
