@@ -10,13 +10,18 @@ const HeroBg = `url(${HeroImage.src})`;
 ---
 
 <PageLayout title="About">
-	<Hero
+	<!-- <Hero
 		bgImg={HeroBg}
 		title="About Us"
 		subText=""
 		overlay={true}
 		overlayOpacity={0.7}
-	/>
+	/> -->
+	<img
+      src={HeroImage.src}
+      alt=""
+      class="w-full h-[350px] md:h-[500px] xl:h-[700px] pt-[110px] opacity-[0.95] object-cover"
+    />
 
 	<div class="w-full h-max py-10">
 		<div class="flex items-center justify-center text-3xl font-bold">
@@ -32,7 +37,7 @@ const HeroBg = `url(${HeroImage.src})`;
 			</div>
 
 			<div class="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-				<article class="space-y-4 text-gray-600">
+				<article class="space-y-4 text-gray-600 text-justify">
 					<p>
 						In 1987, SAKHYA, Anti-dowry and Women's Guidance Cell was started by
 						the College of Social Work, Nirmala Niketan, Mumbai, at the request of
@@ -75,7 +80,7 @@ const HeroBg = `url(${HeroImage.src})`;
 						class="absolute inset-0 h-full w-full object-cover aspect-video"
 					/>
 				</div>
-				<article class="space-y-4 text-gray-600">
+				<article class="space-y-4 text-gray-600 text-justify">
 					<p>
 						The major focus of Sakhya Women's Guidance Cell is to promote gender
 						equality and gender justice through the process of concretization
