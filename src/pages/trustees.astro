@@ -1,0 +1,113 @@
+---
+// Layout
+import PageLayout from "../layouts/PageLayout.astro";
+// Components
+import Section from "../components/Section.astro";
+import Card from "../components/Card.astro";
+import {
+  President,
+  VicePresident,
+  Treasurer,
+  CoTrustee1,
+  CoTrustee2,
+  CoTrustee3,
+  CoTrustee4,
+  CoTrustee5,
+  CoTrustee6,
+} from "../assets/images/Trustees";
+
+// Assets
+import HeroImage from "../assets/images/Trustees/trustees_hero.png";
+const HeroBg = `url(${HeroImage.src})`;
+---
+
+<PageLayout title="Trustees">
+  <div class="h-full w-full bg-col-1-light">
+    <img
+      src={HeroImage.src}
+      alt=""
+      class="w-full h-[400px] md:h-[500px] xl:h-[700px] pt-[110px] opacity-[0.95]"
+    />
+
+    <div class="w-full h-max bg-col-1-light">
+      <div class="flex items-center justify-center pt-10 text-3xl font-bold">
+        <span class="text-txt"
+          >Our <span class="text-col-3">Trustees</span></span
+        >
+      </div>
+    </div>
+
+    <div
+      class="grid content-center justify-center items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-28 py-32 md:gap-12 mx-auto"
+    >
+      <Card
+        class_={"bg-col-2 max-w-80"}
+        img={President}
+        title={"Ms. Philomena Sequira"}
+        subtitle={"President"}
+        txt={"Premankur, St. Pius College Campus, Aarey Road, Goregaon East, Mumbai 400020"}
+      />
+      <Card
+        class_={"bg-col-2 max-w-80"}
+        img={VicePresident}
+        title={"Ms. Sabeena Gonsalves"}
+        subtitle={"Vice-President"}
+        txt={"Nirmala Niketan, 38 New Marine Lines, Churchgate, Mumbai 400020"}
+      />
+      <Card
+        class_={"bg-col-2 max-w-80"}
+        img={Treasurer}
+        title={"Ms. Cheryl Machado"}
+        subtitle={"Treasurer/Secretary"}
+        txt={"Nirmala Nivas, Chuim, Khardanda, Mumbai"}
+      />
+      <Card
+        class_={"bg-col-2 max-w-80"}
+        img={CoTrustee1}
+        title={"Ms. Greta Lopes"}
+        subtitle={"Co-trustee"}
+        txt={"Nirmala Niketan, 38 New Marine Lines, Churchgate, Mumbai 400020"}
+      />
+      <Card
+        class_={"bg-col-2 max-w-80"}
+        img={CoTrustee2}
+        title={"Ms. Noella Dias"}
+        subtitle={"Co-trustee"}
+        txt={"Nirmala Niketan, 38 New Marine Lines, Churchgate, Mumbai 400020"}
+      />
+      <Card
+        class_={"bg-col-2 max-w-80"}
+        img={CoTrustee3}
+        title={"Ms. Evelyn Menezes"}
+        subtitle={"Co-trustee"}
+        txt={"Ashakiran, St. Pius College Campus, Aarey Road, Goregaon East, Mumbai 400063"}
+      />
+      <Card
+        class_={"bg-col-2 max-w-80"}
+        img={CoTrustee4}
+        title={"Ms. Shaila Crasto"}
+        subtitle={"Co-trustee"}
+        txt={"Premanjali, Nirmal P.O. Bassein- Thane Dt 401304"}
+      />
+      <Card
+        class_={"bg-col-2 max-w-80"}
+        img={CoTrustee5}
+        title={"Ms. Nancy Rodrigues"}
+        subtitle={"Co-trustee"}
+        txt={"Marianjali Dak Bangla Rd, Vaijapur P.O. Aurangabad Dt 423701"}
+      />
+      <Card
+        class_={"bg-col-2 max-w-80"}
+        img={CoTrustee6}
+        title={"Ms. Clera Gonsalves"}
+        subtitle={"Co-trustee"}
+        txt={"Karajgaav patilpada, P.O. Talasari, Tal. Dahanu, Dt. Palghar. 401602"}
+      />
+    </div>
+
+    <script
+      is:inline
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
+    ></script>
+  </div>
+</PageLayout>
