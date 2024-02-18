@@ -1,0 +1,143 @@
+---
+// Layout
+import PageLayout from "../layouts/PageLayout.astro";
+// Components
+import ContactUs from '../components/Contact-us.astro'
+---
+
+<PageLayout title="History">
+  <div class="h-full w-full bg-col-1-light">
+    <div class="w-full h-max bg-col-1-light pt-[110px]">
+      <div class="flex items-center justify-center pt-10 text-3xl font-bold">
+        <span class="text-txt"
+          >Help Light up <span class="text-col-3">Someone's Life!</span></span
+        >
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col items-center justify-center p-20 mt-[-100px] pt-24"
+    >
+      <div class="flex flex-col">
+        <div
+          class="flex items-center justify-start pt-24 text-2xl font-bold pb-1"
+        >
+          <span class="text-txt"
+            >Let's Make a <span class="text-col-3">Change</span></span
+          >
+        </div>
+        <div class="w-[200px] h-[4px] bg-col-4"></div>
+        <p
+          class="text-sm md:text-base w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] xl:w-[900px] text-justify pt-6 leading-7 xl:leading-8"
+        >
+          The potential donor could make a wire transfer using the details
+          provided below or send in a cheque in the name of <span
+            class="font-bold">'XXXXXXXX XXX XX XXX XXXX'.</span
+          >
+          In either case, the details required are - their full name (as it appears
+          on their account), physical address, email ID, contact number, and PAN
+          (mandatory).
+        </p>
+      </div>
+      <div
+        class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full h-full pt-10 gap-10 lg:px-10 xl:px-32"
+      >
+        <div
+          class="w-[350px] lg:w-1/2 h-max bg-[#B1FFC3] rounded-xl p-[40px] shadow-xl"
+        >
+          <div class="flex items-center justify-start text-xl font-bold pb-5">
+            <span class="text-txt"
+              >Local Bank Account Details - <span class="text-col-3"
+                >Within India</span
+              ></span
+            >
+          </div>
+          <div class="mb-4">
+            <p>
+              <strong>Bank Name:</strong> details to be added here
+            </p>
+            <p><strong>Branch Name:</strong> details to be added here</p>
+            <p><strong>Branch Code No:</strong> details to be added here</p>
+            <p>
+              <strong>Bank Address:</strong> details to be added here
+            </p>
+            <p>
+              <strong>Bank Contact:</strong>
+              <a href="tel:+91">+91 XXXXXXXXX</a>
+            </p>
+            <p>
+              <strong>Beneficiary A/C No:</strong> details to be added here
+            </p>
+            <p><strong>Account Type:</strong> details to be added here</p>
+            <p><strong>Swift Code No:</strong> details to be added here</p>
+            <p><strong>RTGS/ NEFT IFSC NO:</strong> details to be added here</p>
+            <p><strong>RTGS/NEFT/ECS:</strong> details to be added here</p>
+            <p><strong>MICR CODE NO:</strong> details to be added here</p>
+            <p><strong>Beneficiary Name:</strong> details to be added here</p>
+            <p>
+              <strong>Beneficiary Contact:</strong> DIRECTOR / ADMINISTRATOR <a
+                href="tel:+91">+91 XXXXXXXXXX</a
+              >, <a href="tel:+91">+91 XXXXXXXXXX</a>
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="w-[350px] lg:w-1/2 h-max bg-[#B1FFC3] rounded-xl p-[40px] shadow-xl"
+        >
+          <div class="flex items-center justify-start text-xl font-bold pb-5">
+            <span class="text-txt"
+              >Foreign Bank Account Details - <span class="text-col-3"
+                >Overseas Donations</span
+              ></span
+            >
+          </div>
+          <p class="mb-4">
+            <strong
+              >The following a/c details are compliant with the amended section
+              17 (1) of the Foreign Contribution (regulation) Act, 2010.</strong
+            >
+          </p>
+          <div class="mb-4">
+            <p><strong>Bank Name:</strong> details to be added here</p>
+            <p><strong>Branch Name:</strong> details to be added here</p>
+            <p><strong>Branch Code No:</strong> details to be added here</p>
+            <p>
+              <strong>Bank Address:</strong> details to be added here
+            </p>
+            <p>
+              <strong>Bank Contact:</strong>
+              <a href="tel:+91">+91 XXXXXXXXXX</a>, <a href="tel:+91">XXXX</a>, <a
+                href="tel:+91">XXXX</a
+              >
+            </p>
+            <p>
+              <strong>Bank Email:</strong>
+              <a href="mailto:"> details to be added here</a>
+            </p>
+            <p>
+              <strong>Beneficiary A/C No:</strong> details to be added here
+            </p>
+            <p><strong>A/C Open Date:</strong> details to be added here</p>
+            <p><strong>Swift Code No:</strong> details to be added here</p>
+            <p><strong>IFSC Code No:</strong> details to be added here</p>
+            <p><strong>Beneficiary Name:</strong> details to be added here</p>
+            <p>
+              <strong>Beneficiary Address:</strong> details to be added here
+            </p>
+            <p>
+              <strong>Beneficiary Email Address:</strong>
+              <a href="mailto:">details to be added here</a>
+            </p>
+            <p>
+              <strong>Contact Person:</strong> Director: <a href="tel:+91"
+                >+91 XXXXXXXXXXX</a
+              >, Administrator: <a href="tel:+91">+91 XXXXXXXXXXX</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ContactUs/>
+  </div>
+</PageLayout>
