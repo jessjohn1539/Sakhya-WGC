@@ -3,13 +3,15 @@
 // variant - light | transparent
 import location from "../assets/images/location.svg";
 import message from "../assets/images/message.svg";
-import calendar from "../assets/images/calendar.svg";
+import Mobile from "../assets/images/mobile.svg";
 import LogoImg from "../assets/logo.png";
 //components
 import SocialBtn from "../components/SocialBtn.astro";
 //variable declaration for contact details - (if any changes, you can change it here and it'll be visible on website)
 const address =
   "The Silvester Smruti, 1st Floor, Kalamb Road, Opp. Police Chowki, Nirmal, Nalasopara (W), Tal. Vasai, Dist: Palghar, 401 304";
+const address2 =
+  "Thane Civil Hospital, New Building, Gr. Floor, Tembhi Naka, Agyari Lane, Thane.";
 const email = "natty-sakhya@gmail.com";
 const mobile = "Mobile: 9890312402 ";
 ---
@@ -20,7 +22,7 @@ const mobile = "Mobile: 9890312402 ";
 >
   <!--Contact Details -->
   <div
-    class="p-6 xl:h-[350px] md:w-1/2 bg-white rounded-t-lg md:rounded-l-lg md:rounded-tr-none"
+    class="p-6 xl:h-[450px] md:w-1/2 bg-white rounded-t-lg md:rounded-l-lg md:rounded-tr-none"
   >
   <a href="" class="flex items-center justify-start space-x-3">
     <img src={LogoImg.src} class="h-[70px] w-[70px]" alt="Sakhya Logo" />
@@ -30,23 +32,29 @@ const mobile = "Mobile: 9890312402 ";
       Sakhya - <span class="text-col-3">Women's Guidance Cell</span>
     </p>
   </a>
-
-    <a
-      class="pt-4 mx-auto md:mx-0 block w-fit"
-      href="https://wa.me/918605233000"
-      target="_blank"
-    >
-    </a>
     <div class="md:text-base items-center text-[#354647] flex pt-4">
       <img src={location.src} class="" alt="location" />
-      <p class="p-2">{address}</p>
+      <div class="flex flex-col">
+        <p class="p-2 font-bold text-txt">Head Office :</p>
+        <p class="p-2 mt-[-10px]">{address}</p>
+      </div>
+      
+    </div>
+    <div class="md:text-base items-center text-[#354647] flex pt-2">
+      <img src={location.src} class="" alt="location" />
+      <div class="flex flex-col">
+
+        <p class="p-2 font-bold text-txt">Extension center :</p>
+        <p class="p-2 mt-[-10px]">{address2}</p>
+      </div>
+      
     </div>
     <div class="md:text-base items-center text-[#354647] flex pt-2">
       <img src={message.src} class="" alt="email" />
       <p class="p-2">{email}</p>
     </div>
     <div class="md:text-base items-center text-[#354647] flex pt-2">
-      <img src={calendar.src} class="" alt="timings" />
+      <img src={Mobile.src} class="" alt="timings" />
       <p class="p-2">{mobile}</p>
     </div>
   </div>
