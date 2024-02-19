@@ -1,20 +1,38 @@
 ---
 import CTAImg from "../assets/cta.png";
 ---
-<div class="bg-col-4 h-[200px] sm:w-full sm:h-[200px] flex flex-row items-center relative bottom-0">
-    <button class="rounded-[6px] w-[120px] h-[30px] lg:h-[40px] text-[15px] font-medium bg-col-2 py-[10px] px-[30px] relative left-2/4 lg:left-[120px] lg:w-[200px] xl:left-[170px] xl:w-[250px]">SUPPORT A CAUSE</button>
-    <div class="flex-grow"></div>
-    <div class="flex justify-center">
-        <div class="flex flex-col  xl:relative xl:right-[150px]">
-            <h1 class="text-col-1 relative text-3xl font-bold" style="right: 300px; bottom: 10px; top: 0;">For CSR Support</h1>
-            <div class="relative top-[20px]">
-                <h3 class="relative right-[300px] text-col-1">write to</h3>
-                <h2 class="relative right-[300px] text-col-1 text-lg">natty-sakhya@gmail.com</h2>
-               
-            </div>
-            <div class=" flex justify-end">
-                <img src={CTAImg.src} alt="CTA" class="w-[200px] absolute top-[5px] xl:top-[-96px] xl:w-[500px] xl:right-[-150px]" >
-            </div>
-        </div>
+
+<div
+  class="bg-col-4 h-[200px] sm:w-full sm:h-[200px] flex flex-row items-center relative bottom-0"
+>
+  <a href="/donation">
+    <button
+      class="rounded-[6px] w-[120px] h-[30px] lg:h-[40px] text-[15px] font-medium bg-col-2 py-[10px] px-[30px] relative left-2/4 lg:left-[120px] lg:w-[200px] xl:left-[170px] xl:w-[250px]"
+      >SUPPORT A CAUSE</button
+    ></a
+  >
+  <div class="flex-grow"></div>
+  <div class="flex justify-center">
+    <div class="flex flex-col xl:relative xl:right-[150px]">
+      <h1
+        class="text-col-1 relative text-3xl font-bold"
+        style="right: 300px; bottom: 10px; top: 0;"
+      >
+        For CSR Support
+      </h1>
+      <div class="relative top-[20px]">
+        <h3 class="relative right-[300px] text-col-1">write to</h3>
+        <h2 class="relative right-[300px] text-col-1 text-lg">
+          natty-sakhya@gmail.com
+        </h2>
+      </div>
+      <div class="flex justify-end">
+        <img
+          src={CTAImg.src}
+          alt="CTA"
+          class="w-[200px] absolute top-[5px] xl:top-[-96px] xl:w-[500px] xl:right-[-150px]"
+        />
+      </div>
     </div>
+  </div>
 </div>
