@@ -63,13 +63,13 @@ const { img, title, subtitle, txt, _class } = Astro.props as Props;
 
 	openModalBtns.forEach( (modalBtn, id) => {
 		modalBtn.addEventListener("click", () => {
-			modals[id].showModal();
+			(modals[id] as HTMLDialogElement).showModal();
 		})
 	})
 
 	closeModalBtns.forEach( (modalBtn, id) => {
 		modalBtn.addEventListener("click", () => {
-			modals[id].close()
+			(modals[id] as HTMLDialogElement).close()
 		})
 	})
 </script>

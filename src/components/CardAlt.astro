@@ -74,16 +74,15 @@ const { img, title, subtitle, txt, rtl } = Astro.props as Props;
 	const openModalBtns = document.querySelectorAll('[data-open-modal]');
 	const closeModalBtns = document.querySelectorAll('[data-close-modal]');
 	const modals = document.querySelectorAll('[data-modal]');
-
 	openModalBtns.forEach( (modalBtn, id) => {
 		modalBtn.addEventListener("click", () => {
-			modals[id].showModal();
+			(modals[id] as HTMLDialogElement).showModal();
 		})
 	})
 
 	closeModalBtns.forEach( (modalBtn, id) => {
 		modalBtn.addEventListener("click", () => {
-			modals[id].close()
+			(modals[id] as HTMLDialogElement).close();
 		})
 	})
 </script>
