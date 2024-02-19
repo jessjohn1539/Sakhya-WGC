@@ -8,8 +8,10 @@ import Stories from "../components/Stories.astro";
 import CTA from "../components/cta.astro";
 import Strategies from '../components/Strategies.astro'
 import Contact from "../components/Contact-us.astro";
+
 // Assets
 import HeroImage from "../assets/home.png";
+import Vision from "../components/Vision.astro";
 const HeroBg = `url(${HeroImage.src})`;
 ---
 
@@ -21,7 +23,7 @@ const HeroBg = `url(${HeroImage.src})`;
     overlay={true}
     overlayOpacity={0.7}
   />
-
+  <Vision/>
   <Strategies />
   <Partners />
   <Stories />
