@@ -1,0 +1,13 @@
+---
+interface Props {
+    month: string;
+    year: string;
+}
+
+const { month, year } = Astro.props as Props;
+---
+
+<div>
+    <img src="" alt="" />
+    <p>{month} <span class="text-col-3">{year}</span></p>
+</div>

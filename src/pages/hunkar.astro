@@ -1,0 +1,21 @@
+---
+// Layout
+import PageLayout from "../layouts/PageLayout.astro";
+
+// Components
+import Hero from "../components/Hero.astro";
+import Section from "../components/Section.astro";
+import MagzineCard from "../components/MagzineCard.astro";
+
+// Assets
+import HeroImage from "../assets/home.png";
+const HeroBg = `url(${HeroImage.src})`;
+---
+
+<PageLayout title="Hunkar">
+    <Hero bgImg={HeroBg} overlay={false} />
+    <Section>
+        <!-- Section Title Component -->
+        <MagzineCard month="June" year="2021" />
+    </Section>
+</PageLayout>
