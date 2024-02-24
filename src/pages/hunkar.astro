@@ -5,6 +5,8 @@ import PageLayout from "../layouts/PageLayout.astro";
 // Components
 import Hero from "../components/Hero.astro";
 import Section from "../components/Section.astro";
+import PageTitle from "../components/PageTitle.astro";
+import SectionTitle from "../components/SectionTitle.astro";
 import MagzineCard from "../components/MagzineCard.astro";
 
 // Assets
@@ -48,6 +50,16 @@ const numberToMonth = (number: number) => {
 <PageLayout title="Hunkar">
     <Hero bgImg={HeroBg} overlay={false} />
     <Section>
+        <PageTitle primaryText="Hunkar" />
+        <SectionTitle primaryText="Our Yearly" secondaryText="Magazine" />
+        <p class="text-gray-600 mb-8">
+            Networking and Advocacy forms an integral part of Sakhya’s
+            activities. We believe that change and transformation is achieved by
+            working in solidarity. Hence we network with partners at the
+            district level, state level and the national level. This gives
+            Sakhya a platform to work together to effect changes at the policy
+            level.
+        </p>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
             {
                 mags.map((mag, index) => {
