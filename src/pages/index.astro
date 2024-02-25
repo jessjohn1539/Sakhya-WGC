@@ -6,8 +6,9 @@ import Hero from "../components/Hero.astro";
 import Partners from "../components/Partners.astro";
 import Stories from "../components/Stories.astro";
 import CTA from "../components/cta.astro";
-import Strategies from '../components/Strategies.astro'
+import Strategies from "../components/Strategies.astro";
 import Contact from "../components/Contact-us.astro";
+import Section from "../components/Section.astro";
 
 // Assets
 import HeroImage from "../assets/home.png";
@@ -23,12 +24,17 @@ const HeroBg = `url(${HeroImage.src})`;
     overlay={true}
     overlayOpacity={0.7}
   />
-  <Vision/>
-  <Strategies />
+
+  <Vision />
+  <Section>
+    <Strategies />
+  </Section>
   <Partners />
   <Stories />
-  <CTA/>
-  <Contact />
+  <CTA />
+  <Section>
+    <Contact />
+  </Section>
 
   <script
     is:inline

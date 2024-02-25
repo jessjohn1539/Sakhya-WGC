@@ -2,7 +2,7 @@
 // Layout
 import PageLayout from "../layouts/PageLayout.astro";
 // Components
-
+import Section from "../components/Section.astro";
 // Assets
 
 import HeroImage from "../assets/images/Strategy4/strategy4_hero.png";
@@ -24,41 +24,43 @@ import { Police1, Police2, Police3, CHARI1 } from "../assets/images/Strategy4";
         >
       </div>
     </div>
+    <Section>
+      <div
+        class="flex flex-col items-center justify-center p-20 mt-[-100px] mb-[-180px]"
+      >
+        <div class="flex flex-col">
+          <div
+            class="flex items-center justify-start pt-24 text-2xl font-bold pb-1"
+          >
+            <span class="text-txt"
+              >Collective <span class="text-col-3">Impact</span></span
+            >
+          </div>
+          <div class="w-[210px] h-[4px] bg-col-4"></div>
+          <p
+            class="text-sm md:text-base w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] xl:w-[1100px] text-justify pt-6 leading-7 xl:leading-8"
+          >
+            Networking and Advocacy forms an integral part of Sakhya’s
+            activities. We believe that change and transformation is achieved by
+            working in solidarity. Hence we network with partners at the
+            district level, state level and the national level. This gives
+            Sakhya a platform to work together to effect changes at the policy
+            level.
+          </p>
+        </div>
 
-    <div
-      class="flex flex-col items-center justify-center p-20 mt-[-100px] mb-[-180px] pt-24"
-    >
-      <div class="flex flex-col">
+        <!-- img carousal 1 heading -->
         <div
-          class="flex items-center justify-start pt-24 text-2xl font-bold pb-1"
+          class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1"
         >
           <span class="text-txt"
-            >Collective <span class="text-col-3">Impact</span></span
+            >Networking & Collaboration <span class="text-col-3"
+              >with Police</span
+            ></span
           >
+          <div class="w-full h-[4px] bg-col-4"></div>
         </div>
-        <div class="w-[210px] h-[4px] bg-col-4"></div>
-        <p
-          class="text-sm md:text-base w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] xl:w-[1100px] text-justify pt-6 leading-7 xl:leading-8"
-        >
-          Networking and Advocacy forms an integral part of Sakhya’s activities.
-          We believe that change and transformation is achieved by working in
-          solidarity. Hence we network with partners at the district level,
-          state level and the national level. This gives Sakhya a platform to
-          work together to effect changes at the policy level.
-        </p>
-      </div>
-
-      <!-- img carousal 1 heading -->
-      <div
-        class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1"
-      >
-        <span class="text-txt"
-          >Networking & Collaboration <span class="text-col-3">with Police</span
-          ></span
-        >
-        <div class="w-full h-[4px] bg-col-4"></div>
-      </div>
-      <!-- <div
+        <!-- <div
         class="flex flex-col items-center justify-center pt-10 text-xl font-bold pb-1"
       >
         <span class="text-txt"
@@ -66,30 +68,30 @@ import { Police1, Police2, Police3, CHARI1 } from "../assets/images/Strategy4";
           ></span
         >
       </div> -->
-      <!-- img carousal 1 -->
-      <!-- If images are less than 3, then use the below code -->
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 items-center pt-[40px] shrink-0"
-      >
-        <img
-          src={Police1.src}
-          class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
-          alt=""
-        />
-        <img
-          src={Police2.src}
-          class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
-          alt=""
-        />
-        <img
-          src={Police3.src}
-          class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
-          alt=""
-        />
-      </div>
+        <!-- img carousal 1 -->
+        <!-- If images are less than 3, then use the below code -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 items-center pt-[40px] shrink-0"
+        >
+          <img
+            src={Police1.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={Police2.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={Police3.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+        </div>
 
-      <!-- If images are more than 3, then use the below code -->
-      <!-- <div class="flex flex-row group gap-10 overflow-hidden">
+        <!-- If images are more than 3, then use the below code -->
+        <!-- <div class="flex flex-row group gap-10 overflow-hidden">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 items-center pt-[40px] lg:animate-loop-scroll shrink-0 ">
           <img src={HeroImage.src} class="h-[250px] w-auto overflow-hidden rounded-xl object-cover" alt="">
           <img src={HeroImage.src} class="h-[250px] w-auto overflow-hidden rounded-xl object-cover" alt="">
@@ -102,29 +104,30 @@ import { Police1, Police2, Police3, CHARI1 } from "../assets/images/Strategy4";
         </div>
       </div> -->
 
-      <!-- img carousal 2 heading -->
-      <div
-        class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1 text-center"
-      >
-        <span class="text-txt"
-          >Network with We Action Group & <span class="text-col-3">CHARI</span
-          ><br /><span class="text-txt"
-            >(Commonwealth and Human Rights Initiatives)</span
-          ></span
+        <!-- img carousal 2 heading -->
+        <div
+          class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1 text-center"
         >
-        <div class="w-full h-[4px] bg-col-4"></div>
-      </div>
+          <span class="text-txt"
+            >Network with We Action Group & <span class="text-col-3">CHARI</span
+            ><br /><span class="text-txt"
+              >(Commonwealth and Human Rights Initiatives)</span
+            ></span
+          >
+          <div class="w-full h-[4px] bg-col-4"></div>
+        </div>
 
-      <!-- img carousal 2 -->
-      <div
-        class="grid grid-cols-1 justify-center gap-10 items-center pt-[40px] shrink-0"
-      >
-        <img
-          src={CHARI1.src}
-          class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
-          alt=""
-        />
+        <!-- img carousal 2 -->
+        <div
+          class="grid grid-cols-1 justify-center gap-10 items-center pt-[40px] shrink-0"
+        >
+          <img
+            src={CHARI1.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+        </div>
       </div>
-    </div>
+    </Section>
   </div>
 </PageLayout>
