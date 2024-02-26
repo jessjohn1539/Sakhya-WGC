@@ -9,10 +9,10 @@ import CTA from "../components/cta.astro";
 import Strategies from "../components/Strategies.astro";
 import Contact from "../components/Contact-us.astro";
 import Section from "../components/Section.astro";
+import VMO from "../components/VMO.astro";
 
 // Assets
 import HeroImage from "../assets/home.png";
-import Vision from "../components/Vision.astro";
 const HeroBg = `url(${HeroImage.src})`;
 ---
 
@@ -25,7 +25,8 @@ const HeroBg = `url(${HeroImage.src})`;
     overlayOpacity={0.7}
   />
 
-  <Vision />
+  <!-- <Vision /> -->
+  <VMO />
   <Strategies />
   <Partners />
   <Stories />
