@@ -65,8 +65,8 @@ const numberToMonth = (number: number) => {
         </p>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
             {
-                mags.map((mag) => {
-                    const fileName = mag.default.split("/").pop().slice(0, -4);
+                mags.map(mag => {
+                    const fileName = mag.default.split("/").pop().split(".")[0];
                     let [year, month] = fileName.split("-");
                     month = Number(month);
 
