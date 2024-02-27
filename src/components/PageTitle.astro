@@ -1,0 +1,13 @@
+---
+interface Props {
+    primaryText: string;
+    secondaryText?: string;
+}
+
+const { primaryText, secondaryText } = Astro.props as Props;
+---
+
+<div class="w-full h-max text-center text-3xl font-bold mb-16 text-txt">
+    {primaryText}
+    {secondaryText && <span class="text-col-3">{secondaryText}</span>}
+</div>

@@ -1,0 +1,172 @@
+---
+// Layout
+import PageLayout from "../layouts/PageLayout.astro";
+// Components
+import TeamCard from "../components/TeamCard.astro";
+import Section from "../components/Section.astro";
+// Assets
+import HeroImage from "../assets/images/Team/Team_hero.png";
+import {
+  TeamMember1,
+  TeamMember2,
+  TeamMember3,
+  TeamMember4,
+  TeamMember5,
+  TeamMember6,
+  TeamMember7,
+  TeamMember8,
+  TeamMember9,
+  TeamMember10,
+  TeamMember11,
+  TeamMember12,
+  TeamMember13,
+  TeamMember14,
+} from "../assets/images/Team";
+
+const team_members = [
+  {
+    img: TeamMember1,
+    name: "Natty Lopes",
+    post: "Director",
+    txt: `Ms. Natty Lopes graduated with a master’s degree in social work from the University of Mumbai in 1993. She has submitted her Ph.D. thesis in June, 23 to the University of Mumbai . She has worked in the social work sector for the past 30 years. Her main areas of interest are community organization, disaster management, training in youth-related issues, gender justice, health, and involvement in environmental movements.
+She has cooperated with numerous national and international organizations while working with individuals, including Oxfam, CASA, and the Swiss Agency for Development and Corporation (SDC). Along with other SDC partners, she also contributed to the training handbook released by SDC.
+From 2013 to 2018, Ms. Natty served as Joint Treasurer and Executive Member of the Council of International Fellowship (CIF) and the Bombay Association of Trained Social Workers (BATSW). She was chosen for an International Social Work Exchange Program and had the opportunity to visit Greece in 2009, Ohio in the United States in 2012, and CIF Austria in 2015.
+The manual “Nirogi Jivan, Anandi Jivan,” written by Ms. Natty, contains information covered in the “Preventative Health Care” training workshops offered by Health Promotions Trust. She was instrumental in translating the handbook on “Creating Hope and Health for the Girl Child,” into Marathi, now known as “Mulich Arogya ek Navi Pahat”.
+She was awarded fellowship from Rise Up Gender Equity Initiative (GEI) Accelerator supported by the Cummins Foundation.
+She has been on POSH committee of Reserve Bank of India, Fort ,Reserve Bank of India, Nariman Bhavan and fourth Signal Company`,
+  },
+  {
+    img: TeamMember2,
+    name: "Adv. Sharon Bismark Rodrigues MSW & LLB",
+    post: "Currently pursuing Ph.D. in Social Work from the College of Social Work Nirmala Niketan",
+    txt: `Adv. Sharon Bismark Rodriges, served as a Project Coordinator at the Centre for Social Action during the period 2004 to 2009. She has been appointed by the College of Social Work Nirmala Niketan as Field Supervisor for Graduate students pursuing their social work degree course. Currently Adv. Sharon is serving as Project Coordinator at the Health Promotion Trust and organization of the Archdiocese of Bombay working specifically in the field of preventive health care. 
+Legal involvement:
+1. Legal Advisor to CHIRAG organization from 2012 to 2014 an organization working with the rights of people infected with HIV/AIDS
+2. Presently appointed as a member of the Internal Complaints Committee under the Sexual Harassment Workplace Act 2013 at Shona Cooperate Services, Andheri East, Dilkush Sheltered School, Juhu and Canossa Convent, Mahim
+3. A practicing lawyer handling cases of Domestic Violence at Andheri Session Court and Bandra Family Court
+4. Visiting legal advisor at Premdarshan Community Centre, the Social Outreach Centre of St. Joseph Church, Juhu.
+5. Instrumental in taking sessions on various acts pertaining to women and children, senior citizens, and more.`,
+  },
+  {
+    img: TeamMember3,
+    name: "Adv. Vidya Suresh Patil",
+    post: "Lawyer / counselor",
+    txt: `Ms. Vidya Patil attended Mumbai University where she earned her B.Com., M.A. (Sociology), and law degree (LLB). She also earned her Dipl. In P.G. in Therapeutic Counseling from the Nirmala Niketan College of Social Work. A certificate programme in “Mediation” from the Maharashtra Law University was also completed. She has been working in social work for the past 30 years and has left her imprint on the industry through a variety of her projects. She has been a key player in community organisation at the CHIUM Community Center in Khar and has worked closely with local residents on issues relating to women and children, unorganised sector workers, and other concerns. She has also represented the community at various national levels and forums. She has more than 15 years of expertise in the legal community and served on the Family Court of Bandra’s Legal Aid Panel. She is a member of the internal committees of numerous corporations and institutions and works with the Family Court and MA courts in Mumbai. On gender problems and SHW, she has delivered a number of training programmes and workshops.
+She is also a licenced psychotherapist who has earned the respect of many friends and colleagues in the aforementioned social area. She has recently collaborated with Bharosa Cell (it is an initiative of the police to mediate through counselling in domestic violence cases)
+She has also participated in two-day conferences on “Multi-Disciplinary Approach to Women’s and Children’s Health,” a workshop on “Empowering women via enterprises,” and a national seminar on “Women’s Empowerment through Legal Awareness.” She additionally took part in a global symposium on social protection for the UN-organized sector in Bangkok.
+Her key area of expertise is networking and advocacy, and she has made a significant contribution in this field of work.
+On the occasion of International Women’s Day, MahilaDakshata Samiti (Vinoba Bhave Nagar Police Station) presented her with an award and recognised her for her outstanding contribution in the field of social work.`,
+  },
+  {
+    img: TeamMember4,
+    name: "Mrs. Cheryl Pereira",
+    post: "Counselor",
+    txt: `Mrs. Cheryl attended Mumbai University and earned her bachelor’s degree in History and Sociology and Master’s in Sociology. After completing her D.Ed., she served as a teacher for 28 years. During her tenure as a teacher, she was actively involved in helping underprivileged and needy students. She also extended her services to solve the domestic problems of the school parents.
+Mrs. Cheryl attended her basic course in Neuro-linguistic Programming in 2018 and completed her advanced course in Neuro-linguistic Programming in the year 2019. In addition, she has also honed her skills by attending courses such as Basic Counselling and Skilled Helper in 2019 and 2022 respectively, from Premanjali Counseling Services.
+While pursuing her master’s in Counselling, Mrs. Cheryl has been volunteering with Sakhya since 2022 and is mediating as a counselor in domestic violence cases with the Bharosa Cell, a collaborative initiative of Mira- Bhayandar and Vasai- Virar Police.`,
+  },
+  {
+    img: TeamMember5,
+    name: "Adv. Rushila Rebello",
+    post: "Lawyer",
+    txt: `Advocate Rushila Rebello is a human rights lawyer, activist and a national level trainer. She worked at the Supreme Court, Delhi High Court, National Consumer Redressal Commission, District Consumer Redressal Forum and the lower courts in Delhi as an advocate. Currently she is working with the Family Court, Mumbai and is a member of internal complaints committee of several corporates and establishments. She has published a number of scientific papers on gender issues. She has imparted numerous training programmes and workshops on gender issues and soft skills at national and state level.`,
+  },
+  {
+    img: TeamMember6,
+    name: "Ms. Neeta Chawan",
+    post: "Social Worker / Counsellor",
+    txt: `She graduated from S.N.D.T Women’s University with a Master of Arts in Sociology and a Master of Social Work. While completing her internship, she worked with women and children in a number of organisations and is knowledgeable about women’s issues. She currently works as a counsellor at Thane Civil Hospital’s Sakhya.`,
+  },
+  {
+    img: TeamMember7,
+    name: "Ms. Shalini Jadhav",
+    post: "Community Organizer / Trainer",
+    txt: `Shalini Jadhav has 18 years of combined professional experience. She has a degree in the arts and 13 years of experience working with nonprofit organisations to her credit. She excels at both dealing with the systems and with people at the grassroots level. She has been associated with Sakhya for the past 12 years, and she is a capable administrator.
+She made a valuable input to the training module. She has been responsible for publishing the annual calendar and quarterly magazine “Hunkar” for Sakhya during the past two years.
+She enjoys reading books, novels, and poems to broaden her knowledge. She also enjoys watching television. She is able to readily interact with the women in the neighbourhood and has good PR skills.`,
+  },
+  {
+    img: TeamMember8,
+    name: "Anita M. Gavit",
+    post: "Social Worker / Counsellor",
+    txt: `Anita has completed her MSW from Dr. Baba sahib Ambedkar University, Aurangabad in 2019 – 20. Her core competence is in community health &amp; counseling. She has worked with L &amp; T organization in Public health as a social worker and community mobiliser. She is presently working with Sakhya’s Palghar District project at Zilla parishad, Palghar.`,
+  },
+  {
+    img: TeamMember9,
+    name: "Ranjana Sanjay Wavre",
+    post: "Office Assistant",
+    txt: `Ranjana Sanjay Wavre has been working as an office assistant in Sakhya. She is the girl leader of Sakhya who helped in conducting the adolescents program at Bhadalepada, Giriz, Vasai. She is passionate and committed to the task entrusted to her.She has graduated from Arts faculty of Gonsalo Garcia College, Vasai scoring 88.60%. She also developed her skills in accounting as she completed her course in Tally with 88% and MSCIT with 82%.`,
+  },
+  {
+    img: TeamMember10,
+    name: "Ms. Rekha Ghosha",
+    post: "Community Animator",
+    txt: `Rekha Raju Ghosha has been working as a animator in Sakhya for the last 3 and a half years. She has been a part of Sakhya’s training programs before, and she has always been involved in activating pressure groups. She always eager to learn new things and she enjoys doing that.
+She has completed her education up to 10th standard, and is pursuing Para-professional courses to further her career in same field`,
+  },
+  {
+    img: TeamMember11,
+    name: "Ms. Maya More",
+    post: "Community Animator",
+    txt: `Maya Suresh More, who has passed her 12th grade, has been employed by Sakhaya at Nalasopara East in Bhimdongri for the past four and a half years as an animator.
+She enjoys maintaining relationships with people and working alongside them to further their development. Her ability to connect with others is aided by her warm demeanour and excellent leadership.
+She is willing to labour around the clock for the sake of women’s rights and says that she finds happiness in her work.`,
+  },
+  {
+    img: TeamMember12,
+    name: "Ms. Asha Tupe",
+    post: "Community Animator",
+    txt: `Asha Tupe has been in contact with SAKHYA for the past two years. But even before she started working for SAKHYA, she was constantly supporting the organization by providing community service and taking part in our sessions and events. She is ever eager to work and assist others. She continues to plan activities with the staff and encourages them to takeactive part, especially with students. She has received recognition as a Community Leader in Nehru Nagar.`,
+  },
+  {
+    img: TeamMember13,
+    name: "Ms. Pushpa Pawar",
+    post: "Community Animator",
+    txt: `Pushpa Pawar has been an animator for SAKHYA for the past 12 months. She has spent the previous ten years mostly working with the Valmiki society, where she has served as their Community Leader. She is a brave individual who has inspired the women and kids of the Valmiki Community to take up their own battles under her guiding leadership. As soon as she made contact with SAKHYA,she began referring all the ladies who are the victims of abuse and violence to SAKHYA for counselling. She frequently visits distressed women to learn their whereabouts and is always willing to assist and help them.`,
+  },
+  {
+    img: TeamMember14,
+    name: "Ms. Parvati Dadoda",
+    post: "Support Staff",
+    txt: `Since the past eight years, Parvati has been working with Sakhya. She belongs to one of our support groups made up of local Nala Sopara mahila mandal / SHG residents. She is devoted to her work and committed to it.`,
+  },
+];
+---
+
+<PageLayout title="About">
+  <!-- <Hero
+		bgImg={HeroBg}
+		title="About Us"
+		subText=""
+		overlay={true}
+		overlayOpacity={0.7}
+	/> -->
+  <img
+    src={HeroImage.src}
+    alt=""
+    class="w-full h-[350px] md:h-[500px] xl:h-[700px] pt-[110px] opacity-[0.95] object-cover"
+  />
+
+  <div class="w-full h-max py-10">
+    <div class="flex items-center justify-center text-3xl font-bold">
+      <span class="text-txt">Our <span class="text-col-3">Team</span></span>
+    </div>
+  </div>
+  <Section>
+  <div
+    class="mx-auto w-fit max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8"
+  >
+    {
+      team_members.map((member_info, idx) => (
+        <TeamCard
+          img={member_info.img}
+          title={member_info.name}
+          subtitle={member_info.post}
+          txt={member_info.txt}
+          _class={idx % 2 == 0 ? "bg-col-3" : "bg-col-5"}
+        />
+      ))
+    }
+  </div>
+  </Section>
+</PageLayout>

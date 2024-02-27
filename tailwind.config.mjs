@@ -9,6 +9,7 @@ export default {
 				'col-2': '#56CD9A', // emerald green
 				'col-3': "#35A4A7", // turquoise blue
 				'col-4': "#1C567B", // blue
+        'col-5': "#8BD2C6", 
 				'txt': '#354647', // blue
 			},
 			animation: {

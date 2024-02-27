@@ -4,12 +4,11 @@ interface Props {
 	img: ImageMetadata;
 	title: string;
 	subtitle: string;
-	txtShort: string;
-	txtLong: string;
+	txt: string;
 	rtl: boolean;
 }
 
-const { img, title, subtitle, txtShort, txtLong, rtl } = Astro.props as Props;
+const { img, title, subtitle, txt, rtl } = Astro.props as Props;
 ---
 
 <div 
@@ -32,7 +31,7 @@ const { img, title, subtitle, txtShort, txtLong, rtl } = Astro.props as Props;
 				</span>
 			</span>
 			<p class="mt-2 line-clamp-3 text-sm/relaxed text-justify">
-				{txtShort}
+				{txt}
 			</p>
 		</div>
 		<div class={"sm:flex sm:items-end pl-4 pb-4 sm:px-6" + (rtl ? "" : " sm:justify-end")}>
@@ -65,7 +64,7 @@ const { img, title, subtitle, txtShort, txtLong, rtl } = Astro.props as Props;
 				{title} {subtitle}
 			</span>
 			<p class="mt-5 text-sm font-light text-justify pb-6">
-				{txtLong}
+				{txt}
 			</p>
 		</div>
 	</div>
@@ -75,16 +74,15 @@ const { img, title, subtitle, txtShort, txtLong, rtl } = Astro.props as Props;
 	const openModalBtns = document.querySelectorAll('[data-open-modal]');
 	const closeModalBtns = document.querySelectorAll('[data-close-modal]');
 	const modals = document.querySelectorAll('[data-modal]');
-
 	openModalBtns.forEach( (modalBtn, id) => {
 		modalBtn.addEventListener("click", () => {
-			modals[id].showModal();
+			(modals[id] as HTMLDialogElement).showModal();
 		})
 	})
 
 	closeModalBtns.forEach( (modalBtn, id) => {
 		modalBtn.addEventListener("click", () => {
-			modals[id].close()
+			(modals[id] as HTMLDialogElement).close();
 		})
 	})
 </script>

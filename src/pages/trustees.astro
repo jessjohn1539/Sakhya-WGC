@@ -2,7 +2,6 @@
 // Layout
 import PageLayout from "../layouts/PageLayout.astro";
 // Components
-import Section from "../components/Section.astro";
 import Card from "../components/Card.astro";
 import {
   President,
@@ -15,10 +14,10 @@ import {
   CoTrustee5,
   CoTrustee6,
 } from "../assets/images/Trustees";
+import Section from "../components/Section.astro";
 
 // Assets
 import HeroImage from "../assets/images/Trustees/trustees_hero.png";
-const HeroBg = `url(${HeroImage.src})`;
 ---
 
 <PageLayout title="Trustees">
@@ -36,73 +35,74 @@ const HeroBg = `url(${HeroImage.src})`;
         >
       </div>
     </div>
-
+<Section>
     <div
       class="grid content-center justify-center items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-28 py-32 md:gap-12 mx-auto"
     >
       <Card
-        class_={"bg-col-2 max-w-80"}
+        class_={"bg-col-2"}
         img={President}
         title={"Ms. Philomena Sequira"}
         subtitle={"President"}
         txt={"Premankur, St. Pius College Campus, Aarey Road, Goregaon East, Mumbai 400020"}
       />
       <Card
-        class_={"bg-col-2 max-w-80"}
+        class_={"bg-col-2"}
         img={VicePresident}
         title={"Ms. Sabeena Gonsalves"}
         subtitle={"Vice-President"}
         txt={"Nirmala Niketan, 38 New Marine Lines, Churchgate, Mumbai 400020"}
       />
       <Card
-        class_={"bg-col-2 max-w-80"}
+        class_={"bg-col-2"}
         img={Treasurer}
         title={"Ms. Cheryl Machado"}
         subtitle={"Treasurer/Secretary"}
         txt={"Nirmala Nivas, Chuim, Khardanda, Mumbai"}
       />
       <Card
-        class_={"bg-col-2 max-w-80"}
+        class_={"bg-col-2"}
         img={CoTrustee1}
         title={"Ms. Greta Lopes"}
         subtitle={"Co-trustee"}
         txt={"Nirmala Niketan, 38 New Marine Lines, Churchgate, Mumbai 400020"}
       />
       <Card
-        class_={"bg-col-2 max-w-80"}
+        class_={"bg-col-2"}
         img={CoTrustee2}
         title={"Ms. Noella Dias"}
         subtitle={"Co-trustee"}
         txt={"Nirmala Niketan, 38 New Marine Lines, Churchgate, Mumbai 400020"}
       />
       <Card
-        class_={"bg-col-2 max-w-80"}
+        class_={"bg-col-2"}
         img={CoTrustee3}
         title={"Ms. Evelyn Menezes"}
         subtitle={"Co-trustee"}
         txt={"Ashakiran, St. Pius College Campus, Aarey Road, Goregaon East, Mumbai 400063"}
       />
       <Card
-        class_={"bg-col-2 max-w-80"}
+        class_={"bg-col-2"}
         img={CoTrustee4}
         title={"Ms. Shaila Crasto"}
         subtitle={"Co-trustee"}
         txt={"Premanjali, Nirmal P.O. Bassein- Thane Dt 401304"}
       />
       <Card
-        class_={"bg-col-2 max-w-80"}
+        class_={"bg-col-2"}
         img={CoTrustee5}
         title={"Ms. Nancy Rodrigues"}
         subtitle={"Co-trustee"}
         txt={"Marianjali Dak Bangla Rd, Vaijapur P.O. Aurangabad Dt 423701"}
       />
       <Card
-        class_={"bg-col-2 max-w-80"}
+        class_={"bg-col-2"}
         img={CoTrustee6}
         title={"Ms. Clera Gonsalves"}
         subtitle={"Co-trustee"}
         txt={"Karajgaav patilpada, P.O. Talasari, Tal. Dahanu, Dt. Palghar. 401602"}
       />
     </div>
+</Section>
   </div>
 </PageLayout>

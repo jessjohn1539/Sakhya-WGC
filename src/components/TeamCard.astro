@@ -1,0 +1,76 @@
+---
+import type { ImageMetadata } from 'astro';
+interface Props {
+	img: ImageMetadata;
+	title: string;
+	subtitle: string;
+	txt: string;
+	_class: string;
+}
+
+const { img, title, subtitle, txt, _class } = Astro.props as Props;
+---
+<div class={"flex flex-col sm:flex-row items-start gap-8 my-8 rounded-md p-4 " + _class}>
+  <div class="flex shrink-0 flex-col gap-3 max-w-48">
+    <img
+      alt={title + ", " + subtitle}
+			src={img.src}
+      class="w-48 aspect-[3/4] rounded-lg object-cover"
+    />
+    <p class="text-lg/tight font-medium text-txt">{title}</p>
+    <p class="text-xs/tight font-light text-txt">{subtitle}</p>
+  </div>
+  <div>
+    <p class="mt-0.5 text-gray-700 line-clamp-[8] text-justify">
+      {txt}
+    </p>
+    <button 
+			data-open-modal
+			class="bg-col-1 px-5 py-3 mt-8 text-center text-xs font-bold transition hover:bg-col-2 rounded-md"
+		>
+      Read More
+    </button>
+  </div>
+</div>
+
+<dialog data-modal class="backdrop:bg-black/80 px-6 py-3 rounded-md max-w-4xl min-h-screen md:min-h-0">
+	<button 
+		data-close-modal
+		class="block bg-col-1 px-5 py-3 ml-auto mb-2 text-center text-xs font-bold transition hover:bg-col-2 rounded-b-sm sm:rounded-md w-full sm:w-auto"
+	>
+		X
+	</button>
+	<div class="flex items-center md:items-start gap-4 flex-col md:flex-row mt-5">
+		<div class="flex shrink-0 max-w-48 flex-col items-center md:items-start gap-3">
+      <img
+        alt={title + ", " + subtitle}
+			  src={img.src}
+        class="w-48 aspect-[3/4] rounded-lg object-cover"
+      />
+      <p class="text-lg/tight font-medium text-txt">{title}</p>
+      <p class="text-xs/tight font-light text-txt">{subtitle}</p>
+    </div>
+		<p class="text-sm font-light text-justify pb-6">
+			{txt}
+		</p>
+	</div>
+</dialog>
+
+<script>
+	const openModalBtns = document.querySelectorAll('[data-open-modal]');
+	const closeModalBtns = document.querySelectorAll('[data-close-modal]');
+	const modals = document.querySelectorAll('[data-modal]');
+
+	openModalBtns.forEach( (modalBtn, id) => {
+		modalBtn.addEventListener("click", () => {
+			(modals[id] as HTMLDialogElement).showModal();
+		})
+	})
+
+	closeModalBtns.forEach( (modalBtn, id) => {
+		modalBtn.addEventListener("click", () => {
+			(modals[id] as HTMLDialogElement).close()
+		})
+	})
+</script>
+
