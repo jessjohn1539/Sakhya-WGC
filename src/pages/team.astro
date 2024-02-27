@@ -3,6 +3,7 @@
 import PageLayout from "../layouts/PageLayout.astro";
 // Components
 import TeamCard from "../components/TeamCard.astro";
+import Section from "../components/Section.astro";
 // Assets
 import HeroImage from "../assets/images/Team/Team_hero.png";
 import {
@@ -151,8 +152,9 @@ She is willing to labour around the clock for the sake of women’s rights and s
       <span class="text-txt">Our <span class="text-col-3">Team</span></span>
     </div>
   </div>
+  <Section>
   <div
-    class="mx-auto w-fit max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8"
+    class="mx-auto w-fit max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8"
   >
     {
       team_members.map((member_info, idx) => (
@@ -166,4 +168,5 @@ She is willing to labour around the clock for the sake of women’s rights and s
       ))
     }
   </div>
+  </Section>
 </PageLayout>
