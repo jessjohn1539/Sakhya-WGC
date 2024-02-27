@@ -11,8 +11,7 @@ import MagzineCard from "../components/MagzineCard.astro";
 
 // Assets
 import HeroImage from "../assets/home.png";
-let mags = await Astro.glob("../assets/hunkar/*.pdf");
-mags = mags.reverse();
+const mags = await Astro.glob("../assets/hunkar/*.pdf");
 const magThumbnails = await Astro.glob("../assets/hunkar/thumbnails/*.webp");
 const HeroBg = `url(${HeroImage.src})`;
 
