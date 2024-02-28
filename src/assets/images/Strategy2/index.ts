@@ -1,12 +1,12 @@
-import Community1 from './Community/Community-1.jpg'
-import Community2 from './Community/Community-2.jpg'
-import Community3 from './Community/Community-3.jpg'
-import TOT1 from './TOT/tot-1.jpg'
-import Exposure1 from './Exposure/Exposure-1.jpg'
-import Exposure2 from './Exposure/Exposure-2.jpg'
-import Students1 from './Students/Session-students-1.jpg'
-import Workshop1 from './Workshop/Workshop-1.jpg'
-import HarassmentSession1 from './HarassmentSession/Harassment-1.jpg'
+import Community1 from './Community/Community-1.webp'
+import Community2 from './Community/Community-2.webp'
+import Community3 from './Community/Community-3.webp'
+import TOT1 from './TOT/tot-1.webp'
+import Exposure1 from './Exposure/Exposure-1.webp'
+import Exposure2 from './Exposure/Exposure-2.webp'
+import Students1 from './Students/Session-students-1.webp'
+import Workshop1 from './Workshop/Workshop-1.webp'
+import HarassmentSession1 from './HarassmentSession/Harassment-1.webp'
 
 export {
   Community1,
