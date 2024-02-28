@@ -1,0 +1,37 @@
+---
+import { Image } from 'astro:assets';
+// Layout
+import PageLayout from "../layouts/PageLayout.astro";
+
+
+// Components
+import Section from "../components/Section.astro";
+import PageTitle from "../components/PageTitle.astro";
+import SectionTitle from "../components/PageTitle.astro";
+
+// Assets
+import HeroImage from "../assets/home.png";
+const imageFiles = await Astro.glob('../assets/images/Media/*');
+---
+
+<PageLayout title="Media Coverage">
+    <img
+        src={HeroImage.src}
+        alt=""
+        class="w-full h-[350px] md:h-[500px] xl:h-[700px] pt-[110px] opacity-[0.95] object-cover"
+    />
+    <Section>
+        <PageTitle primaryText="Media" secondaryText='Coverage'/>
+        <SectionTitle primaryText="Our Appearances in" secondaryText="the Media" />
+        <p class="text-gray-600 mb-8">
+            Networking and Advocacy forms an integral part of Sakhya’s activities. We believe that change and transformation is achieved by working in solidarity. Hence we network with partners at the district level, state level and the national level. This gives Sakhya a platform to work together to effect changes at the policy level.
+        </p>
+        <div class="md:columns-2 lg:columns-3 xl:columns-5">
+            {
+                imageFiles.map( image => (
+                    <Image src={image.default} alt="" class="border-8 border-col-3 my-4 w-full"/>
+                ))
+            }
+        </div>
+    </Section>
+</PageLayout>
