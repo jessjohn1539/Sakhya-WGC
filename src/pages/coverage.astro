@@ -10,7 +10,7 @@ import PageTitle from "../components/PageTitle.astro";
 import SectionTitle from "../components/PageTitle.astro";
 
 // Assets
-import HeroImage from "../assets/home.webp";
+import HeroImage from "../assets/images/Gallery/371763931_3552112218345113_323716569083109105_n.jpg";
 const imageFiles = await Astro.glob('../assets/images/Media/*');
 ---
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
@@ -19,7 +19,7 @@ const imageFiles = await Astro.glob('../assets/images/Media/*');
     <img
         src={HeroImage.src}
         alt=""
-        class="w-full h-[350px] md:h-[500px] xl:h-[700px] pt-[110px] opacity-[0.95] object-cover"
+        class="w-full h-[350px] md:h-[500px] xl:h-[600px] pt-[110px] opacity-[0.95] object-cover"
     />
     <Section>
         <PageTitle primaryText="Media" secondaryText='Coverage'/>
