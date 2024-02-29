@@ -5,18 +5,22 @@ import PageLayout from "../layouts/PageLayout.astro";
 import Section from "../components/Section.astro";
 // Assets
 
-import HeroImage from "../assets/images/Strategy2/strategy2_hero.png";
+import HeroImage from "../assets/images/Strategy2/strategy2_hero.webp";
 import {
   Community1,
   Community2,
   Community3,
   TOT1,
+  TOT2,
   Exposure1,
   Exposure2,
+  Exposure3,
   Students1,
+  Students2,
   Workshop1,
   HarassmentSession1,
 } from "../assets/images/Strategy2";
+import Nurses from "../assets/images/Strategy2/NHT/Nurse.webp"
 ---
 
 <PageLayout title="CommunityOutreach">
@@ -24,7 +28,7 @@ import {
     <img
       src={HeroImage.src}
       alt=""
-      class="w-full h-[350px] md:h-[500px] xl:h-[700px] pt-[110px] opacity-[0.95] object-cover"
+      class="w-full h-[350px] md:h-[500px] xl:h-[600px] pt-[110px] opacity-[0.95] object-cover"
     />
 
     <div class="w-full h-max bg-col-1-light">
@@ -126,7 +130,7 @@ import {
 
         <!-- img carousal 2 -->
         <div
-          class="grid grid-cols-1 md:grid-cols-2 justify-center gap-10 items-center pt-[40px] shrink-0"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 items-center pt-[40px] shrink-0"
         >
           <img
             src={Exposure1.src}
@@ -135,6 +139,11 @@ import {
           />
           <img
             src={Exposure2.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={Exposure3.src}
             class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
             alt=""
           />
@@ -150,16 +159,43 @@ import {
           <div class="w-[200px] h-[4px] bg-col-4"></div>
         </div>
 
+        
         <!-- img carousal 3 -->
         <div
-          class="grid grid-cols-1 justify-center gap-10 items-center pt-[40px] shrink-0"
+          class="grid grid-cols-1 md:grid-cols-2 justify-center gap-10 items-center pt-[40px] shrink-0"
         >
           <img
             src={TOT1.src}
             class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
             alt=""
           />
+          <img
+            src={TOT2.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
         </div>
+         <!-- img carousal 4 heading -->
+         <div
+         class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1"
+       >
+         <span class="text-txt"
+           >Nurse and Housekeeping staff <span class="text-col-3">training</span></span
+         >
+         <div class="w-[420px] h-[4px] bg-col-4"></div>
+       </div>
+        <!-- img carousal 4 -->
+        <div
+          class="grid grid-cols-1 justify-center gap-10 items-center pt-[40px] shrink-0"
+        >
+          <img
+            src={Nurses.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+        </div>
+
+
       </div>
 
       <div
@@ -201,16 +237,20 @@ import {
             >
             <div class="w-full h-[4px] bg-col-4"></div>
           </div>
-          <!-- img carousal 1 -->
+          <!-- img carousal 5 -->
           <div
-            class="grid grid-cols-1 justify-center gap-10 items-center pt-[40px] shrink-0"
-          >
-            <img
-              src={Students1.src}
-              class="h-[300px] w-auto overflow-hidden rounded-xl object-cover"
-              alt=""
-            />
-          </div>
+          class="grid grid-cols-1 md:grid-cols-2 justify-center gap-10 items-center pt-[40px] shrink-0"
+        >
+          <img
+            src={Students1.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={Students2.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
         </div>
 
         <!-- img carousal 2 -->

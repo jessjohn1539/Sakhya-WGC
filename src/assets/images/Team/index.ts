@@ -1,17 +1,17 @@
-import TeamMember1 from "./Natty.png";
-import TeamMember2 from "./Sharon.png";
-import TeamMember3 from "./Vidya.png";
-import TeamMember4 from "./Cheryl.png";
-import TeamMember5 from "./Rushila.png";
-import TeamMember6 from "./Neeta.png";
-import TeamMember7 from "./Shalini.png";
-import TeamMember8 from "./Anita.png";
-import TeamMember9 from "./Ranjana.png";
-import TeamMember10 from "./Rekha.png";
-import TeamMember11 from "./Maya.png";
-import TeamMember12 from "./Asha.png";
-import TeamMember13 from "./Pushpa.png";
-import TeamMember14 from "./Parvati.png";
+import TeamMember1 from "./Natty.webp";
+import TeamMember2 from "./Sharon.webp";
+import TeamMember3 from "./Vidya.webp";
+import TeamMember4 from "./Cheryl.webp";
+import TeamMember5 from "./Rushila.webp";
+import TeamMember6 from "./Neeta.webp";
+import TeamMember7 from "./Shalini.webp";
+import TeamMember8 from "./Anita.webp";
+import TeamMember9 from "./Ranjana.webp";
+import TeamMember10 from "./Rekha.webp";
+import TeamMember11 from "./Maya.webp";
+import TeamMember12 from "./Asha.webp";
+import TeamMember13 from "./Pushpa.webp";
+import TeamMember14 from "./Parvati.webp";
 
 export {
   TeamMember1,

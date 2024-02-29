@@ -3,17 +3,16 @@
 import PageLayout from "../layouts/PageLayout.astro";
 
 // Components
-import Hero from "../components/Hero.astro";
 import Section from "../components/Section.astro";
 import PageTitle from "../components/PageTitle.astro";
 import SectionTitle from "../components/SectionTitle.astro";
 import MagzineCard from "../components/MagzineCard.astro";
 
 // Assets
-import HeroImage from "../assets/home.png";
+import HeroImage from "../assets/home.webp";
 const mags = await Astro.glob("../assets/hunkar/*.pdf");
+mags.reverse();
 const magThumbnails = await Astro.glob("../assets/hunkar/thumbnails/*.webp");
-const HeroBg = `url(${HeroImage.src})`;
 
 const numberToMonth = (number: number) => {
     switch (number) {
@@ -51,8 +50,8 @@ const numberToMonth = (number: number) => {
     <img
         src={HeroImage.src}
         alt=""
-        class="w-full h-[350px] md:h-[500px] xl:h-[700px] pt-[110px] opacity-[0.95] object-cover"
-      />
+        class="w-full h-[350px] md:h-[500px] xl:h-[600px] pt-[110px] opacity-[0.95] object-cover"
+    />
     <Section>
         <PageTitle primaryText="Hunkar" />
         <SectionTitle primaryText="Our Yearly" secondaryText="Magazine" />
@@ -66,10 +65,9 @@ const numberToMonth = (number: number) => {
         </p>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
             {
-                mags.map((mag, index) => {
-                    const fileName = mag.default.split("/").pop().slice(0, -4);
+                mags.map(mag => {
+                    const fileName = mag.default.split("/").pop().split(".")[0];
                     let [year, month] = fileName.split("-");
-                    year = year.split(".")[0];
                     month = Number(month);
 
                     const thumbnail = magThumbnails.find((thumb) =>
