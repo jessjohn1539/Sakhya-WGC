@@ -1,9 +1,12 @@
 ---
+import { Image } from 'astro:assets';
 // Layout
 import PageLayout from "../layouts/PageLayout.astro";
 // Components
 import ContactUs from '../components/Contact-us.astro'
 import Section from "../components/Section.astro";
+
+const certificates = await Astro.glob('../assets/images/Donation/*');
 ---
 
 <PageLayout title="Donate">
@@ -139,6 +142,14 @@ import Section from "../components/Section.astro";
         </div>
       </div>
     </div>
+    <Section>
+      <div class="lg:columns-2">
+        {
+            certificates.map( image => (
+                <Image src={image.default} alt="" class="border-8 border-col-3 my-4 w-full"/>
+            ))
+        }
+    </Section>
     <Section>
     <ContactUs/>
   </Section>

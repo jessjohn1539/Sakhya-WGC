@@ -9,7 +9,7 @@ import SectionTitle from "../components/SectionTitle.astro";
 import MagzineCard from "../components/MagzineCard.astro";
 
 // Assets
-import HeroImage from "../assets/home.png";
+import HeroImage from "../assets/home.webp";
 const mags = await Astro.glob("../assets/hunkar/*.pdf");
 mags.reverse();
 const magThumbnails = await Astro.glob("../assets/hunkar/thumbnails/*.webp");
@@ -50,7 +50,7 @@ const numberToMonth = (number: number) => {
     <img
         src={HeroImage.src}
         alt=""
-        class="w-full h-[350px] md:h-[500px] xl:h-[700px] pt-[110px] opacity-[0.95] object-cover"
+        class="w-full h-[350px] md:h-[500px] xl:h-[600px] pt-[110px] opacity-[0.95] object-cover"
     />
     <Section>
         <PageTitle primaryText="Hunkar" />
