@@ -18,9 +18,14 @@ const HeroBg = `url(${HeroImage.src})`;
 ---
 
 <PageLayout title="Annual Reports">
-    <Hero bgImg={HeroBg} overlay={false} />
+    <!-- <Hero bgImg={HeroBg} overlay={false} /> -->
+    <img
+        src={HeroImage.src}
+        alt=""
+        class="w-full h-[350px] md:h-[500px] xl:h-[600px] pt-[110px] opacity-[0.95] object-cover"
+    />
     <Section>
-        <PageTitle primaryText="Annual Reports" />
+        <PageTitle primaryText="Annual" secondaryText="Reports" />
         <SectionTitle primaryText="Our Annual" secondaryText="Reports" />
         <p class="text-gray-600 mb-8">
             Networking and Advocacy forms an integral part of Sakhya’s
