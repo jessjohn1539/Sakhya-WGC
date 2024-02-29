@@ -15,11 +15,7 @@ const imageFiles = await Astro.glob('../assets/images/Gallery/*');
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
 <PageLayout title="Gallery">
-    <img
-        src={HeroImage.src}
-        alt=""
-        class="w-full h-[350px] md:h-[500px] xl:h-[700px] pt-[110px] opacity-[0.95] object-cover"
-    />
+    <div class="pt-[130px]"></div>
     <Section>
         <PageTitle primaryText="Photo" secondaryText="Gallery" />
 
