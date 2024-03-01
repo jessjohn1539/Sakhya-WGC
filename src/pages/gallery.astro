@@ -1,6 +1,5 @@
 ---
 import { Image } from 'astro:assets';
-import GLightbox from 'glightbox';
 // Layout
 import PageLayout from "../layouts/PageLayout.astro";
 
@@ -9,7 +8,6 @@ import Section from "../components/Section.astro";
 import PageTitle from "../components/PageTitle.astro";
 
 // Assets
-import HeroImage from "../assets/home.webp";
 const imageFiles = await Astro.glob('../assets/images/Gallery/*');
 ---
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
@@ -31,7 +29,7 @@ const imageFiles = await Astro.glob('../assets/images/Gallery/*');
     </Section>
 </PageLayout>
 
-<script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js">
 import 'https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js';
 const lightbox = GLightbox({
     touchNavigation: true,

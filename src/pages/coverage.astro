@@ -9,6 +9,7 @@ import Section from "../components/Section.astro";
 import PageTitle from "../components/PageTitle.astro";
 import SectionTitle from "../components/PageTitle.astro";
 
+
 // Assets
 import HeroImage from "../assets/images/Gallery/371763931_3552112218345113_323716569083109105_n.jpg";
 const imageFiles = await Astro.glob('../assets/images/Media/*');
@@ -39,7 +40,7 @@ const imageFiles = await Astro.glob('../assets/images/Media/*');
     </Section>
 </PageLayout>
 
-<script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js">
 import 'https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js';
 const lightbox = GLightbox({
     touchNavigation: true,
