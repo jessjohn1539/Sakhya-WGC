@@ -10,6 +10,10 @@ import Students1 from './Students/Session-students-1.webp'
 import Students2 from './Students/Session-students-2.webp'
 import Workshop1 from './Workshop/Workshop-1.webp'
 import HarassmentSession1 from './HarassmentSession/Harassment-1.webp'
+import Livelihood1 from './LivelihoodSupport/livelihood1.webp'
+import Livelihood2 from './LivelihoodSupport/livelihood2.webp'
+import Livelihood3 from './LivelihoodSupport/livelihood3.webp'
+import Livelihood4 from './LivelihoodSupport/livelihood4.webp'
 
 export {
   Community1,
@@ -24,4 +28,8 @@ export {
   Students2,
   Workshop1,
   HarassmentSession1,
+  Livelihood1,
+  Livelihood2,
+  Livelihood3,
+  Livelihood4,
 }
