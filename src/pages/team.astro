@@ -37,15 +37,9 @@ She has been on POSH committee of Reserve Bank of India, Fort ,Reserve Bank of I
   },
   {
     img: TeamMember2,
-    name: "Adv. Sharon Bismark Rodrigues MSW & LLB",
-    post: "Currently pursuing Ph.D. in Social Work from the College of Social Work Nirmala Niketan",
-    txt: `Adv. Sharon Bismark Rodriges, served as a Project Coordinator at the Centre for Social Action during the period 2004 to 2009. She has been appointed by the College of Social Work Nirmala Niketan as Field Supervisor for Graduate students pursuing their social work degree course. Currently Adv. Sharon is serving as Project Coordinator at the Health Promotion Trust and organization of the Archdiocese of Bombay working specifically in the field of preventive health care. 
-Legal involvement:
-1. Legal Advisor to CHIRAG organization from 2012 to 2014 an organization working with the rights of people infected with HIV/AIDS
-2. Presently appointed as a member of the Internal Complaints Committee under the Sexual Harassment Workplace Act 2013 at Shona Cooperate Services, Andheri East, Dilkush Sheltered School, Juhu and Canossa Convent, Mahim
-3. A practicing lawyer handling cases of Domestic Violence at Andheri Session Court and Bandra Family Court
-4. Visiting legal advisor at Premdarshan Community Centre, the Social Outreach Centre of St. Joseph Church, Juhu.
-5. Instrumental in taking sessions on various acts pertaining to women and children, senior citizens, and more.`,
+    name: "Adv.Shradha S. Patil",
+    post: "Lawyer / Professor",
+    txt: `Adv.Shradha S.Patil is a lawyer and a professor. She has work experience as lawyer from last 6years with specialization in Civil and matrimonial cases. She has experience in conducting POSH trainings and handling cases. She represents Sakhya's at various institutions as external member of Internal committee.`,
   },
   {
     img: TeamMember3,
@@ -59,17 +53,17 @@ On the occasion of International Women’s Day, MahilaDakshata Samiti (Vinoba Bh
   },
   {
     img: TeamMember4,
+    name: "Adv. Rushila Rebello",
+    post: "Lawyer",
+    txt: `Advocate Rushila Rebello is a human rights lawyer, activist and a national level trainer. She worked at the Supreme Court, Delhi High Court, National Consumer Redressal Commission, District Consumer Redressal Forum and the lower courts in Delhi as an advocate. Currently she is working with the Family Court, Mumbai and is a member of internal complaints committee of several corporates and establishments. She has published a number of scientific papers on gender issues. She has imparted numerous training programmes and workshops on gender issues and soft skills at national and state level.`,
+  },
+  {
+    img: TeamMember5,
     name: "Mrs. Cheryl Pereira",
     post: "Counselor",
     txt: `Mrs. Cheryl attended Mumbai University and earned her bachelor’s degree in History and Sociology and Master’s in Sociology. After completing her D.Ed., she served as a teacher for 28 years. During her tenure as a teacher, she was actively involved in helping underprivileged and needy students. She also extended her services to solve the domestic problems of the school parents.
 Mrs. Cheryl attended her basic course in Neuro-linguistic Programming in 2018 and completed her advanced course in Neuro-linguistic Programming in the year 2019. In addition, she has also honed her skills by attending courses such as Basic Counselling and Skilled Helper in 2019 and 2022 respectively, from Premanjali Counseling Services.
 While pursuing her master’s in Counselling, Mrs. Cheryl has been volunteering with Sakhya since 2022 and is mediating as a counselor in domestic violence cases with the Bharosa Cell, a collaborative initiative of Mira- Bhayandar and Vasai- Virar Police.`,
-  },
-  {
-    img: TeamMember5,
-    name: "Adv. Rushila Rebello",
-    post: "Lawyer",
-    txt: `Advocate Rushila Rebello is a human rights lawyer, activist and a national level trainer. She worked at the Supreme Court, Delhi High Court, National Consumer Redressal Commission, District Consumer Redressal Forum and the lower courts in Delhi as an advocate. Currently she is working with the Family Court, Mumbai and is a member of internal complaints committee of several corporates and establishments. She has published a number of scientific papers on gender issues. She has imparted numerous training programmes and workshops on gender issues and soft skills at national and state level.`,
   },
   {
     img: TeamMember6,
@@ -153,20 +147,18 @@ She is willing to labour around the clock for the sake of women’s rights and s
     </div>
   </div>
   <Section>
-  <div
-    class="mx-auto w-fit max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8"
-  >
-    {
-      team_members.map((member_info, idx) => (
-        <TeamCard
-          img={member_info.img}
-          title={member_info.name}
-          subtitle={member_info.post}
-          txt={member_info.txt}
-          _class={idx % 2 == 0 ? "bg-col-3" : "bg-col-5"}
-        />
-      ))
-    }
-  </div>
+    <div class="mx-auto w-fit max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
+      {
+        team_members.map((member_info, idx) => (
+          <TeamCard
+            img={member_info.img}
+            title={member_info.name}
+            subtitle={member_info.post}
+            txt={member_info.txt}
+            _class={idx % 2 == 0 ? "bg-col-3" : "bg-col-5"}
+          />
+        ))
+      }
+    </div>
   </Section>
 </PageLayout>
