@@ -3,21 +3,65 @@
 import PageLayout from "../layouts/PageLayout.astro";
 // Components
 import Section from "../components/Section.astro";
+import ContributorCard from "../components/ContributorCard.astro";
 // Assets
-
+import sid from "../assets/images/contributors/siddharth.webp";
+import alston from "../assets/images/contributors/alston.webp";
+import jess from "../assets/images/contributors/jess.webp";
 ---
 
 <PageLayout title="Contributors">
   <div class="h-full w-full bg-col-1-light">
     <div class="w-full h-max bg-col-1-light">
-      <div class="flex items-center justify-center pt-44 text-3xl font-bold pb-10">
+      <div
+        class="flex items-center justify-center pt-44 text-3xl font-bold pb-10"
+      >
         <span class="text-txt"
           >Website <span class="text-col-3">Contributors</span></span
         >
       </div>
     </div>
     <Section>
-     <!-- put the contributors card here -->
+      <!-- put the contributors card here -->
+      <div
+        class="p-[55px] xl:p-[50px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 justify-center gap-10 lg:gap-28"
+      >
+        <ContributorCard
+          name="Jess John"
+          img={jess.src}
+          description="Hey there, this is a very short about me"
+          github="https://github.com/jessjohn1539"
+          linkedin="https://www.linkedin.com/in/jessjohn1539/"
+          instagram="https://www.instagram.com/jesspacito_6174/"
+          website="https://jessjohn.netlify.app/"
+        />
+        <ContributorCard
+          name="Alston Fernandes"
+          img={alston.src}
+          description="Hey there, this is a very short about me"
+          github="https://github.com/05Alston"
+          linkedin="https://www.linkedin.com/in/alston-fernandes-b28720220/"
+          instagram="https://www.instagram.com/fernands_alston/"
+          website="http://alston-fernandes.netlify.com/"
+          />
+          <ContributorCard
+            name="Figo Fernandez"
+            img={sid.src}
+            description="Hey there, this is a very short about me"
+            github="https://github.com/FernandezFigo105"
+            linkedin="https://www.linkedin.com/in/figo-fernandez-221144242/"
+            instagram="https://www.instagram.com/fernandez_figo?igsh=YWRvaGlwaHZjb2Q1"
+          />
+        <ContributorCard
+          name="Siddharth Dhaigude"
+          img={sid.src}
+          description="Hey there, this is a very short about me"
+          github="https://github.com/sd8capricon"
+          linkedin="https://www.linkedin.com/in/sdhaigude/"
+          instagram="https://instagram.com/sid_d813?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+          website="https://siddharthdhaigude.tech"
+        />
+      </div>
     </Section>
   </div>
 </PageLayout>

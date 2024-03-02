@@ -1,0 +1,169 @@
+---
+// Layout
+import PageLayout from "../layouts/PageLayout.astro";
+// Components
+import Section from "../components/Section.astro";
+import Partners from "../components/Partners.astro";
+// Assets
+import HeroImage from "../assets/images/Strategy4/strategy4_hero.webp";
+import{
+    Staff1,
+    Staff2,
+    Staff3,
+    Staff4,
+    POSH1,
+    POSH2,
+    POSH3,
+    POSH4,
+    POSH5,
+    POSH6,
+    POSH7
+}from "../assets/images/Strategy5";
+---
+
+<PageLayout title="Networking&Advocacy">
+  <div class="h-full w-full bg-col-1-light pb-[200px]">
+    <img
+      src={POSH3.src}
+      alt=""
+      class="w-full h-[350px] md:h-[500px] xl:h-[600px] pt-[110px] opacity-[0.95] object-cover"
+    />
+
+    <div class="w-full h-max bg-col-1-light">
+      <div class="flex items-center justify-center pt-10 text-3xl font-bold">
+        <span class="text-txt">Trainings<span class="text-col-3"></span></span>
+      </div>
+    </div>
+    <Section>
+      <div
+        class="flex flex-col items-center justify-center p-20 mt-[-100px] mb-[-180px]"
+      >
+        <div class="flex flex-col">
+          <div
+            class="flex items-center justify-start pt-24 text-2xl font-bold pb-1"
+          >
+            <span class="text-txt"
+              >Sakhya's <span class="text-col-3">Training</span></span
+            >
+          </div>
+          <div class="w-[210px] h-[4px] bg-col-4"></div>
+          <p
+            class="text-sm text-txt md:text-base w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] xl:w-[1100px] text-justify pt-6 leading-7 xl:leading-8"
+          >
+            We provide trainings to corporate institutions. We believe that change and transformation is achieved by
+            working in solidarity. Hence we network with partners at the
+            district level, state level and the national level. This gives
+            Sakhya a platform to work together to effect changes at the policy
+            level.
+          </p>
+        </div>
+
+        <!-- img carousal 1 heading -->
+        <div
+          class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1"
+        >
+          <span class="text-txt"
+            >Capacity Building of <span class="text-col-3">Staff</span></span
+          >
+          <div class="w-full h-[4px] bg-col-4"></div>
+        </div>
+        <!-- img carousal 1 -->
+        <div class="flex flex-row group gap-10 overflow-hidden">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 object-cover justify-center gap-5 items-center pt-[40px] lg:animate-loop-scroll-slow shrink-0"
+          >
+            <img
+              src={Staff1.src}
+              class="h-[250px] w-full overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Staff2.src}
+              class="h-[250px] w-full overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Staff3.src}
+              class="h-[250px] w-full overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Staff4.src}
+              class="h-[250px] w-full overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 object-cover justify-center gap-5 items-center pt-[40px] lg:animate-loop-scroll-slow shrink-0"
+          >
+            <img
+              src={Staff1.src}
+              class="h-[250px] w-full overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Staff2.src}
+              class="h-[250px] w-full overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Staff3.src}
+              class="h-[250px] w-full overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Staff4.src}
+              class="h-[250px] w-full overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- img carousal 2 heading -->
+        <div
+          class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1 text-center"
+        >
+          <span class="text-txt"
+            >POSH <span class="text-col-3">Training</span></span
+          >
+          <div class="w-full h-[4px] bg-col-4"></div>
+        </div>
+        <!-- img carousal 2 -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 object-fit items-center pt-[40px] shrink-0"
+        >
+          <img
+            src={POSH1.src}
+            class="h-[250px] w-full overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={POSH2.src}
+            class="h-[250px] w-full overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={POSH7.src}
+            class="h-[250px] w-full overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={POSH4.src}
+            class="h-[250px] w-full overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={POSH5.src}
+            class="h-[250px] w-full overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={POSH6.src}
+            class="h-[250px] w-full overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+        </div>
+      </div>
+    </Section>
+  </div>
+</PageLayout>
