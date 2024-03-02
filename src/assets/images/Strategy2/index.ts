@@ -12,8 +12,12 @@ import Workshop1 from './Workshop/Workshop-1.webp'
 import HarassmentSession1 from './HarassmentSession/Harassment-1.webp'
 import Livelihood1 from './LivelihoodSupport/livelihood1.webp'
 import Livelihood2 from './LivelihoodSupport/livelihood2.webp'
-import Livelihood3 from './LivelihoodSupport/livelihood3.webp'
-import Livelihood4 from './LivelihoodSupport/livelihood4.webp'
+import Livelihood3 from './LivelihoodSupport/livelihood3.jpg'
+import Livelihood4 from './LivelihoodSupport/livelihood4.jpg'
+import Nurse1 from './NHT/Nurse1.webp'
+import Nurse2 from './NHT/Nurse2.jpg'
+import Nurse3 from './NHT/Nurse3.jpg'
+import Nurse4 from './NHT/Nurse4.jpg'
 
 export {
   Community1,
@@ -32,4 +36,8 @@ export {
   Livelihood2,
   Livelihood3,
   Livelihood4,
+  Nurse1,
+  Nurse2,
+  Nurse3,
+  Nurse4
 }
