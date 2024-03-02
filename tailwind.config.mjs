@@ -14,6 +14,7 @@ export default {
 			},
 			animation: {
 				'loop-scroll': 'loop-scroll 10s linear infinite',
+				'loop-scroll-slow': 'loop-scroll 40s linear infinite',
 			  },
 			  keyframes: {
 				'loop-scroll': {

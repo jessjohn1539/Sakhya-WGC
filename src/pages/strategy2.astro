@@ -19,8 +19,12 @@ import {
   Students2,
   Workshop1,
   HarassmentSession1,
+  Livelihood1,
+  Livelihood2,
+  Livelihood3,
+  Livelihood4,
 } from "../assets/images/Strategy2";
-import Nurses from "../assets/images/Strategy2/NHT/Nurse.webp"
+import Nurses from "../assets/images/Strategy2/NHT/Nurse.webp";
 ---
 
 <PageLayout title="CommunityOutreach">
@@ -72,8 +76,93 @@ import Nurses from "../assets/images/Strategy2/NHT/Nurse.webp"
             interventions:
           </p>
         </div>
-
         <!-- img carousal 1 heading -->
+        <div
+          class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1"
+        >
+          <span class="text-txt"
+            >Livelihood <span class="text-col-3">Support</span></span
+          >
+          <div class="w-[240px] h-[4px] bg-col-4"></div>
+        </div>
+        <!-- img carousal 1 -->
+        <!-- If images are less than 3, then use the below code -->
+        <!-- <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 items-center pt-[40px] shrink-0"
+        >
+          <img
+            src={Livelihood1.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={Livelihood2.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={Livelihood3.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={Livelihood3.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+        </div> -->
+        <div class="flex flex-row group gap-10 overflow-hidden">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-10 items-center pt-[40px] lg:animate-loop-scroll-slow shrink-0"
+          >
+            <img
+              src={Livelihood1.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Livelihood2.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Livelihood3.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Livelihood4.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-10 items-center pt-[40px] lg:animate-loop-scroll-slow shrink-0"
+          >
+            <img
+              src={Livelihood1.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Livelihood2.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Livelihood3.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Livelihood4.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- img carousal 2 heading -->
         <div
           class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1"
         >
@@ -82,7 +171,7 @@ import Nurses from "../assets/images/Strategy2/NHT/Nurse.webp"
           >
           <div class="w-[240px] h-[4px] bg-col-4"></div>
         </div>
-        <!-- img carousal 1 -->
+        <!-- img carousal 2 -->
         <!-- If images are less than 3, then use the below code -->
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 items-center pt-[40px] shrink-0"
@@ -104,21 +193,7 @@ import Nurses from "../assets/images/Strategy2/NHT/Nurse.webp"
           />
         </div>
 
-        <!-- If images are more than 3, then use the below code -->
-        <!-- <div class="flex flex-row group gap-10 overflow-hidden">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 items-center pt-[40px] lg:animate-loop-scroll shrink-0 ">
-          <img src={HeroImage.src} class="h-[250px] w-auto overflow-hidden rounded-xl object-cover" alt="">
-          <img src={HeroImage.src} class="h-[250px] w-auto overflow-hidden rounded-xl object-cover" alt="">
-          <img src={HeroImage.src} class="h-[250px] w-auto overflow-hidden rounded-xl object-cover" alt="">
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 items-center pt-[40px] lg:animate-loop-scroll shrink-0 ">
-          <img src={HeroImage.src} class="h-[250px] w-auto overflow-hidden rounded-xl object-cover" alt="">
-          <img src={HeroImage.src} class="h-[250px] w-auto overflow-hidden rounded-xl object-cover" alt="">
-          <img src={HeroImage.src} class="h-[250px] w-auto overflow-hidden rounded-xl object-cover" alt="">
-        </div>
-      </div> -->
-
-        <!-- img carousal 2 heading -->
+        <!-- img carousal 3 heading -->
         <div
           class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1"
         >
@@ -128,7 +203,7 @@ import Nurses from "../assets/images/Strategy2/NHT/Nurse.webp"
           <div class="w-[150px] h-[4px] bg-col-4"></div>
         </div>
 
-        <!-- img carousal 2 -->
+        <!-- img carousal 3 -->
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 items-center pt-[40px] shrink-0"
         >
@@ -149,7 +224,7 @@ import Nurses from "../assets/images/Strategy2/NHT/Nurse.webp"
           />
         </div>
 
-        <!-- img carousal 3 heading -->
+        <!-- img carousal 4 heading -->
         <div
           class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1"
         >
@@ -159,8 +234,7 @@ import Nurses from "../assets/images/Strategy2/NHT/Nurse.webp"
           <div class="w-[200px] h-[4px] bg-col-4"></div>
         </div>
 
-        
-        <!-- img carousal 3 -->
+        <!-- img carousal 4 -->
         <div
           class="grid grid-cols-1 md:grid-cols-2 justify-center gap-10 items-center pt-[40px] shrink-0"
         >
@@ -175,15 +249,17 @@ import Nurses from "../assets/images/Strategy2/NHT/Nurse.webp"
             alt=""
           />
         </div>
-         <!-- img carousal 4 heading -->
-         <div
-         class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1"
-       >
-         <span class="text-txt"
-           >Nurse and Housekeeping staff <span class="text-col-3">training</span></span
-         >
-         <div class="w-[420px] h-[4px] bg-col-4"></div>
-       </div>
+        <!-- img carousal 4 heading -->
+        <div
+          class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1"
+        >
+          <span class="text-txt"
+            >Nurse and Housekeeping staff <span class="text-col-3"
+              >training</span
+            ></span
+          >
+          <div class="w-[420px] h-[4px] bg-col-4"></div>
+        </div>
         <!-- img carousal 4 -->
         <div
           class="grid grid-cols-1 justify-center gap-10 items-center pt-[40px] shrink-0"
@@ -194,8 +270,6 @@ import Nurses from "../assets/images/Strategy2/NHT/Nurse.webp"
             alt=""
           />
         </div>
-
-
       </div>
 
       <div
@@ -239,69 +313,70 @@ import Nurses from "../assets/images/Strategy2/NHT/Nurse.webp"
           </div>
           <!-- img carousal 5 -->
           <div
-          class="grid grid-cols-1 md:grid-cols-2 justify-center gap-10 items-center pt-[40px] shrink-0"
-        >
-          <img
-            src={Students1.src}
-            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
-            alt=""
-          />
-          <img
-            src={Students2.src}
-            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
-            alt=""
-          />
-        </div>
-
-        <!-- img carousal 2 -->
-        <div class="flex flex-col justify-center items-center">
-          <!-- img carousal 2 heading -->
-          <div
-            class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1"
+            class="grid grid-cols-1 md:grid-cols-2 justify-center gap-10 items-center pt-[40px] shrink-0"
           >
-            <span class="text-txt"
-              >Workshop for <span class="text-col-3"
-                >Healthcare Professionals</span
-              ></span
-            >
-            <div class="w-full h-[4px] bg-col-4"></div>
+            <img
+              src={Students1.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Students2.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
           </div>
 
           <!-- img carousal 2 -->
-          <div
-            class="grid grid-cols-1 justify-center gap-10 items-center pt-[40px] shrink-0"
-          >
-            <img
-              src={Workshop1.src}
-              class="h-[300px] w-auto overflow-hidden rounded-xl object-cover"
-              alt=""
-            />
-          </div>
-        </div>
-
-        <!-- img carousal 3 -->
-        <div class="flex flex-col justify-center items-center">
-          <!-- img carousal 3 heading -->
-          <div
-            class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1"
-          >
-            <span class="text-txt"
-              >Session on Sexual Harassment of <span class="text-col-3"
-                >Women at Workplace</span
-              ></span
+          <div class="flex flex-col justify-center items-center">
+            <!-- img carousal 2 heading -->
+            <div
+              class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1"
             >
-            <div class="w-full h-[4px] bg-col-4"></div>
+              <span class="text-txt"
+                >Workshop for <span class="text-col-3"
+                  >Healthcare Professionals</span
+                ></span
+              >
+              <div class="w-full h-[4px] bg-col-4"></div>
+            </div>
+
+            <!-- img carousal 2 -->
+            <div
+              class="grid grid-cols-1 justify-center gap-10 items-center pt-[40px] shrink-0"
+            >
+              <img
+                src={Workshop1.src}
+                class="h-[300px] w-auto overflow-hidden rounded-xl object-cover"
+                alt=""
+              />
+            </div>
           </div>
 
           <!-- img carousal 3 -->
-          <div
-            class="grid grid-cols-1 justify-center gap-10 items-center pt-[40px] shrink-0"
-          >
-            <img
-              src={HarassmentSession1.src}
-              class="h-[300px] w-auto overflow-hidden rounded-xl object-cover"
-              alt=""
-            />
+          <div class="flex flex-col justify-center items-center">
+            <!-- img carousal 3 heading -->
+            <div
+              class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1"
+            >
+              <span class="text-txt"
+                >Session on Sexual Harassment of <span class="text-col-3"
+                  >Women at Workplace</span
+                ></span
+              >
+              <div class="w-full h-[4px] bg-col-4"></div>
+            </div>
+
+            <!-- img carousal 3 -->
+            <div
+              class="grid grid-cols-1 justify-center gap-10 items-center pt-[40px] shrink-0"
+            >
+              <img
+                src={HarassmentSession1.src}
+                class="h-[300px] w-auto overflow-hidden rounded-xl object-cover"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
