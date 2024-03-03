@@ -14,7 +14,6 @@ import HeroImage from "../assets/images/Gallery/IMG-20230512-WA0013.jpg";
 const reports = await Astro.glob("../assets/reports/*.pdf");
 reports.reverse();
 const reportThumbnails = await Astro.glob("../assets/reports/thumbnails/*.png");
-const HeroBg = `url(${HeroImage.src})`;
 ---
 
 <PageLayout title="Annual Reports">
