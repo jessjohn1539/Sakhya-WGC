@@ -12,7 +12,7 @@ const { img, title, subtitle, txt, rtl } = Astro.props as Props;
 ---
 
 <div 
-	class={"w-3/4 sm:w-auto max-w-4xl mt-12 mx-4 md:mx-8 flex flex-col bg-col-3 rounded-md md:rounded-3xl shadow-xl " 
+	class={"w-3/4 sm:w-auto mt-12 flex flex-col bg-col-3 rounded-md md:rounded-3xl shadow-xl " 
 	+ (rtl ? "sm:flex-row sm:rounded-br-none" : "sm:flex-row-reverse sm:rounded-bl-none")}>
 	<!-- (rtl ? "sm:flex-row sm:rounded-br-none md:rounded-tr-[52px] md:rounded-br-none" : "sm:flex-row-reverse sm:rounded-bl-none md:rounded-tl-[52px] md:rounded-bl-none") use this to make as in design file-->
 	<div class="sm:basis-56">

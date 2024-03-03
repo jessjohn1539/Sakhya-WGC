@@ -9,55 +9,53 @@ import HeroImage from "../assets/images/Strategy1/strategy1_hero.webp";
 ---
 
 <PageLayout title="Counselling&LegalAsst">
-  <div class="h-full w-full bg-col-1-light">
     <img
-      src={HeroImage.src}
-      alt=""
-      class="w-full h-[350px] md:h-[500px] xl:h-[600px] pt-[110px] opacity-[0.95] object-cover"
+    src={HeroImage.src}
+    alt=""
+    class="w-full h-[350px] md:h-[500px] xl:h-[600px] pt-[110px] opacity-[0.95] object-cover"
     />
-
-    <div class="w-full h-max bg-col-1-light">
+    <Section>
       <div class="flex items-center justify-center pt-10 text-3xl font-bold">
-        <span class="text-txt"
-          >Counselling & <span class="text-col-3">Legal Assistance</span></span
+        <span class="text-txt text-center"
+        >Counselling & <span class="text-col-3">Legal Assistance</span></span
         >
       </div>
-    </div>
-
+    </Section>
     <Section>
-      <div
-        class="flex flex-row items-center justify-center p-20 mt-[-100px] mb-[-180px]"
-      >
-        <div class="flex flex-col">
-          <div
-            class="flex items-center justify-start pt-24 text-2xl font-bold pb-1"
+      <div class="flex flex-col items-center">
+        <div
+          class="text-center relative pt-24 text-2xl font-bold pb-1 w-fit border-b-4 box-border border-col-4 
+          after:absolute after:-bottom-1 after:right-0 after:w-[1ch] after:h-1.5 after:bg-col-1-light
+          before:absolute before:-bottom-1 before:left-0 before:w-[1ch] before:h-1.5 before:bg-col-1-light"
+        >
+          <span 
+          class="text-txt flex flex-wrap gap-2 justify-center whitespace-nowrap"
+            >Individuals & <span class="text-col-3">Families</span></span
           >
-            <span class="text-txt"
-              >Individuals & <span class="text-col-3">Families</span></span
-            >
-          </div>
-          <div class="w-[250px] h-[4px] bg-col-4"></div>
-          <p
-            class="text-sm text-txt md:text-base w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] xl:w-[1100px] text-justify pt-6 leading-7 xl:leading-8"
-          >
-            Counselling is one of the major activities of Sakhya. It enables us
-            to understand the consequences of sexual and gender - based violence
-            in order to design an effective intervention plan for supporting the
-            victim or survivor. These consequences vary, depending on the form
-            of violence perpetrated and the coping capacities of the victim.
-          </p>
-          <div
-            class="flex items-center justify-start pt-24 text-2xl font-bold pb-1"
-          >
-            <span class="text-txt"
-              >Case <span class="text-col-3">Studies</span></span
-            >
-          </div>
-          <div class="w-[150px] h-[4px] bg-col-4"></div>
         </div>
+        <p
+          class="text-sm text-txt md:text-base w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] xl:w-[1100px] text-justify pt-6 leading-7 xl:leading-8"
+        >
+          Counselling is one of the major activities of Sakhya. It enables us
+          to understand the consequences of sexual and gender - based violence
+          in order to design an effective intervention plan for supporting the
+          victim or survivor. These consequences vary, depending on the form
+          of violence perpetrated and the coping capacities of the victim.
+        </p>
       </div>
-
-      <div class="flex flex-col items-center justify-center pb-20 pt-28">
+    </Section>
+    <Section>
+      <div class="flex flex-col items-center">
+        <div
+          class="text-center relative pt-24 text-2xl font-bold pb-1 w-fit border-b-4 box-border border-col-4 
+          after:absolute after:-bottom-1 after:right-0 after:w-[1ch] after:h-1.5 after:bg-col-1-light
+          before:absolute before:-bottom-1 before:left-0 before:w-[1ch] before:h-1.5 before:bg-col-1-light"
+        >
+          <span 
+          class="text-txt flex flex-wrap gap-2 justify-center whitespace-nowrap"
+            >Case <span class="text-col-3">Studies</span></span
+          >
+        </div>
         <CardAlt
           img={HeroImage}
           title={"Sakhya -"}
@@ -78,7 +76,7 @@ import HeroImage from "../assets/images/Strategy1/strategy1_hero.webp";
           subtitle={"Trials in Marriage"}
           txt={"She was all of 25 years old, taking care of 6 children without any means of financial or economic support whatsoever; even from her husband who had strayed over the years. To add to it, her marital life was a chaos; her husband took to alcohol abuse, regularly abused her and subjected her to violence of all sorts. One fine day, he doused her with kerosene. It is during one of the ward visits by the social workers of Sakhya in Thane Civil hospital that they met this young mother in the burns ward. Over a period of time during her stay in the hospital, the counselors built a rapport with her; she was hesitant though to share her plight initially. After being discharged, this gutsy woman followed up with the team and eventually filed an FIR with the support of Sakhya team, coordinated with the child welfare committee to explore educational and shelter facilities for the children and have been successfully rehabilitated, while 3 children continued to stay with her. Gradually the police also took cognizant of the matter and intervened, her husband was chided for his behaviour, who has reconciled with his wife and children. She now stays with the husband and her 3 children, while the other children are staying in the shelter home."}
           rtl={true}
-        />
+          />
         <CardAlt
           img={HeroImage}
           title={"Sakhya -"}
@@ -88,5 +86,4 @@ import HeroImage from "../assets/images/Strategy1/strategy1_hero.webp";
         />
       </div>
     </Section>
-  </div>
 </PageLayout>
