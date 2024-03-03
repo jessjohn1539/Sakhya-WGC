@@ -36,15 +36,17 @@ import{
       <div
         class="flex flex-col items-center justify-center p-20 mt-[-100px] mb-[-180px]"
       >
-        <div class="flex flex-col">
+        <div class="flex flex-col items-center">
           <div
-            class="flex items-center justify-start pt-24 text-2xl font-bold pb-1"
+            class="text-center relative pt-24 text-2xl font-bold pb-1 w-fit border-b-4 box-border border-col-4 
+            after:absolute after:-bottom-1 after:right-0 after:w-[1ch] after:h-1.5 after:bg-col-1-light
+            before:absolute before:-bottom-1 before:left-0 before:w-[1ch] before:h-1.5 before:bg-col-1-light"
           >
-            <span class="text-txt"
-              >Sakhya's <span class="text-col-3">Training</span></span
-            >
+          <span 
+          class="text-txt flex gap-2 justify-center whitespace-nowrap"
+            >Sakhya's <span class="text-col-3">Training</span></span
+          >
           </div>
-          <div class="w-[210px] h-[4px] bg-col-4"></div>
           <p
             class="text-sm text-txt md:text-base w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] xl:w-[1100px] text-justify pt-6 leading-7 xl:leading-8"
           >
@@ -60,7 +62,7 @@ import{
         <div
           class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1"
         >
-          <span class="text-txt"
+          <span class="text-txt flex flex-wrap gap-2 justify-center w-min whitespace-nowrap"
             >Capacity Building of <span class="text-col-3">Staff</span></span
           >
           <div class="w-full h-[4px] bg-col-4"></div>
@@ -118,14 +120,16 @@ import{
         </div>
 
         <!-- img carousal 2 heading -->
-        <div
-          class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1 text-center"
-        >
-          <span class="text-txt"
+          <div
+            class="text-center relative pt-24 text-2xl font-bold pb-1 w-fit border-b-4 box-border border-col-4 
+            after:absolute after:-bottom-1 after:right-0 after:w-[1ch] after:h-1.5 after:bg-col-1-light
+            before:absolute before:-bottom-1 before:left-0 before:w-[1ch] before:h-1.5 before:bg-col-1-light"
+          >
+          <span 
+          class="text-txt flex gap-2 justify-center w-min whitespace-nowrap"
             >POSH <span class="text-col-3">Training</span></span
           >
-          <div class="w-full h-[4px] bg-col-4"></div>
-        </div>
+          </div>
         <!-- img carousal 2 -->
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 object-fit items-center pt-[40px] shrink-0"
