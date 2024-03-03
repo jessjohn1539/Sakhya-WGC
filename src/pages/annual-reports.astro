@@ -3,7 +3,6 @@
 import PageLayout from "../layouts/PageLayout.astro";
 
 // Components
-import Hero from "../components/Hero.astro";
 import Section from "../components/Section.astro";
 import PageTitle from "../components/PageTitle.astro";
 import SectionTitle from "../components/SectionTitle.astro";
@@ -14,7 +13,6 @@ import HeroImage from "../assets/images/Gallery/IMG-20230512-WA0013.jpg";
 const reports = await Astro.glob("../assets/reports/*.pdf");
 reports.reverse();
 const reportThumbnails = await Astro.glob("../assets/reports/thumbnails/*.png");
-const HeroBg = `url(${HeroImage.src})`;
 ---
 
 <PageLayout title="Annual Reports">
