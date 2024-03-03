@@ -5,8 +5,15 @@ import PageLayout from "../layouts/PageLayout.astro";
 import Section from "../components/Section.astro";
 // Assets
 
-import HeroImage from "../assets/images/Strategy4/strategy4_hero.png";
-import { Police1, Police2, Police3, CHARI1 } from "../assets/images/Strategy4";
+import HeroImage from "../assets/images/Strategy4/strategy4_hero.webp";
+import {
+  Police1,
+  Police2,
+  Police3,
+  CHARI1,
+  EMP1,
+  EMP2,
+} from "../assets/images/Strategy4";
 ---
 
 <PageLayout title="Networking&Advocacy">
@@ -14,7 +21,7 @@ import { Police1, Police2, Police3, CHARI1 } from "../assets/images/Strategy4";
     <img
       src={HeroImage.src}
       alt=""
-      class="w-full h-[350px] md:h-[500px] xl:h-[700px] pt-[110px] opacity-[0.95] object-cover"
+      class="w-full h-[350px] md:h-[500px] xl:h-[600px] pt-[110px] opacity-[0.95] object-cover"
     />
 
     <div class="w-full h-max bg-col-1-light">
@@ -38,7 +45,7 @@ import { Police1, Police2, Police3, CHARI1 } from "../assets/images/Strategy4";
           </div>
           <div class="w-[210px] h-[4px] bg-col-4"></div>
           <p
-            class="text-sm md:text-base w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] xl:w-[1100px] text-justify pt-6 leading-7 xl:leading-8"
+            class="text-sm text-txt md:text-base w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] xl:w-[1100px] text-justify pt-6 leading-7 xl:leading-8"
           >
             Networking and Advocacy forms an integral part of Sakhya’s
             activities. We believe that change and transformation is achieved by
@@ -90,21 +97,36 @@ import { Police1, Police2, Police3, CHARI1 } from "../assets/images/Strategy4";
           />
         </div>
 
-        <!-- If images are more than 3, then use the below code -->
-        <!-- <div class="flex flex-row group gap-10 overflow-hidden">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 items-center pt-[40px] lg:animate-loop-scroll shrink-0 ">
-          <img src={HeroImage.src} class="h-[250px] w-auto overflow-hidden rounded-xl object-cover" alt="">
-          <img src={HeroImage.src} class="h-[250px] w-auto overflow-hidden rounded-xl object-cover" alt="">
-          <img src={HeroImage.src} class="h-[250px] w-auto overflow-hidden rounded-xl object-cover" alt="">
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 items-center pt-[40px] lg:animate-loop-scroll shrink-0 ">
-          <img src={HeroImage.src} class="h-[250px] w-auto overflow-hidden rounded-xl object-cover" alt="">
-          <img src={HeroImage.src} class="h-[250px] w-auto overflow-hidden rounded-xl object-cover" alt="">
-          <img src={HeroImage.src} class="h-[250px] w-auto overflow-hidden rounded-xl object-cover" alt="">
-        </div>
-      </div> -->
-
         <!-- img carousal 2 heading -->
+        <div
+          class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1"
+        >
+          <span class="text-txt"
+            >Economic Empowerment <span class="text-col-3"
+              >with CA Rachana Ranade</span
+            ></span
+          >
+          <div class="w-full h-[4px] bg-col-4"></div>
+        </div>
+
+        <!-- img carousal 2 -->
+        <!-- If images are less than 3, then use the below code -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 justify-center gap-10 items-center pt-[40px] shrink-0"
+        >
+          <img
+            src={EMP1.src}
+            class="h-[250px] w-full overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={EMP2.src}
+            class="h-[250px] w-full overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+        </div>
+
+        <!-- img carousal 3 heading -->
         <div
           class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1 text-center"
         >
@@ -117,7 +139,7 @@ import { Police1, Police2, Police3, CHARI1 } from "../assets/images/Strategy4";
           <div class="w-full h-[4px] bg-col-4"></div>
         </div>
 
-        <!-- img carousal 2 -->
+        <!-- img carousal 3 -->
         <div
           class="grid grid-cols-1 justify-center gap-10 items-center pt-[40px] shrink-0"
         >

@@ -1,38 +1,35 @@
 ---
-import CTAImg from "../assets/cta.png";
 ---
 
 <div
-  class="bg-col-4 h-[200px] sm:w-full sm:h-[200px] flex flex-row items-center relative bottom-0"
+  class="bg-col-4 w-full h-[300px] lg:h-[250px] flex flex-col justify-center items-center md:flex-row z-0"
 >
-  <a href="/donation">
-    <button
-      class="rounded-[6px] w-[120px] h-[30px] lg:h-[40px] text-[15px] font-medium bg-col-2 py-[10px] px-[30px] relative left-2/4 lg:left-[120px] lg:w-[200px] xl:left-[170px] xl:w-[250px]"
-      >SUPPORT A CAUSE</button
-    ></a
-  >
-  <div class="flex-grow"></div>
-  <div class="flex justify-center">
-    <div class="flex flex-col xl:relative xl:right-[150px]">
+  <div class="pt-[0px] flex flex-col md:flex-row-reverse justify-center items-center w-full">
+    <div
+      class="flex flex-col md:justify-center items-center h-[150px] md:ml-[120px] md:py-[150px] md:mr-[80px] lg:ml-[0px] lg:w-[400px] w-full xl:w-[700px]"
+    >
       <h1
-        class="text-col-1 relative text-3xl font-bold"
-        style="right: 300px; bottom: 10px; top: 0;"
+        class="text-col-1 text-2xl self-center font-bold pb-[20px] xl:text-3xl"
       >
         For CSR Support
       </h1>
-      <div class="relative top-[20px]">
-        <h3 class="relative right-[300px] text-col-1">write to</h3>
-        <h2 class="relative right-[300px] text-col-1 text-lg">
-          natty-sakhya@gmail.com
+      <h3 class="text-col-1 text-center xl:text-lg xl:pb-[10px]">write to</h3>
+      <a href="mailto:sakhya_87@rediffmail.com">
+        <h2 class="text-col-1 text-lg text-center pb-[40px] xl:text-xl">
+          sakhya_87@rediffmail.com
         </h2>
-      </div>
-      <div class="flex justify-end">
-        <img
-          src={CTAImg.src}
-          alt="CTA"
-          class="w-[200px] absolute top-[5px] xl:top-[-96px] xl:w-[500px] xl:right-[-150px]"
-        />
-      </div>
+      </a>
+    </div>
+
+    <div
+      class="flex justify-center md:w-1/2 md:justify-start items-center xl:w-[700px] xl:justify-start"
+    >
+      <a href="/donation">
+        <button
+          class="bg-col-1 w-[200px] text-txt h-[30px] rounded-md md:ml-[80px] md:h-[40px] md:rounded-[10px] lg:ml-[150px] font-semibold lg:text-lg lg:w-[250px] lg:h-[50px]"
+          >SUPPORT A CAUSE</button
+        >
+      </a>
     </div>
   </div>
 </div>

@@ -3,33 +3,28 @@
 import PageLayout from "../layouts/PageLayout.astro";
 
 // Components
-import Hero from "../components/Hero.astro";
 import Section from "../components/Section.astro";
 import PageTitle from "../components/PageTitle.astro";
 import SectionTitle from "../components/SectionTitle.astro";
 import MagzineCard from "../components/MagzineCard.astro";
 
 // Assets
-import HeroImage from "../assets/home.png";
+import HeroImage from "../assets/images/Gallery/IMG-20230512-WA0013.jpg";
 const reports = await Astro.glob("../assets/reports/*.pdf");
 reports.reverse();
 const reportThumbnails = await Astro.glob("../assets/reports/thumbnails/*.png");
-const HeroBg = `url(${HeroImage.src})`;
 ---
 
 <PageLayout title="Annual Reports">
-    <Hero bgImg={HeroBg} overlay={false} />
+    <!-- <Hero bgImg={HeroBg} overlay={false} /> -->
+    <img
+        src={HeroImage.src}
+        alt=""
+        class="w-full h-[350px] md:h-[500px] xl:h-[600px] pt-[110px] opacity-[0.95] object-cover"
+    />
     <Section>
-        <PageTitle primaryText="Annual Reports" />
+        <PageTitle primaryText="Annual" secondaryText="Reports" />
         <SectionTitle primaryText="Our Annual" secondaryText="Reports" />
-        <p class="text-gray-600 mb-8">
-            Networking and Advocacy forms an integral part of Sakhya’s
-            activities. We believe that change and transformation is achieved by
-            working in solidarity. Hence we network with partners at the
-            district level, state level and the national level. This gives
-            Sakhya a platform to work together to effect changes at the policy
-            level.
-        </p>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
             {
                 reports.map((report) => {

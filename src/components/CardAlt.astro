@@ -23,21 +23,21 @@ const { img, title, subtitle, txt, rtl } = Astro.props as Props;
 		/>
 	</div>
 	<div class="flex flex-1 flex-col">
-		<div class={"border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6 text-xl text-gray-800" + (rtl ? "" : " flex flex-col sm:place-items-end")}>
+		<div class={"border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6 text-xl text-txt" + (rtl ? "" : " flex flex-col sm:place-items-end")}>
 			<span class="font-bold uppercase">
 				{title} 
 				<span class="font-normal">
 					{subtitle}
 				</span>
 			</span>
-			<p class="mt-2 line-clamp-3 text-sm/relaxed text-justify">
+			<p class="mt-2 line-clamp-3 text-txt text-sm/relaxed text-justify">
 				{txt}
 			</p>
 		</div>
 		<div class={"sm:flex sm:items-end pl-4 pb-4 sm:px-6" + (rtl ? "" : " sm:justify-end")}>
 			<button 
 				data-open-modal
-				class="block bg-col-1 px-5 py-3 text-center text-xs font-bold transition hover:bg-col-2 rounded-md"
+				class="block bg-col-1 px-5 py-3 text-center text-txt text-xs font-bold transition hover:bg-col-2 rounded-md"
 			>
 				Read More
 			</button>
@@ -60,10 +60,10 @@ const { img, title, subtitle, txt, rtl } = Astro.props as Props;
 		/>
 
 		<div class="md:px-6 text-gray-800">
-			<span class="font-medium uppercase text-xl md:text-lg">
+			<span class="font-medium uppercase text-txt text-xl md:text-lg">
 				{title} {subtitle}
 			</span>
-			<p class="mt-5 text-sm font-light text-justify pb-6">
+			<p class="mt-5 text-sm font-light text-txt text-justify pb-6">
 				{txt}
 			</p>
 		</div>
