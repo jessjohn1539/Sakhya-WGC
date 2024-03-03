@@ -31,7 +31,7 @@ const reportThumbnails = await Astro.glob("../assets/reports/thumbnails/*.png");
                     const fileName = report.default
                         .split("/")
                         .pop()
-                        .slice(0, -4);
+                        .split(".")[0];
 
                     const thumbnail = reportThumbnails.find((thumb) =>
                         thumb.default.src.includes(fileName),

@@ -19,7 +19,7 @@ if (props.redirect == null) props.redirect = props.github;
 ---
 
 <div
-  class="contributor flex flex-col items-center mb-20 relative xl:h-80 transition-all duration-150 hover:-translate-y-2 hover:shadow-2xl bg-[#B1FFC3] rounded-md"
+  class="contributor flex flex-col items-center mb-20 relative xl:h-80 transition-all duration-150 hover:-translate-y-2 hover:shadow-2xl bg-[#6CC6B4] rounded-[20px]"
 >
   <a href={props.redirect} target="_blank" class="h-full">
     <img class="h-full" src={props.img} alt={props.name + " image"} />
@@ -29,7 +29,7 @@ if (props.redirect == null) props.redirect = props.github;
   > 
     <a href={props.redirect} target="_blank">
       <h3
-        class="mb-1.5 text-lg text-black font-semibold hover:text-primary-dark transition-colors duration-75"
+        class="mb-1.5 text-lg text-txt font-semibold hover:text-col-3 transition-colors duration-75"
       >
         {props.name}
       </h3>

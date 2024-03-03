@@ -6,37 +6,45 @@ import Section from "../components/Section.astro";
 // Assets
 
 import HeroImage from "../assets/images/Strategy4/strategy4_hero.webp";
-import { Police1, Police2, Police3, CHARI1 } from "../assets/images/Strategy4";
+import {
+  Police1,
+  Police2,
+  Police3,
+  CHARI1,
+  EMP1,
+  EMP2,
+} from "../assets/images/Strategy4";
 ---
 
 <PageLayout title="Networking&Advocacy">
-  <div class="h-full w-full bg-col-1-light pb-[200px]">
     <img
       src={HeroImage.src}
       alt=""
       class="w-full h-[350px] md:h-[500px] xl:h-[600px] pt-[110px] opacity-[0.95] object-cover"
     />
 
-    <div class="w-full h-max bg-col-1-light">
+    <Section>
       <div class="flex items-center justify-center pt-10 text-3xl font-bold">
-        <span class="text-txt"
+        <span class="text-txt text-center"
           >Networking & <span class="text-col-3">Advocacy</span></span
         >
       </div>
-    </div>
+    </Section>
     <Section>
       <div
-        class="flex flex-col items-center justify-center p-20 mt-[-100px] mb-[-180px]"
+        class="flex flex-col items-center justify-center"
       >
-        <div class="flex flex-col">
-          <div
-            class="flex items-center justify-start pt-24 text-2xl font-bold pb-1"
-          >
-            <span class="text-txt"
+        <div class="flex flex-col items-center">
+        <div
+          class="text-center relative pt-24 text-2xl font-bold pb-1 w-fit border-b-4 box-border border-col-4 
+          after:absolute after:-bottom-1 after:right-0 after:w-[1ch] after:h-1.5 after:bg-col-1-light
+          before:absolute before:-bottom-1 before:left-0 before:w-[1ch] before:h-1.5 before:bg-col-1-light"
+        >
+          <span 
+          class="text-txt flex flex-wrap gap-2 justify-center whitespace-nowrap"
               >Collective <span class="text-col-3">Impact</span></span
-            >
-          </div>
-          <div class="w-[210px] h-[4px] bg-col-4"></div>
+          >
+        </div>
           <p
             class="text-sm text-txt md:text-base w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] xl:w-[1100px] text-justify pt-6 leading-7 xl:leading-8"
           >
@@ -51,9 +59,9 @@ import { Police1, Police2, Police3, CHARI1 } from "../assets/images/Strategy4";
 
         <!-- img carousal 1 heading -->
         <div
-          class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1"
+          class="flex flex-col items-center justify-center pt-32 text-2xl font-bold pb-1"
         >
-          <span class="text-txt"
+          <span class="text-txt text-center"
             >Networking & Collaboration <span class="text-col-3"
               >with Police</span
             ></span
@@ -90,25 +98,40 @@ import { Police1, Police2, Police3, CHARI1 } from "../assets/images/Strategy4";
           />
         </div>
 
-        <!-- If images are more than 3, then use the below code -->
-        <!-- <div class="flex flex-row group gap-10 overflow-hidden">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 items-center pt-[40px] lg:animate-loop-scroll shrink-0 ">
-          <img src={HeroImage.src} class="h-[250px] w-auto overflow-hidden rounded-xl object-cover" alt="">
-          <img src={HeroImage.src} class="h-[250px] w-auto overflow-hidden rounded-xl object-cover" alt="">
-          <img src={HeroImage.src} class="h-[250px] w-auto overflow-hidden rounded-xl object-cover" alt="">
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 items-center pt-[40px] lg:animate-loop-scroll shrink-0 ">
-          <img src={HeroImage.src} class="h-[250px] w-auto overflow-hidden rounded-xl object-cover" alt="">
-          <img src={HeroImage.src} class="h-[250px] w-auto overflow-hidden rounded-xl object-cover" alt="">
-          <img src={HeroImage.src} class="h-[250px] w-auto overflow-hidden rounded-xl object-cover" alt="">
-        </div>
-      </div> -->
-
         <!-- img carousal 2 heading -->
+        <div
+          class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1"
+        >
+          <span class="text-txt text-center"
+            >Economic Empowerment <span class="text-col-3"
+              >with CA Rachana Ranade</span
+            ></span
+          >
+          <div class="w-full h-[4px] bg-col-4"></div>
+        </div>
+
+        <!-- img carousal 2 -->
+        <!-- If images are less than 3, then use the below code -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 justify-center gap-10 items-center pt-[40px] shrink-0"
+        >
+          <img
+            src={EMP1.src}
+            class="h-[250px] w-full overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={EMP2.src}
+            class="h-[250px] w-full overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+        </div>
+
+        <!-- img carousal 3 heading -->
         <div
           class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1 text-center"
         >
-          <span class="text-txt"
+          <span class="text-txt text-center"
             >Network with We Action Group & <span class="text-col-3">CHARI</span
             ><br /><span class="text-txt"
               >(Commonwealth and Human Rights Initiatives)</span
@@ -117,7 +140,7 @@ import { Police1, Police2, Police3, CHARI1 } from "../assets/images/Strategy4";
           <div class="w-full h-[4px] bg-col-4"></div>
         </div>
 
-        <!-- img carousal 2 -->
+        <!-- img carousal 3 -->
         <div
           class="grid grid-cols-1 justify-center gap-10 items-center pt-[40px] shrink-0"
         >
@@ -129,5 +152,4 @@ import { Police1, Police2, Police3, CHARI1 } from "../assets/images/Strategy4";
         </div>
       </div>
     </Section>
-  </div>
 </PageLayout>
