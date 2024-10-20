@@ -1,0 +1,88 @@
+---
+import socialIcons from "../assets/icons/socials";
+
+export interface Props {
+  name: string;
+  img: string;
+  description: string;
+  instagram?: string;
+  facebook?: string;
+  linkedin?: string;
+  github?: string;
+  website?: string;
+  class?: string;
+  redirect?: string;
+}
+
+const props = Astro.props as Props;
+if (props.redirect == null) props.redirect = props.github;
+---
+
+<div
+  class="contributor flex flex-col items-center mb-20 relative xl:h-80 transition-all duration-150 hover:-translate-y-2 hover:shadow-2xl bg-[#6CC6B4] rounded-[20px]"
+>
+  <a href={props.redirect} target="_blank" class="h-full">
+    <img class="h-full" src={props.img} alt={props.name + " image"} />
+  </a>
+  <div
+    class="bg-white shadow-md w-[80%] py-2 px-2 text-center absolute -bottom-10 rounded-sm"
+  > 
+    <a href={props.redirect} target="_blank">
+      <h3
+        class="mb-1.5 text-lg text-txt font-semibold hover:text-col-3 transition-colors duration-75"
+      >
+        {props.name}
+      </h3>
+    </a>
+    <div class="flex justify-center gap-2 text-sm">
+      {
+        props.linkedin && (
+          <a class="social-link p-1" href={props.linkedin} target="_blank">
+            <img src={socialIcons.linkedin.src} alt="" srcset="" />
+          </a>
+        )
+      }
+      {
+        props.github && (
+          <a class="social-link p-1" href={props.github} target="_blank">
+            <img src={socialIcons.github.src} alt="" srcset="" />
+          </a>
+        )
+      }
+      {
+        props.instagram && (
+          <a class="social-link p-1" href={props.instagram} target="_blank">
+            <img src={socialIcons.instagram.src} alt="" srcset="" />
+          </a>
+        )
+      }
+      {
+        props.facebook && (
+          <a class="social-link p-1" href={props.facebook} target="_blank">
+            <img src={socialIcons.facebook.src} alt="" srcset="" />
+          </a>
+        )
+      }
+      {
+        props.website && (
+          <a class="social-link p-1" href={props.website} target="_blank">
+            <img src={socialIcons.globe.src} alt="" srcset="" />
+          </a>
+        )
+      }
+    </div>
+  </div>
+</div>
+
+<!-- <style>
+  .contributor:hover h3 {
+    @apply text-primary;
+  }
+  h3 {
+    font-family: "Poppins", sans-serif;
+  }
+  .social-link img {
+    height: 20px;
+    @apply mr-1.5;
+  }
+</style> -->

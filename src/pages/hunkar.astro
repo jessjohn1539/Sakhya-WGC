@@ -1,0 +1,85 @@
+---
+// Layout
+import PageLayout from "../layouts/PageLayout.astro";
+
+// Components
+import Section from "../components/Section.astro";
+import PageTitle from "../components/PageTitle.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+import MagzineCard from "../components/MagzineCard.astro";
+
+// Assets
+import HeroImage from "../assets/images/Gallery/image34.png";
+const mags = await Astro.glob("../assets/hunkar/*.pdf");
+mags.reverse();
+const magThumbnails = await Astro.glob("../assets/hunkar/thumbnails/*.webp");
+
+const numberToMonth = (number: number) => {
+    switch (number) {
+        case 1:
+            return "January";
+        case 2:
+            return "February";
+        case 3:
+            return "March";
+        case 4:
+            return "April";
+        case 5:
+            return "May";
+        case 6:
+            return "June";
+        case 7:
+            return "July";
+        case 8:
+            return "August";
+        case 9:
+            return "September";
+        case 10:
+            return "October";
+        case 11:
+            return "November";
+        case 12:
+            return "December";
+        default:
+            return "January";
+    }
+};
+---
+
+<PageLayout title="Hunkar">
+    <img
+        src={HeroImage.src}
+        alt=""
+        class="w-full h-[350px] md:h-[500px] xl:h-[600px] pt-[110px] opacity-[0.95] object-cover"
+    />
+    <Section>
+        <PageTitle primaryText="Hunkar" />
+        <SectionTitle primaryText="Our Yearly" secondaryText="Magazine" />
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {
+                mags.map(mag => {
+                    const fileName = mag.default.split("/").pop().split(".")[0];
+                    let [year, month] = fileName.split("-");
+                    month = Number(month);
+
+                    const thumbnail = magThumbnails.find((thumb) =>
+                        thumb.default.src.includes(fileName),
+                    );
+
+                    if (!thumbnail) {
+                        // return default img
+                        return "";
+                    }
+                    return (
+                        <MagzineCard
+                            imgSrc={thumbnail.default.src}
+                            month={numberToMonth(month)}
+                            year={year}
+                            src={mag.default}
+                        />
+                    );
+                })
+            }
+        </div>
+    </Section>
+</PageLayout>

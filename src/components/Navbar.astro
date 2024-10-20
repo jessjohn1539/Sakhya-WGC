@@ -1,0 +1,200 @@
+---
+import LogoImg from "../assets/logo.webp";
+import Hamburger from "./Hamburger.astro";
+
+const links = [
+  {
+    name: "About",
+    subsections: [
+      {
+        name: "About us",
+        link: "/about",
+      },
+      {
+        name: "Sakhya History",
+        link: "/history",
+      },
+      {
+        name: "Our Team",
+        link: "/team",
+      },
+      {
+        name: "Trustees",
+        link: "/trustees",
+      },
+    ],
+  },
+  {
+    name: "Strategies",
+    subsections: [
+      {
+        name: "Counselling & Legal Asst",
+        link: "/strategy1",
+      },
+      {
+        name: "Groups & Communities",
+        link: "/strategy2",
+      },
+      {
+        name: "Awareness Campaigns",
+        link: "/strategy3",
+      },
+      {
+        name: "Networking & Advocacy",
+        link: "/strategy4",
+      },
+      {
+        name: "Trainings",
+        link: "/strategy5",
+      },
+    ],
+  },
+  {
+    name: "Resources",
+    subsections: [
+      {
+        name: "Annual Report",
+        link: "/annual-reports",
+      },
+      {
+        name: "Hunkar",
+        link: "/hunkar",
+      },
+      {
+        name: "Media coverage",
+        link: "/coverage",
+      },
+    ],
+  },
+  {
+    name: "Gallery",
+    subsections: [
+      {
+        name: "Photos",
+        link: "/gallery",
+      },
+      {
+        name: "Videos",
+        link: "/gallery",
+      },
+    ],
+  },
+//  {
+//    name: "Join us",
+//    subsections: [
+//      // {
+//      //   name: "Student internship",
+//      //   link: "",
+//      // },
+//      {
+//        name: "Donation Info",
+//        link: "/donation",
+//      },
+//      // {
+//      //   name: "Volunteer form",
+//      //   link: "",
+//      // },
+//    ],
+//  },
+];
+---
+
+<div class="relative">
+  <header class="bg-col-1-light fixed top-0 left-0 right-0 z-50">
+    <nav class="flex items-center justify-between max-w-screen-xl p-4 mx-auto">
+      <a class="block" href="/">
+        <span class="sr-only">Home</span>
+        <img src={LogoImg.src} class="h-16 md:h-20" alt="Sakhya Logo" />
+      </a>
+      <div class="grow flex justify-center items-center gap-8">
+        <nav aria-label="Global" class="hidden md:block">
+          <ul class="flex flex-row items-center gap-0">
+            {
+              links.map((link) => (
+                <li>
+                  <details class="group [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex cursor-pointer focus:border-none items-center justify-between rounded-lg py-1 px-3 text-slate-700 hover:text-col-3">
+                      <span class="font-medium text-sm lg:text-base">
+                        {link.name}
+                      </span>
+                      <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </summary>
+                    <ul class="mt-2 flex flex-col absolute bg-col-1-light rounded-md">
+                      {link.subsections.map((subsection) => (
+                        <li>
+                          <a
+                            href={subsection.link}
+                            class="block rounded-md px-4 py-2 w-40 lg:w-44 text-xs lg:text-sm font-medium text-gray-700 hover:text-col-3"
+                          >
+                            {subsection.name}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="/donation">
+          <button
+            type="button"
+            class="text-txt bg-col-2 hover:bg-col-1 focus:ring-4 focus:outline-none focus:ring-col-3 font-medium rounded-lg text-xs lg:text-sm px-4 lg:px-9 py-2 text-center"
+          >
+            Donate
+          </button>
+        </a>
+        <div class="block md:hidden">
+          <Hamburger links={links} />
+        </div>
+      </div>
+    </nav>
+    <!-- <ul class='md:hidden flex items-center'>
+        <li>
+          <button type='button' class='flex items-center justify-center transition-all duration-200 active:scale-90 cursor-pointer relative pr-4 interactable' onClick={onTriggerPopup}  datatype={`${popupState ? 'open' : 'close'}`}>
+            <GiHamburgerMenu class={`absolute transition-all text-2xl text-slate-50 duration-100 ${popupState ? 'opacity-0 rotate-45': 'opacity-100 rotate-0'}`}/>
+            <IoClose class={`absolute transition-all text-2xl scale-110 text-slate-50 duration-100  ${popupState ? 'opacity-100 rotate-0' : 'opacity-0 -rotate-45'}`}/>
+          </button>
+        </li>
+        <li>
+        </li>
+      </ul> -->
+  </header>
+</div>
+
+<script>
+  // Fetch all the details element.
+  const details = document.querySelectorAll("details");
+
+  // Add the onclick listeners.
+  details.forEach((detail) => {
+    detail.addEventListener("toggle", () => {
+      if (detail.open) setTargetDetail(detail);
+    });
+  });
+
+  // Close all the details that are not targetDetail.
+  function setTargetDetail(targetDetail: HTMLDetailsElement) {
+    details.forEach((detail) => {
+      if (detail !== targetDetail) {
+        detail.open = false;
+      }
+    });
+  }
+</script>

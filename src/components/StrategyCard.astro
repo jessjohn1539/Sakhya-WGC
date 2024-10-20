@@ -1,0 +1,35 @@
+---
+interface Props {
+	class_?: string;
+	img: ImageMetadata;
+	title: string;
+	subtitle?: string;
+	txt: string;
+}
+
+const { class_, img, title, subtitle, txt } = Astro.props as Props;
+---
+
+<div
+	class={"my-[-30px] md:my-[-1px] mx-auto max-w-80 flex flex-col justify-center items-center rounded-xl text-txt text-center shadow-md " +
+		(class_ ? class_ : "")}
+>
+	<img
+		class="relative m-4 overflow-hidden object-cover w-[280px] h-66 mb-[-5px] rounded-xl text-white shadow-lg shadow-blue-gray-500/40"
+		src={img.src}
+		alt="image"
+	/>
+	<div class="p-6">
+		<p
+			class="mb-2 font-sans text-xl font-bold leading-snug tracking-wide"
+		>
+			{title}
+		</p>
+		<p class="mb-2 font-sans text-sm font-light leading-snug tracking-wide">
+			{subtitle}
+		</p>
+		<p class="pt-4 font-sans text-base leading-relaxed">
+			{txt}
+		</p>
+	</div>
+</div>

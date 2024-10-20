@@ -1,0 +1,448 @@
+---
+// Layout
+import PageLayout from "../layouts/PageLayout.astro";
+// Components
+import Section from "../components/Section.astro";
+// Assets
+
+import HeroImage from "../assets/images/Strategy2/strategy2_hero.webp";
+import {
+  Community1,
+  Community2,
+  Community3,
+  TOT1,
+  TOT2,
+  Exposure1,
+  Exposure2,
+  Exposure3,
+  Students1,
+  Students2,
+  Workshop1,
+  HarassmentSession1,
+  Livelihood1,
+  Livelihood2,
+  Livelihood3,
+  Livelihood4,
+  Nurse1,
+  Nurse2,
+  Nurse3,
+  Nurse4
+} from "../assets/images/Strategy2";
+
+---
+
+<PageLayout title="CommunityOutreach">
+  <div class="h-full w-full bg-col-1-light pb-[200px]">
+    <img
+      src={HeroImage.src}
+      alt=""
+      class="w-full h-[350px] md:h-[500px] xl:h-[600px] pt-[110px] opacity-[0.95] object-cover"
+    />
+
+    <Section>
+      <div class="flex items-center justify-center pt-10 text-3xl font-bold">
+        <span class="text-txt text-center"
+          >Groups and <span class="text-col-3">Community Outreach</span></span
+        >
+      </div>
+    </Section>
+
+    <Section>
+      <div
+        class="flex flex-col items-center justify-center p-20 mt-[-100px] mb-[-180px]"
+      >
+        <div class="flex flex-col items-center">
+        <div
+          class="text-center relative pt-24 text-2xl font-bold pb-1 w-fit border-b-4 box-border border-col-4 
+          after:absolute after:-bottom-1 after:right-0 after:w-[1ch] after:h-1.5 after:bg-col-1-light
+          before:absolute before:-bottom-1 before:left-0 before:w-[1ch] before:h-1.5 before:bg-col-1-light"
+        >
+          <span 
+          class="text-txt flex flex-wrap gap-2 justify-center whitespace-nowrap"
+              >Work with <span class="text-col-3">Communities</span></span
+          >
+        </div>
+          <p
+            class="text-sm text-txt md:text-base w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] xl:w-[1100px] text-justify pt-6 leading-7 xl:leading-8"
+          >
+            Community work implies work with individuals and their support
+            networks to make it easier for them to make healthier choices.
+            Community involvement is crucial to the future success of investing
+            in collective human resources, to build resilience. Our efforts have
+            been geared to sensitize communities, to foster a sense of
+            belonging, and start a process by which a community articulates its
+            own needs and seeks to organize actions to address those needs.<br
+            /> Constant meetings, home visits, training sessions, workshops and special
+            programmes held in communities with women have resulted in developing
+            leadership qualities among them. The women who are financially independent
+            have begun to take decisions by themselves. The sessions mainly focus
+            on creating awareness about women status, gender based violence, stress
+            management, Cyber crime, Parenting, women and law, group bonding, leadership
+            and personality development etc. Given below is a snapshot of the community
+            interventions:
+          </p>
+        </div>
+        <!-- img carousal 1 heading -->
+        <div
+          class="text-center relative pt-24 text-2xl font-bold pb-1 w-fit border-b-4 box-border border-col-4 
+          after:absolute after:-bottom-1 after:right-0 after:w-[1ch] after:h-1.5 after:bg-col-1-light
+          before:absolute before:-bottom-1 before:left-0 before:w-[1ch] before:h-1.5 before:bg-col-1-light"
+        >
+          <span 
+          class="text-txt flex flex-wrap gap-2 justify-center whitespace-nowrap"
+            >Livelihood <span class="text-col-3">Support</span></span
+          >
+        </div>
+        <!-- img carousal 1 -->
+        <!-- If images are less than 3, then use the below code -->
+        <!-- <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 items-center pt-[40px] shrink-0"
+        >
+          <img
+            src={Livelihood1.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={Livelihood2.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={Livelihood3.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={Livelihood3.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+        </div> -->
+        <div class="flex flex-row group gap-10 overflow-hidden">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-10 items-center pt-[40px] lg:animate-loop-scroll-slow shrink-0"
+          >
+            <img
+              src={Livelihood1.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Livelihood2.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Livelihood3.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Livelihood4.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-10 items-center pt-[40px] lg:animate-loop-scroll-slow shrink-0"
+          >
+            <img
+              src={Livelihood1.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Livelihood2.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Livelihood3.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Livelihood4.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- img carousal 2 heading -->
+        <div
+          class="text-center relative pt-24 text-2xl font-bold pb-1 w-fit border-b-4 box-border border-col-4 
+          after:absolute after:-bottom-1 after:right-0 after:w-[1ch] after:h-1.5 after:bg-col-1-light
+          before:absolute before:-bottom-1 before:left-0 before:w-[1ch] before:h-1.5 before:bg-col-1-light"
+        >
+          <span 
+          class="text-txt flex flex-wrap gap-2 justify-center whitespace-nowrap"
+            >Community <span class="text-col-3">Sessions</span></span
+          >
+        </div>
+        <!-- img carousal 2 -->
+        <!-- If images are less than 3, then use the below code -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 items-center pt-[40px] shrink-0"
+        >
+          <img
+            src={Community1.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={Community2.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={Community3.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+        </div>
+
+        <!-- img carousal 3 heading -->
+        <div
+          class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1"
+        >
+          <span class="text-txt"
+            >Exposure <span class="text-col-3">Visit</span></span
+          >
+          <div class="w-[150px] h-[4px] bg-col-4"></div>
+        </div>
+
+        <!-- img carousal 3 -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 items-center pt-[40px] shrink-0"
+        >
+          <img
+            src={Exposure1.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={Exposure2.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={Exposure3.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+        </div>
+
+        <!-- img carousal 4 heading -->
+        <div
+          class="text-center relative pt-24 text-2xl font-bold pb-1 w-fit border-b-4 box-border border-col-4 
+          after:absolute after:-bottom-1 after:right-0 after:w-[1ch] after:h-1.5 after:bg-col-1-light
+          before:absolute before:-bottom-1 before:left-0 before:w-[1ch] before:h-1.5 before:bg-col-1-light"
+        >
+          <span 
+          class="text-txt flex flex-wrap gap-2 justify-center whitespace-nowrap"
+            >Training of <span class="text-col-3">Trainers</span></span
+          >
+        </div>
+
+        <!-- img carousal 4 -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 justify-center gap-10 items-center pt-[40px] shrink-0"
+        >
+          <img
+            src={TOT1.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={TOT2.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+        </div>
+        <!-- img carousal 5 heading -->
+        <div
+          class="text-center relative pt-24 text-2xl font-bold pb-1 w-fit border-b-4 box-border border-col-4 
+          after:absolute after:-bottom-1 after:right-0 after:w-[1ch] after:h-1.5 after:bg-col-1-light
+          before:absolute before:-bottom-1 before:left-0 before:w-[1ch] before:h-1.5 before:bg-col-1-light"
+        >
+          <span 
+          class="text-txt flex flex-wrap gap-2 justify-center"
+            >Nurse and Housekeeping staff <span class="text-col-3"
+              >training</span
+            ></span
+          >
+        </div>
+        <!-- img carousal 5 -->
+        <div class="flex flex-row group gap-10 overflow-hidden">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 object-cover justify-center gap-10 items-center pt-[40px] lg:animate-loop-scroll-slow shrink-0"
+          >
+            <img
+              src={Nurse1.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Nurse2.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Nurse3.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Nurse4.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 object-cover justify-center gap-10 items-center pt-[40px] lg:animate-loop-scroll-slow shrink-0"
+          >
+            <img
+              src={Nurse1.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Nurse2.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Nurse3.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Nurse4.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col items-center justify-center p-20 mt-[-100px] mb-[-180px] pb-[280px]"
+      >
+        <div class="flex flex-col items-center">
+        <div
+          class="text-center relative pt-24 text-2xl font-bold pb-1 w-fit border-b-4 box-border border-col-4 
+          after:absolute after:-bottom-1 after:right-0 after:w-[1ch] after:h-1.5 after:bg-col-1-light
+          before:absolute before:-bottom-1 before:left-0 before:w-[1ch] before:h-1.5 before:bg-col-1-light"
+        >
+          <span 
+          class="text-txt flex flex-wrap gap-2 justify-center whitespace-nowrap"
+              >Work with <span class="text-col-3">Groups</span></span
+          >
+        </div>
+          <p
+            class="text-sm text-txt md:text-base w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] xl:w-[1100px] text-justify pt-6 leading-7 xl:leading-8"
+          >
+            The issue of gender discrimination is all pervasive, in every aspect
+            and sphere in all areas. Hence it is a prerogative of Sakhya to
+            permeate into these systems to ensure that trainings are conducted
+            not only to create awareness and sensitize the masses but also to
+            prevent perpetrators of violence. The groups comprised of the youth
+            in schools and institutions, corporate groups, NGO staff, hospital
+            staff, ward boys and nursing students, police and ICDS / Anganwadi
+            personnel.
+          </p>
+        </div>
+
+        <!-- img carousal 1 -->
+        <div class="flex flex-col justify-center items-center">
+          <!-- img carousal 1 heading -->
+        <div
+          class="text-center relative pt-24 text-2xl font-bold pb-1 w-fit border-b-4 box-border border-col-4 
+          after:absolute after:-bottom-1 after:right-0 after:w-[1ch] after:h-1.5 after:bg-col-1-light
+          before:absolute before:-bottom-1 before:left-0 before:w-[1ch] before:h-1.5 before:bg-col-1-light"
+        >
+          <span 
+          class="text-txt flex flex-wrap gap-2 justify-center"
+              >Session on Cyber Crime <span class="text-col-3"
+                >with Students</span
+              ></span
+          >
+        </div>
+          <!-- img carousal 5 -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 justify-center gap-10 items-center pt-[40px] shrink-0"
+          >
+            <img
+              src={Students1.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Students2.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+          </div>
+
+          <!-- img carousal 2 -->
+          <div class="flex flex-col justify-center items-center">
+            <!-- img carousal 2 heading -->
+        <div
+          class="text-center relative pt-24 text-2xl font-bold pb-1 w-fit border-b-4 box-border border-col-4 
+          after:absolute after:-bottom-1 after:right-0 after:w-[1ch] after:h-1.5 after:bg-col-1-light
+          before:absolute before:-bottom-1 before:left-0 before:w-[1ch] before:h-1.5 before:bg-col-1-light"
+        >
+          <span 
+          class="text-txt flex flex-wrap gap-2 justify-center"
+                >Workshop for <span class="text-col-3"
+                  >Healthcare Professionals</span
+                ></span
+          >
+        </div>
+            <!-- img carousal 2 -->
+            <div
+              class="grid grid-cols-1 justify-center gap-10 items-center pt-[40px] shrink-0"
+            >
+              <img
+                src={Workshop1.src}
+                class="h-[300px] w-auto overflow-hidden rounded-xl object-cover"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <!-- img carousal 3 -->
+          <div class="flex flex-col justify-center items-center">
+            <!-- img carousal 3 heading -->
+        <div
+          class="text-center relative pt-24 text-2xl font-bold pb-1 w-fit border-b-4 box-border border-col-4 
+          after:absolute after:-bottom-1 after:right-0 after:w-[1ch] after:h-1.5 after:bg-col-1-light
+          before:absolute before:-bottom-1 before:left-0 before:w-[1ch] before:h-1.5 before:bg-col-1-light"
+        >
+          <span 
+          class="text-txt flex flex-wrap gap-2 justify-center"
+                >Session on Sexual Harassment of <span class="text-col-3"
+                  >Women at Workplace</span
+                ></span
+          >
+        </div>
+
+            <!-- img carousal 3 -->
+            <div
+              class="grid grid-cols-1 justify-center gap-10 items-center pt-[40px] shrink-0"
+            >
+              <img
+                src={HarassmentSession1.src}
+                class="h-[300px] w-auto overflow-hidden rounded-xl object-cover"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </Section>
+  </div>
+</PageLayout>

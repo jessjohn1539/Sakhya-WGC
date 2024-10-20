@@ -1,0 +1,155 @@
+---
+// Layout
+import PageLayout from "../layouts/PageLayout.astro";
+// Components
+import Section from "../components/Section.astro";
+// Assets
+
+import HeroImage from "../assets/images/Strategy4/strategy4_hero.webp";
+import {
+  Police1,
+  Police2,
+  Police3,
+  CHARI1,
+  EMP1,
+  EMP2,
+} from "../assets/images/Strategy4";
+---
+
+<PageLayout title="Networking&Advocacy">
+    <img
+      src={HeroImage.src}
+      alt=""
+      class="w-full h-[350px] md:h-[500px] xl:h-[600px] pt-[110px] opacity-[0.95] object-cover"
+    />
+
+    <Section>
+      <div class="flex items-center justify-center pt-10 text-3xl font-bold">
+        <span class="text-txt text-center"
+          >Networking & <span class="text-col-3">Advocacy</span></span
+        >
+      </div>
+    </Section>
+    <Section>
+      <div
+        class="flex flex-col items-center justify-center"
+      >
+        <div class="flex flex-col items-center">
+        <div
+          class="text-center relative pt-24 text-2xl font-bold pb-1 w-fit border-b-4 box-border border-col-4 
+          after:absolute after:-bottom-1 after:right-0 after:w-[1ch] after:h-1.5 after:bg-col-1-light
+          before:absolute before:-bottom-1 before:left-0 before:w-[1ch] before:h-1.5 before:bg-col-1-light"
+        >
+          <span 
+          class="text-txt flex flex-wrap gap-2 justify-center whitespace-nowrap"
+              >Collective <span class="text-col-3">Impact</span></span
+          >
+        </div>
+          <p
+            class="text-sm text-txt md:text-base w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] xl:w-[1100px] text-justify pt-6 leading-7 xl:leading-8"
+          >
+            Networking and Advocacy forms an integral part of Sakhya’s
+            activities. We believe that change and transformation is achieved by
+            working in solidarity. Hence we network with partners at the
+            district level, state level and the national level. This gives
+            Sakhya a platform to work together to effect changes at the policy
+            level.
+          </p>
+        </div>
+
+        <!-- img carousal 1 heading -->
+        <div
+          class="flex flex-col items-center justify-center pt-32 text-2xl font-bold pb-1"
+        >
+          <span class="text-txt text-center"
+            >Networking & Collaboration <span class="text-col-3"
+              >with Police</span
+            ></span
+          >
+          <div class="w-full h-[4px] bg-col-4"></div>
+        </div>
+        <!-- <div
+        class="flex flex-col items-center justify-center pt-10 text-xl font-bold pb-1"
+      >
+        <span class="text-txt"
+          >Leaflet distribution in the <span class="text-col-3">Community</span
+          ></span
+        >
+      </div> -->
+        <!-- img carousal 1 -->
+        <!-- If images are less than 3, then use the below code -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 items-center pt-[40px] shrink-0"
+        >
+          <img
+            src={Police1.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={Police2.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={Police3.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+        </div>
+
+        <!-- img carousal 2 heading -->
+        <div
+          class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1"
+        >
+          <span class="text-txt text-center"
+            >Economic Empowerment <span class="text-col-3"
+              >with CA Rachana Ranade</span
+            ></span
+          >
+          <div class="w-full h-[4px] bg-col-4"></div>
+        </div>
+
+        <!-- img carousal 2 -->
+        <!-- If images are less than 3, then use the below code -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 justify-center gap-10 items-center pt-[40px] shrink-0"
+        >
+          <img
+            src={EMP1.src}
+            class="h-[250px] w-full overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={EMP2.src}
+            class="h-[250px] w-full overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+        </div>
+
+        <!-- img carousal 3 heading -->
+        <div
+          class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1 text-center"
+        >
+          <span class="text-txt text-center"
+            >Network with We Action Group & <span class="text-col-3">CHARI</span
+            ><br /><span class="text-txt"
+              >(Commonwealth and Human Rights Initiatives)</span
+            ></span
+          >
+          <div class="w-full h-[4px] bg-col-4"></div>
+        </div>
+
+        <!-- img carousal 3 -->
+        <div
+          class="grid grid-cols-1 justify-center gap-10 items-center pt-[40px] shrink-0"
+        >
+          <img
+            src={CHARI1.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+        </div>
+      </div>
+    </Section>
+</PageLayout>

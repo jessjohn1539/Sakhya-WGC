@@ -1,0 +1,55 @@
+---
+// Layout
+import PageLayout from "../layouts/PageLayout.astro";
+
+// Components
+import Section from "../components/Section.astro";
+import PageTitle from "../components/PageTitle.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+import MagzineCard from "../components/MagzineCard.astro";
+
+// Assets
+import HeroImage from "../assets/images/Gallery/IMG-20230512-WA0013.jpg";
+const reports = await Astro.glob("../assets/reports/*.pdf");
+reports.reverse();
+const reportThumbnails = await Astro.glob("../assets/reports/thumbnails/*.png");
+---
+
+<PageLayout title="Annual Reports">
+    <!-- <Hero bgImg={HeroBg} overlay={false} /> -->
+    <img
+        src={HeroImage.src}
+        alt=""
+        class="w-full h-[350px] md:h-[500px] xl:h-[600px] pt-[110px] opacity-[0.95] object-cover"
+    />
+    <Section>
+        <PageTitle primaryText="Annual" secondaryText="Reports" />
+        <SectionTitle primaryText="Our Annual" secondaryText="Reports" />
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {
+                reports.map((report) => {
+                    const fileName = report.default
+                        .split("/")
+                        .pop()
+                        .split(".")[0];
+
+                    const thumbnail = reportThumbnails.find((thumb) =>
+                        thumb.default.src.includes(fileName),
+                    );
+
+                    if (!thumbnail) {
+                        // return default img
+                        return "";
+                    }
+                    return (
+                        <MagzineCard
+                            imgSrc={thumbnail.default.src}
+                            year={fileName}
+                            src={report.default}
+                        />
+                    );
+                })
+            }
+        </div>
+    </Section>
+</PageLayout>

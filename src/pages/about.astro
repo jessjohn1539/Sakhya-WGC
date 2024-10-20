@@ -1,0 +1,106 @@
+---
+// Layout
+import PageLayout from "../layouts/PageLayout.astro";
+// Components
+
+// Assets
+import PastImg from "../assets/images/About/Past.webp";
+import PresentImg from "../assets/images/About/Present.webp";
+import HeroImage from "../assets/images/About/About.webp";
+import Section from "../components/Section.astro";
+---
+
+<PageLayout title="About">
+  <!-- <Hero
+		bgImg={HeroBg}
+		title="About Us"
+		subText=""
+		overlay={true}
+		overlayOpacity={0.7}
+	/> -->
+  <img
+    src={HeroImage.src}
+    alt=""
+    class="w-full h-[350px] md:h-[500px] xl:h-[600px] pt-[110px] opacity-[0.9] object-cover"
+  />
+  <Section>
+    <div class="w-full h-max py-10">
+      <div class="flex items-center justify-center text-3xl font-bold">
+        <span class="text-txt">Who <span class="text-col-3">We Are</span></span>
+      </div>
+    </div>
+    <div
+      class="mx-auto w-fit max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8"
+    >
+      <div class="text-2xl font-bold pb-1">
+        <span class="text-txt"
+          >In Retrospect - <span class="text-col-3">Then</span></span
+        >
+        <div class="w-48 h-1 bg-col-4"></div>
+      </div>
+
+      <div class="mt-8 flex flex-col gap-8 md:flex-row lg:gap-16">
+        <article class="text-gray-600 md:max-w-[40ch] text-justify">
+          <p>
+            In 1987, SAKHYA, Anti-dowry and Women's Guidance Cell was started by
+            the College of Social Work, Nirmala Niketan, Mumbai, at the request
+            of and in collaboration with the District Vigilance Commission,
+            Government of Maharashtra. From 1985 to 2003 it continued to be run
+            as a field action project of Nirmala Niketan run by the Religious
+            Congregation of the Daughters of the Heart of Mary. From 2004 it
+            became an independent entity under the aegis of Nirmala Institute.
+            From 1987 the focus of Sakhya was addressing dowry related
+            harassment and working on the issue of domestic violence. Besides
+            this, Sakhya has been offering services in the form of counseling,
+            legal aid, providing shelter to women in distress, conducting
+            awareness programs on gender issues, educational programs to youth
+            on family life, HIV/AIDS, value education, gender sensitization in
+            schools, colleges, institutions and low-income group communities.
+          </p>
+        </article>
+        <div class="shrink-0">
+          <img
+            alt=""
+            src={PastImg.src}
+            class="md:max-w-sm object-cover shadow-[21px_15px_0_0_rgba(53,164,167,1)]"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="mx-auto w-fit max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8"
+    >
+      <div class="text-2xl font-bold pb-1">
+        <span class="text-txt"
+          >In Present - <span class="text-col-3">Now</span></span
+        >
+        <div class="w-48 h-1 bg-col-4"></div>
+      </div>
+
+      <div
+        class="mt-8 flex flex-col gap-8 md:flex-row-reverse justify-end lg:gap-16"
+      >
+        <article class="text-gray-600 md:max-w-[40ch] text-justify">
+          <p>
+            The major focus of Sakhya Women's Guidance Cell is to promote gender
+            equality and gender justice through the process of concretization
+            called women's empowerment. Sakhya believes that an integrated
+            approach of women's empowerment is vital to sustainable development
+            and the realization of human rights for all. Sakhya makes efforts to
+            identifying and redressing power imbalances and giving women more
+            autonomy to manage their own lives. Promoting gender equality
+            through the process of awareness and sensitization and giving women
+            more autonomy to manage their own lives.
+          </p>
+        </article>
+        <div class="shrink-0">
+          <img
+            alt=""
+            src={PresentImg.src}
+            class="md:max-w-sm object-cover shadow-[-21px_15px_0_0_rgba(53,164,167,1)]"
+          />
+        </div>
+      </div>
+    </div>
+  </Section>
+</PageLayout>

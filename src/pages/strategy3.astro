@@ -1,0 +1,217 @@
+---
+// Layout
+import PageLayout from "../layouts/PageLayout.astro";
+// Components
+import Section from "../components/Section.astro";
+
+// Assets
+
+import HeroImage from "../assets/images/Strategy3/strategy3_hero.webp";
+import {
+  Campaign1,
+  Campaign2,
+  Campaign3,
+  StreetPlay1,
+  StreetPlay2,
+  Skill1,
+  Skill2,
+  Skill3,
+  Skill4,
+  Skill5,
+} from "../assets/images/Strategy3";
+---
+
+<PageLayout title="AwarenessCampaigns">
+  <div class="h-full w-full bg-col-1-light pb-[200px]">
+    <img
+      src={HeroImage.src}
+      alt=""
+      class="w-full h-[350px] md:h-[500px] xl:h-[600px] pt-[110px] opacity-[0.95] object-cover"
+    />
+
+    <Section>
+      <div class="flex items-center justify-center pt-10 text-3xl font-bold">
+        <span class="text-txt text-center"
+          >Awareness <span class="text-col-3">Campaigns</span></span
+        >
+      </div>
+    </Section>
+    <Section>
+      <div
+        class="flex flex-col items-center justify-center p-20 mt-[-100px] mb-[-180px]"
+      >
+        <div class="flex flex-col items-center">
+        <div
+          class="text-center relative pt-24 text-2xl font-bold pb-1 w-fit border-b-4 box-border border-col-4 
+          after:absolute after:-bottom-1 after:right-0 after:w-[1ch] after:h-1.5 after:bg-col-1-light
+          before:absolute before:-bottom-1 before:left-0 before:w-[1ch] before:h-1.5 before:bg-col-1-light"
+        >
+          <span 
+          class="text-txt flex gap-2 justify-center whitespace-nowrap"
+              >Empowering <span class="text-col-3">Action</span></span
+          >
+        </div>
+          <p
+            class="text-sm text-txt md:text-base w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] xl:w-[1100px] text-justify pt-6 leading-7 xl:leading-8"
+          >
+            Campaign is a multi – outreach effort to educate key stakeholders,
+            including the common citizens, the media, policymakers, employers
+            and social workers about the importance of an issue. We have also
+            observed that campaigning results in an increase in case referrals
+            to Sakhya. <br />
+            International Week for the Elimination of Violence against Women: The
+            25th November is marked as the International Day for the Elimination
+            of Violence against Women. The UN makes efforts to raise awareness about
+            the women around the world who are victims of gender based violence.
+            <br /> Sakhya organized various awareness programmes including distribution
+            of leaflets, talks, sessions, competitions, street play and rally in
+            strategic places
+          </p>
+        </div>
+        <!-- img carousal 1 heading -->
+        <div
+          class="text-center relative pt-24 text-2xl font-bold pb-1 w-fit border-b-4 box-border border-col-4 
+          after:absolute after:-bottom-1 after:right-0 after:w-[1ch] after:h-1.5 after:bg-col-1-light
+          before:absolute before:-bottom-1 before:left-0 before:w-[1ch] before:h-1.5 before:bg-col-1-light"
+        >
+          <span 
+          class="text-txt flex flex-wrap gap-2 justify-center whitespace-nowrap"
+            >Skill Development <span class="text-col-3">Training</span></span
+          >
+        </div>
+
+        <!-- img carousal 1 -->
+        <div class="flex flex-row group gap-10 overflow-hidden">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 justify-center gap-10 items-center pt-[40px] lg:animate-loop-scroll-slow shrink-0"
+          >
+            <img
+              src={Skill1.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Skill2.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Skill3.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Skill4.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Skill5.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 justify-center gap-10 items-center pt-[40px] lg:animate-loop-scroll-slow shrink-0"
+          >
+            <img
+              src={Skill1.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Skill2.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Skill3.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Skill4.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+            <img
+              src={Skill5.src}
+              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- img carousal 2 heading -->
+        <div
+          class="text-center relative pt-24 text-2xl font-bold pb-1 w-fit border-b-4 box-border border-col-4 
+          after:absolute after:-bottom-1 after:right-0 after:w-[1ch] after:h-1.5 after:bg-col-1-light
+          before:absolute before:-bottom-1 before:left-0 before:w-[1ch] before:h-1.5 before:bg-col-1-light"
+        >
+          <span 
+          class="text-txt flex flex-wrap gap-2 justify-center whitespace-nowrap"
+            >Knock the Door <span class="text-col-3">Campaign</span></span
+          >
+        </div>
+        <div
+          class="flex flex-col items-center justify-center pt-10 text-xl font-bold pb-1"
+        >
+          <span class="text-txt text-center"
+            >Leaflet distribution in the <span class="text-col-3"
+              >Community</span
+            ></span
+          >
+        </div>
+        <!-- img carousal 2 -->
+        <!-- If images are less than 3, then use the below code -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 items-center pt-[40px] shrink-0"
+        >
+          <img
+            src={Campaign1.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={Campaign2.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={Campaign3.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+        </div>
+
+        <!-- img carousal 3 heading -->
+        <div
+          class="text-center relative pt-24 text-2xl font-bold pb-1 w-fit border-b-4 box-border border-col-4 
+          after:absolute after:-bottom-1 after:right-0 after:w-[1ch] after:h-1.5 after:bg-col-1-light
+          before:absolute before:-bottom-1 before:left-0 before:w-[1ch] before:h-1.5 before:bg-col-1-light"
+        >
+          <span 
+          class="text-txt flex flex-wrap gap-2 justify-center whitespace-nowrap"
+            >Street Play at <span class="text-col-3">Public Places</span></span
+          >
+        </div>
+
+        <!-- img carousal 3 -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 justify-center gap-10 items-center pt-[40px] shrink-0"
+        >
+          <img
+            src={StreetPlay1.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+          <img
+            src={StreetPlay2.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+        </div>
+      </div>
+    </Section>
+  </div>
+</PageLayout>

@@ -1,0 +1,51 @@
+---
+import { Image } from 'astro:assets';
+import 'photoswipe/style.css';
+// Layout
+import PageLayout from "../layouts/PageLayout.astro";
+
+// Components
+import Section from "../components/Section.astro";
+import PageTitle from "../components/PageTitle.astro";
+
+// Assets
+const imageFiles = await Astro.glob('../assets/images/Gallery/*');
+---
+<PageLayout title="Gallery">
+    <div class="pt-[130px]"></div>
+    <Section>
+        <PageTitle primaryText="Photo" secondaryText="Gallery" />
+
+        <div id="gallery" class="md:columns-2 lg:columns-3 xl:columns-5">
+            {
+                imageFiles.map( image => (
+                    <a
+                    href={image.default.src}
+                    target="_blank">
+                      <Image src={image.default} alt="" class="border-8 border-col-3 my-4 w-full"/>
+                    </a>
+                ))
+            }
+        </div>
+    </Section>
+</PageLayout>
+
+<script>
+    import PhotoSwipeLightbox from 'photoswipe/lightbox';
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '#gallery',
+        children: 'a',
+        pswpModule: () => import('photoswipe'),
+        padding: { top: 20, bottom: 20, left: 20, right: 20 }
+    });
+    lightbox.addFilter('domItemData', (itemData, _, linkEl) => {
+        if (linkEl) {
+            itemData.src = linkEl.href;
+            itemData.w = Number(linkEl.children[0].clientWidth * 5);
+            itemData.h = Number(linkEl.children[0].clientHeight * 5);
+        }
+
+        return itemData;
+    });
+    lightbox.init();
+</script>

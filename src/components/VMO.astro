@@ -1,0 +1,102 @@
+---
+// Assets
+import VisionImg from "../assets/vision1.png";
+import MissionImg from "../assets/Mission.jpg";
+import ObjectiveImg from "../assets/Objective.jpg";
+---
+
+<div class="bg-col-4 w-full h-max flex flex-col items-center py-20 gap-16">
+  <!-- Vision -->
+  <div
+    class="w-[350px] xl:w-max h-[520px] xl:h-[300px] bg-col-3 flex flex-col xl:flex-row rounded-tl-[62px]"
+  >
+    <div
+      class="flex flex-col p-10 xl:p-20 items-start justify-start xl:justify-center"
+    >
+      <div class="flex flex-col items-start justify-start">
+        <span class="text-txt text-3xl font-bold"
+          >Our <span class="text-[#BAEBD6] text-3xl font-bold">Vision</span
+          ></span
+        >
+        <div class="w-[150px] h-[4px] bg-col-4"></div>
+      </div>
+      <p class="text-base text-txt text-start py-5 w-[300px] xl:w-[800px]">
+        A society where gender justice and gender equality will contribute to
+        enable women to live with human dignity.
+      </p>
+    </div>
+    <div class="flex items-center justify-center">
+      <img
+        src={VisionImg.src}
+        alt="Vision"
+        class="w-[300px] h-[240px] xl:h-[300px] xl:w-[400px] xl:shadow-[20px_20px_0_0_rgba(186,235,214,1)] object-cover"
+      />
+    </div>
+  </div>
+
+  <!-- Mission -->
+  <div
+    class="w-[350px] xl:w-max h-[500px] xl:h-[300px] bg-[#BAEBD6] flex flex-col xl:flex-row-reverse rounded-tr-[62px]"
+  >
+    <div
+      class="flex flex-col p-10 xl:p-20 items-end justify-start xl:justify-center"
+    >
+      <div class="flex flex-col items-end justify-center">
+        <span class="text-txt text-3xl font-bold"
+          >Our <span class="text-col-3 text-3xl font-bold">Mission</span></span
+        >
+        <div class="w-[180px] h-[4px] bg-col-4"></div>
+      </div>
+      <p class="text-base text-txt text-right py-5 w-[300px] xl:w-[800px]">
+        Enabling society to cultivate a sense of social responsibility to bring
+        about a gender just society.
+      </p>
+    </div>
+    <div class="flex items-center justify-center">
+      <img
+        src={MissionImg.src}
+        alt="Mission"
+        class="w-[300px] h-[240px] xl:h-[300px] xl:w-[400px] object-cover xl:shadow-[-20px_20px_0_0_rgba(53,164,167,1)]"
+      />
+    </div>
+  </div>
+
+  <!-- Objectives -->
+  <div
+    class="w-[350px] xl:w-max h-[670px] xl:h-[300px] bg-col-3 flex flex-col xl:flex-row rounded-tl-[62px]"
+  >
+    <div
+      class="flex flex-col p-10 xl:p-20 items-start justify-start xl:justify-center"
+    >
+      <div class="flex flex-col items-start justify-start">
+        <span class="text-txt text-3xl font-bold"
+          >Our <span class="text-[#BAEBD6] text-3xl font-bold">Objectives</span
+          ></span
+        >
+        <div class="w-[150px] h-[4px] bg-col-4"></div>
+      </div>
+      <p class="">
+        <ul
+          class="list-disc text-txt text-base text-start py-5 xl:pl-5 w-[300px] xl:w-[800px]"
+        >
+          <li>To create gender equality and sensitize the masses.</li>
+          <li>
+            A society where gender justice and gender equality will contribute
+            to enable women to live with human dignity.
+          </li>
+          <li>
+            A society where gender justice and gender equality will contribute
+            to enable women to live with human dignity.
+          </li>
+        </ul>
+      </p>
+    </div>
+    <div class="flex items-center justify-center">
+      <img
+        src={ObjectiveImg.src}
+        alt="Objectives"
+        class="w-[300px] h-[240px] xl:h-[300px] xl:w-[400px] xl:shadow-[20px_20px_0_0_rgba(186,235,214,1)]"
+      />
+    </div>
+  </div>
+</div>

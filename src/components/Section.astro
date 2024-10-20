@@ -1,0 +1,27 @@
+---
+interface Props {
+    class?: string;
+    theme?: string; // dark | light default: 'light' - determines the color of the text
+    title?: string; // the title of the section
+}
+
+const props = Astro.props as Props;
+if (!props.theme) props.theme = "light";
+---
+
+<section
+    class={"w-full px-4 md:px-12 xl:px-32 py-8 " +
+        (props.class ? props.class + " " : "") +
+        (props.theme === "dark" ? "dark" : "light")}
+>
+    <slot />
+</section>
+
+<style>
+    .light {
+        @apply text-black bg-col-1-light;
+    }
+    .dark {
+        @apply text-white bg-black;
+    }
+</style>
