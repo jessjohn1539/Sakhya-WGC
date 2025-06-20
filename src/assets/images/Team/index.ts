@@ -1,18 +1,18 @@
 import TeamMember1 from "./Natty.webp";
-import TeamMember2 from "./shradha.webp";
-import TeamMember3 from "./Vidya.webp";
-import TeamMember4 from "./Rushila.webp";
-import TeamMember5 from "./Cheryl.webp";
-import TeamMember6 from "./Neeta.webp";
-import TeamMember7 from "./Shalini.webp";
-import TeamMember8 from "./Anita.webp";
-import TeamMember9 from "./Ranjana.webp";
-import TeamMember10 from "./Rekha.webp";
-import TeamMember11 from "./Maya.webp";
-import TeamMember12 from "./Asha.webp";
-import TeamMember13 from "./Pushpa.webp";
-import TeamMember14 from "./Parvati.webp";
-
+import TeamMember2 from "./Rupali.webp";
+import TeamMember3 from "./shradha.webp";
+import TeamMember4 from "./Vidya.webp";
+import TeamMember5 from "./Rushila.webp";
+import TeamMember6 from "./Cheryl.webp";
+import TeamMember7 from "./Neeta.webp";
+import TeamMember8 from "./Shalini.webp";
+import TeamMember9 from "./Anita.webp";
+import TeamMember10 from "./Ranjana.webp";
+import TeamMember11 from "./Rekha.webp";
+import TeamMember12 from "./Maya.webp";
+import TeamMember13 from "./Asha.webp";
+import TeamMember14 from "./Pushpa.webp";
+import TeamMember15 from "./Parvati.webp";
 export {
   TeamMember1,
   TeamMember2,
@@ -28,4 +28,5 @@ export {
   TeamMember12,
   TeamMember13,
   TeamMember14,
+  TeamMember15,
 };
