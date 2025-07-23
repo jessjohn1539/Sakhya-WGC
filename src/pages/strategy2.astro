@@ -23,15 +23,21 @@ import {
   Livelihood2,
   Livelihood3,
   Livelihood4,
+  Livelihood5,
+  Livelihood6,
+  Livelihood7,
   Nurse1,
   Nurse2,
   Nurse3,
-  Nurse4
+  Nurse4,
+  plantation1,
+  plantation2,
+  plantation3
 } from "../assets/images/Strategy2";
 
 ---
 
-<PageLayout title="CommunityOutreach">
+<PageLayout title="Sustainable Livelihood">
   <div class="h-full w-full bg-col-1-light pb-[200px]">
     <img
       src={HeroImage.src}
@@ -119,56 +125,54 @@ import {
             alt=""
           />
         </div> -->
-        <div class="flex flex-row group gap-10 overflow-hidden">
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-10 items-center pt-[40px] lg:animate-loop-scroll-slow shrink-0"
-          >
-            <img
-              src={Livelihood1.src}
-              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
-              alt=""
-            />
-            <img
-              src={Livelihood2.src}
-              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
-              alt=""
-            />
-            <img
-              src={Livelihood3.src}
-              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
-              alt=""
-            />
-            <img
-              src={Livelihood4.src}
-              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
-              alt=""
-            />
-          </div>
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-10 items-center pt-[40px] lg:animate-loop-scroll-slow shrink-0"
-          >
-            <img
-              src={Livelihood1.src}
-              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
-              alt=""
-            />
-            <img
-              src={Livelihood2.src}
-              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
-              alt=""
-            />
-            <img
-              src={Livelihood3.src}
-              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
-              alt=""
-            />
-            <img
-              src={Livelihood4.src}
-              class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
-              alt=""
-            />
-          </div>
-        </div>
+        
+        <div class="relative w-full py-10 [mask-image:linear-gradient(to_right,transparent_0%,_white_5%,_white_95%,_transparent_100%)] overflow-hidden [scrollbar-width:none] [-ms-overflow-style:none]">
+  <div class="flex gap-10 w-max animate-[loop-scroll_52s_linear_infinite] [&::-webkit-scrollbar]:hidden">
+    <!-- First Set -->
+    <img src={Livelihood1.src} class="h-64 w-auto rounded-xl object-cover flex-shrink-0" alt="" />
+    <img src={Livelihood2.src} class="h-64 w-auto rounded-xl object-cover flex-shrink-0" alt="" />
+    <img src={Livelihood3.src} class="h-64 w-auto rounded-xl object-cover flex-shrink-0" alt="" />
+    <img src={Livelihood4.src} class="h-64 w-auto rounded-xl object-cover flex-shrink-0" alt="" />
+    <img src={Livelihood5.src} class="h-64 w-auto rounded-xl object-cover flex-shrink-0" alt="" />
+    <img src={Livelihood6.src} class="h-64 w-auto rounded-xl object-cover flex-shrink-0" alt="" />
+    <img src={Livelihood7.src} class="h-64 w-auto rounded-xl object-cover flex-shrink-0" alt="" />
+    
+    <!-- Duplicate Set -->
+    <img src={Livelihood1.src} class="h-64 w-auto rounded-xl object-cover flex-shrink-0" alt="" />
+    <img src={Livelihood2.src} class="h-64 w-auto rounded-xl object-cover flex-shrink-0" alt="" />
+    <img src={Livelihood3.src} class="h-64 w-auto rounded-xl object-cover flex-shrink-0" alt="" />
+    <img src={Livelihood4.src} class="h-64 w-auto rounded-xl object-cover flex-shrink-0" alt="" />
+    <img src={Livelihood5.src} class="h-64 w-auto rounded-xl object-cover flex-shrink-0" alt="" />
+    <img src={Livelihood6.src} class="h-64 w-auto rounded-xl object-cover flex-shrink-0" alt="" />
+    <img src={Livelihood7.src} class="h-64 w-auto rounded-xl object-cover flex-shrink-0" alt="" />
+  </div>
+</div>
+
+<style>
+/* Nuclear option - add this if scrollbar persists */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+}
+</style>
+
+         <!-- img carousal 2 heading -->
+<div class="text-center relative pt-24 text-2xl font-bold pb-1 w-fit border-b-4 box-border border-col-4 
+      after:absolute after:-bottom-1 after:right-0 after:w-[1ch] after:h-1.5 after:bg-col-1-light
+      before:absolute before:-bottom-1 before:left-0 before:w-[1ch] before:h-1.5 before:bg-col-1-light">
+  <span class="text-txt flex flex-wrap gap-2 justify-center whitespace-nowrap">
+    Plantation at takedipada, Thane <span class="text-col-3">(In collaboration with ICDS)</span>
+  </span>
+</div>
+
+<!-- img carousal 2 -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-start pt-4">
+  <img src={plantation2.src} class="h-[250px] w-full rounded-xl object-cover" alt="" />
+  <img src={plantation3.src} class="h-[250px] w-full rounded-xl object-cover" alt="" />
+  <img src={plantation1.src} class="h-[250px] w-full rounded-xl object-cover" alt="" />
+</div>
+
+        
 
         <!-- img carousal 2 heading -->
         <div
