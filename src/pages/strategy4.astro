@@ -15,10 +15,11 @@ import {
   EMP2,
 } from "../assets/images/Strategy4";
 import Kalamb from "../assets/images/Strategy4/Kalamb/Kalamb.jpeg";
-import MahilaArogya from "../assets/images/Strategy4/MahilaArogya/MahilaArogya.jpg"
+import MahilaArogya from "../assets/images/Strategy4/MahilaArogya/MahilaArogya.jpeg"
+import survey from "../assets/images/Strategy4/Survey/survey.jpeg"
 ---
 
-<PageLayout title="Networking&Advocacy">
+<PageLayout title="Research and Advocacy">
     <img
       src={HeroImage.src}
       alt=""
@@ -28,7 +29,7 @@ import MahilaArogya from "../assets/images/Strategy4/MahilaArogya/MahilaArogya.j
     <Section>
       <div class="flex items-center justify-center pt-10 text-3xl font-bold">
         <span class="text-txt text-center"
-          >Networking & <span class="text-col-3">Advocacy</span></span
+          >Research and <span class="text-col-3">Advocacy</span></span
         >
       </div>
     </Section>
@@ -57,6 +58,47 @@ import MahilaArogya from "../assets/images/Strategy4/MahilaArogya/MahilaArogya.j
             Sakhya a platform to work together to effect changes at the policy
             level.
           </p>
+        </div>
+
+        <!-- img carousal 1 heading -->
+          <div
+          class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1 text-center"
+        >
+          <span class="text-txt text-center"
+            >Assement Survey, <span class="text-col-3">Katkari Pada </span>
+      </span>
+          
+          <div class="w-full h-[4px] bg-col-4"></div>
+        </div>
+
+        <div
+          class="grid grid-cols-1 justify-center gap-10 items-center pt-[40px] shrink-0"
+        >
+          <img
+            src={survey.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
+        </div>
+
+        <!-- img carousal 1 heading -->
+          <div
+          class="flex flex-col items-center justify-center pt-20 text-2xl font-bold pb-1 text-center"
+        >
+          <span class="text-txt text-center"
+            >Maharashtra Mahila <span class="text-col-3">Arogya Parishad</span
+            >
+          <div class="w-full h-[4px] bg-col-4"></div>
+        </div>
+
+        <div
+          class="grid grid-cols-1 justify-center gap-10 items-center pt-[40px] shrink-0"
+        >
+          <img
+            src={MahilaArogya.src}
+            class="h-[250px] w-auto overflow-hidden rounded-xl object-cover"
+            alt=""
+          />
         </div>
           <!-- img carousal 1 heading -->
           <div
@@ -174,6 +216,7 @@ import MahilaArogya from "../assets/images/Strategy4/MahilaArogya/MahilaArogya.j
             alt=""
           />
         </div>
+
       </div>
     </Section>
 </PageLayout>

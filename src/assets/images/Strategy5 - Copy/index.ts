@@ -16,9 +16,6 @@ import educationNursing1 from './Education/educationNursing1.jpeg'
 import education2 from './Education/education2.jpeg'
 import education3 from './Education/education3.jpeg'
 import education4 from './Education/education4.jpeg'
-import irrigation1 from './Irrigation/irrigation1.jpeg'
-import irrigation2 from './Irrigation/irrigation2.jpg'
-import irrigation3 from './Irrigation/irrigation3.jpeg'
 
 
 export{
@@ -39,8 +36,5 @@ export{
     educationNursing1,
     education2,
     education3,
-    education4,
-    irrigation1,
-    irrigation2,
-    irrigation3
+    education4
 }
