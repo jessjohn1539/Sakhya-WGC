@@ -19,6 +19,8 @@ import education4 from './Education/education4.jpeg'
 import irrigation1 from './Irrigation/irrigation1.jpeg'
 import irrigation2 from './Irrigation/irrigation2.jpg'
 import irrigation3 from './Irrigation/irrigation3.jpeg'
+import beautician1 from './BeauticianTraining/beautician1.jpg'
+import beautician2 from './BeauticianTraining/beautician2.jpg'
 
 
 export{
@@ -42,5 +44,8 @@ export{
     education4,
     irrigation1,
     irrigation2,
-    irrigation3
+    irrigation3,
+    beautician1,
+    beautician2,
+    
 }
