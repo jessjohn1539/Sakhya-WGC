@@ -5,6 +5,7 @@ import CHARI1 from './CHARI/CHARI1.webp'
 import EMP1 from './EcoEmp/Emp1.jpg'
 import EMP2 from './EcoEmp/Emp2.jpg'
 
+
 export {
     Police1,
     Police2,
